@@ -13,8 +13,8 @@ class Landing extends CI_Controller {
 
     public function index()
     {
-        $data['nav'] = $this->load->view('templates/compress-navbar');
-        $data['footer'] = $this->load->view('templates/compress-footer');
+        $data['nav'] = $this->load->view('templates/compress-navbar', NULL, TRUE);
+        $data['footer'] = $this->load->view('templates/compress-footer', NULL, TRUE);
         $this->load->view('home', $data);
     }
 }

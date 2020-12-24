@@ -2,14 +2,6 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Landing extends CI_Controller {
-    /*
-    //Model Query Database
-    public function __construct()
-    {
-        parent:: __construct();
-        $this->load->model('info_pendaftaran');
-    }
-    */
 
     public function index()
     {

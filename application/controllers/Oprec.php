@@ -22,8 +22,8 @@ class Oprec extends CI_Controller {
         public function search_result()
         {
                 $hasil_search = $this->input->post('search');
-                
-                //baru berdasarkan Nama (belum NIM)
-                $user   = $this->db->get_where('user', ['Nama' => $hasil_search])->row_array();
+
+                //belum di test
+                $user   = $this->db->get_where('user', ['Nama' => $hasil_search || 'NIM' => $hasil_search])->row_array();
         }
 }

@@ -1,1 +1,4 @@
-Ini footer</br>
+    <div class="footer">
+        Ini footer
+    </div>
+</html>

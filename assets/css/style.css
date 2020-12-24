@@ -2,18 +2,121 @@
     font-family: "Barlow";
     src: url("../fonts/Barlow/Barlow-Light.ttf") format("truetype");
 }
-.container{
+html{
     font-family: 'Barlow';
-    font-size: 30px;
+    background-image: url("../images/landing-bg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 0.2em 1.5em 0.2em 1.5em;
+}
+
+.container{
     display: flex;
     width: 100%;
     justify-content: center;
     align-items:center;
     height: 100%;
-    color:red;
+    top: 150;
+    color:brown;
+    flex-direction: column;
 }
+
+.content-container{
+    border-radius: 10px;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background: #f3eb9b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #cac184, #ebe9d8, #f3eb9b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #cac184, #ebe9d8,#f3eb9b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.title{
+    z-index: -1;
+    text-align: center;
+    position: fixed;
+    font-size: 70px;
+    padding: 0;
+    margin: 0;
+}
+
+.sub-title{
+    font-size: 25px;
+}
+
+.footer{
+    bottom: 0;
+    left: 0;
+}
+
+.compress-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #645f40;
+}
+
+.compress-section b{
+    background-color: #645f40;
+    width: 300px;
+    padding: 1px;
+    margin: 0 2em 0 2em;
+}
+
+.compress-card{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin: 10px;
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+.compress-card-img{
+    width: 150px;
+    height: auto;
+}
+
+.compress-card-deck{
+    display: flex;
+}
+
 @media (max-width: 700px){
-    html{
-        color: blue;
+    .navbar{
+        width: 100vw;
+    }
+
+    .compress-section b{
+        display: none;
+    }
+
+    .compress-section h1{
+        text-align: center;
+        font-size: 20px;
     }
 }

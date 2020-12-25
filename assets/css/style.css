@@ -39,6 +39,23 @@ body{
     z-index: 100;
 }
 
+.footer{
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    height: 10vh;
+    width: 100%;
+    background-color: brown;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.copyright{
+    font-size: 20px;
+}
+
 .sub-bar{
     width: 100%;
     display: flex;
@@ -107,11 +124,6 @@ body{
 
 .instruction-title img{
     width: 2vw;
-}
-
-.footer{
-    bottom: 0;
-    left: 0;
 }
 
 .compress-section{

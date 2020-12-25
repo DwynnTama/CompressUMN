@@ -1,16 +1,21 @@
 @font-face {
-    font-family: "Barlow";
+    font-family: "Barlow-light";
     src: url("../fonts/Barlow/Barlow-Light.ttf") format("truetype");
 }
+@font-face{
+    font-family: "Barlow-bold";
+    src: url("../fonts/Barlow/Barlow-Bold.ttf") format("truetype");
+}
 html{
-    font-family: 'Barlow';
+    font-family: 'Barlow-light';
     background-image: url("../images/landing-bg.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
-
-
 
 .navbar{
     position: fixed;
@@ -20,11 +25,21 @@ html{
     padding-bottom: 0.3em;
     padding-right: 0;
     margin-right: 0;
+    padding-left: 4em;
+    margin-left: 0;
     display:flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
+    z-index: 100;
+}
+
+.sub-bar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navbar a{
@@ -40,6 +55,8 @@ html{
     justify-content: center;
     align-items:center;
     height: 100%;
+    margin: 0;
+    padding: 0;
     top: 150;
     color:brown;
     flex-direction: column;
@@ -61,6 +78,7 @@ html{
 }
 
 .title{
+    font-family: "Barlow-bold";
     z-index: -1;
     text-align: center;
     position: fixed;
@@ -92,9 +110,9 @@ html{
     margin: 0 2em 0 2em;
 }
 
-.compress-section h1{
+.compress-section h2{
+    font-family: "Barlow-bold";
     text-align: center;
-    font-size: 40px;
 }
 
 .compress-card{
@@ -103,8 +121,9 @@ html{
     width: 200px;
     height: 250px;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgb(31, 29, 29);
     text-align: center;
+    color: white;
 }
 
 .compress-card-img{
@@ -113,22 +132,39 @@ html{
 }
 
 .compress-card-deck{
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
 }
 
 
 @media (max-width: 700px){
     .navbar{
-        width: 100vw;
+        width: 100%;
+        justify-content: center;
+        padding: 1em 0 1em 0;
     }
 
-    .compress-section b{
+    .sub-bar{
         display: none;
     }
 
-    .compress-section h1{
+    .compress-section b{
+        width: 20%;
+        margin: 0 0.7em 0 0.7em;
+    }
+
+    .compress-section h2{
         text-align: center;
         font-size: 20px;
+    }
+
+    .compress-card{
+        width: 250px;
+    }
+
+    .compress-card-img{
+        width: 200px;
     }
 
     .compress-card-deck{
@@ -138,5 +174,11 @@ html{
     .title{
         font-size: 50px;
     }
-    
+}
+
+@media (width: 768px){
+    .compress-section b{
+        width: 200px;
+        margin: 0 1em 0 1em;
+    }
 }

@@ -9,7 +9,7 @@
 <div class="content-container">
     <div class="compress-section">
         <b></b>
-        <h1>THE LATEST UPCOMING EVENT !</h1>
+        <h2>THE LATEST UPCOMING EVENT !</h2>
         <b></b>
     </div>
 
@@ -26,75 +26,72 @@
             <p>aku adalah ...<p>
             <img src="https://wallpapercave.com/wp/wp2841697.jpg" class="compress-card-img"/>
         </div>
-    </div>  
-    <div class="slider-small">
-        <div class="slides-small">
-                <input type="radio" name ="radio-btn" id="radio1">
-                <input type="radio" name ="radio-btn" id="radio2">
-                <input type="radio" name ="radio-btn" id="radio3">
+    </div>
 
-                <div class="slide-small first">
-                    <img src="https://wallpaperaccess.com/full/1313700.jpg" alt="">
-                    <div class="text"> <p>Caption Pic 1</p></div>
-                </div>
+    <div class="slideshow-container">
 
-                <div class="slide-small">
-                    <img src="https://lh3.googleusercontent.com/proxy/xLbg-NqNmPZoBckQkzmLFg0WFGV2O6zgU71g2fpsjLYWiNYb9o8twh1zbvO7b4nEgYPLa2R4x8rtsXSlasiDTKTT39j6JbM" alt="">
-                    <p class="text">Caption Pic 2</p>
-                </div>
+    <div class="mySlides fade">
+        <img src="https://wallpaperaccess.com/full/1313700.jpg" style="width:100%;border-radius:10px">
+        <div class="text">Caption 1</div>
+    </div>
 
-                <div class="slide-small">
-                    <img src="https://wonderfulengineering.com/wp-content/uploads/2016/01/cool-wallpaper-4.jpg" alt="">
-                    <p class="text">Caption Pic 3</p>
-                </div>
+    <div class="mySlides fade">
+        <img src="https://images.wallpapersden.com/image/download/hyper-beast-csgo-art-cool_a25sZWyUmZqaraWkpJRmbmdlrWZlbWU.jpg" style="width:100%;border-radius:10px">
+        <div class="text">Caption 2</div>
+    </div>
 
-                <div class="navigation-auto-small">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                </div>
-        </div>
-            <div class="navigation-manual-small">
-                        <label for="radio1" class="manual-btn"></label>
-                        <label for="radio2" class="manual-btn"></label>
-                        <label for="radio3" class="manual-btn"></label>
-            </div>
-        </div>
+    <div class="mySlides fade">
+        <img src="https://wonderfulengineering.com/wp-content/uploads/2016/01/cool-wallpaper-4.jpg" style="width:100%;border-radius:10px">
+        <div class="text">Caption 3</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
 
     <div class="compress-section">
         <b></b>
-        <h1>CHECK US OUT !</h1>
+        <h2>CHECK US OUT !</h2>
         <b></b>
     </div>
-    <div class="slider">
-        <div class="slides">
-                <input type="radio" name ="radio-btn" id="radio1">
-                <input type="radio" name ="radio-btn" id="radio2">
-                <input type="radio" name ="radio-btn" id="radio3">
+    
+    <div class="compress-carousel">
+        <div class="compress-slides">
+            <input type="radio" name ="radio-btn" id="btn1">
+            <input type="radio" name ="radio-btn" id="btn2">
+            <input type="radio" name ="radio-btn" id="btn3">
 
-                <div class="slide first">
-                    <img src="https://wallpaperaccess.com/full/1313700.jpg" alt="">
-                </div>
+            <div class="compress-slide first">
+                <img src="https://wallpaperaccess.com/full/1313700.jpg" alt="">
+            </div>
 
-                <div class="slide">
-                    <img src="https://lh3.googleusercontent.com/proxy/xLbg-NqNmPZoBckQkzmLFg0WFGV2O6zgU71g2fpsjLYWiNYb9o8twh1zbvO7b4nEgYPLa2R4x8rtsXSlasiDTKTT39j6JbM" alt="">
-                </div>
+            <div class="compress-slide">
+                <img src="https://images.wallpapersden.com/image/download/hyper-beast-csgo-art-cool_a25sZWyUmZqaraWkpJRmbmdlrWZlbWU.jpg" alt="">
+            </div>
 
-                <div class="slide">
-                    <img src="https://wonderfulengineering.com/wp-content/uploads/2016/01/cool-wallpaper-4.jpg" alt="">
-                </div>
+            <div class="compress-slide">
+                <img src="https://wonderfulengineering.com/wp-content/uploads/2016/01/cool-wallpaper-4.jpg" alt="">
+            </div>
 
-                <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                </div>
-        </div>
-            <div class="navigation-manual">
-                        <label for="radio1" class="manual-btn"></label>
-                        <label for="radio2" class="manual-btn"></label>
-                        <label for="radio3" class="manual-btn"></label>
+            <div class="compress-btn-auto">
+                <div class="btn-auto1"></div>
+                <div class="btn-auto2"></div>
+                <div class="btn-auto3"></div>
             </div>
         </div>
+        <div class="compress-btn-manual">
+            <label for="btn1" class="btn-manual"></label>
+            <label for="btn2" class="btn-manual"></label>
+            <label for="btn3" class="btn-manual"></label>
+        </div>
+    </div>
 </div>
 <?= $footer ?>

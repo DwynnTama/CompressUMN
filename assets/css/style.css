@@ -1,19 +1,265 @@
 @font-face {
-    font-family: "Barlow";
+    font-family: "Barlow-light";
     src: url("../fonts/Barlow/Barlow-Light.ttf") format("truetype");
 }
+@font-face{
+    font-family: "Barlow-bold";
+    src: url("../fonts/Barlow/Barlow-Bold.ttf") format("truetype");
+}
+html{
+    font-family: 'Barlow-light';
+    background-image: url("../images/landing-bg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+body{
+    margin:0;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    padding-right: 0;
+    margin-right: 0;
+    padding-left: 4em;
+    margin-left: 0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    z-index: 100;
+}
+
+.footer{
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    height: 10vh;
+    width: 100%;
+    background-color: brown;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.copyright{
+    font-size: 20px;
+}
+
+.sub-bar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 0.2em 1.5em 0.2em 1.5em;
+}
+
 .container{
-    font-family: 'Barlow';
-    font-size: 30px;
     display: flex;
     width: 100%;
     justify-content: center;
     align-items:center;
-    height: 100%;
-    color:red;
+    height: 90%;
+    margin: 0;
+    padding: 0;
+    top: 150;
+    color:brown;
+    flex-direction: column;
 }
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 1em 0;
+    height: auto;
+    background-color: white;
+}
+
+.title{
+    font-family: "Barlow-bold";
+    z-index: -1;
+    text-align: center;
+    position: fixed;
+    font-size: 70px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-title{
+    font-size: 25px;
+}
+
+.instruction-title{
+    font-family: "Barlow-bold";
+    color: #f3eb9b;
+    padding-top: 1vh;
+    font-size: 2vw;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.instruction-title img{
+    width: 2vw;
+}
+
+.compress-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #645f40;
+}
+
+.compress-section b{
+    width: 300px;
+    padding: 1px;
+    margin: 0 2em 0 2em;
+}
+
+#section1 b{
+    background-color: #f3eb9b;
+}
+
+#section2 b{
+    background-color: brown;
+}
+
+#section1 h2{
+    color: #f3eb9b;
+}
+
+#section2 h2{
+    color: brown;
+}
+
+.compress-section h2{
+    font-family: "Barlow-bold";
+    text-align: center;
+}
+
+.compress-card{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin: 10px;
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: rgb(31, 29, 29);
+    text-align: center;
+    color: white;
+}
+
+.compress-card-img{
+    width: 150px;
+    height: auto;
+}
+
+.compress-card-deck{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+#section1{
+    background-color: brown;
+}
+
+#section2{
+    background-image: url("../images/landing-bg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 @media (max-width: 700px){
-    html{
-        color: blue;
+    .navbar{
+        width: 100%;
+        justify-content: center;
+        padding: 1em 0 1em 0;
+    }
+
+    .container{
+        height: 92%;
+    }
+
+    .sub-bar{
+        display: none;
+    }
+
+    .compress-section b{
+        width: 20%;
+        margin: 0 0.7em 0 0.7em;
+    }
+
+    .compress-section h2{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .compress-card{
+        width: 250px;
+    }
+
+    .compress-card-img{
+        width: 200px;
+    }
+
+    .compress-card-deck{
+        flex-direction: column;
+    }
+
+    .title{
+        font-size: 50px;
+    }
+
+    .instruction-title{
+        font-size: 5vw;
+    }
+
+    .instruction-title img{
+        padding-top: 5px;
+        width: 5vw;
+    }
+}
+
+@media (width: 768px){
+    .container{
+        height: 90%;
+    }
+
+    .compress-section b{
+        width: 200px;
+        margin: 0 1em 0 1em;
+    }
+
+    .instruction-title{
+        font-size: 5vw;
+    }
+
+    .instruction-title img{
+        padding-top: 10px;
+        width: 5vw;
     }
 }

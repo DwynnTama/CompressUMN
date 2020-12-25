@@ -1,14 +1,14 @@
 <title>Open Recruitment</title>
 <div class="box">
     <h2>Hasil Interview Open Recruitment</h2>
-    <form action="">
+    <form method="POST" action="<?= base_url('Oprec/Result') ?>">
         <div>
-            <input type="text" placeholder="Type...">
+            <input name="nama" type="text" placeholder="Masukkan Nama atau NIM...">
             <select name="" id="">
                 <option>NIM</option>
                 <option>Nama</option>
             </select>
         </div>
-        <input type="submit" value="Search">
+        <input type="submit" value="submit">
     </form>
 </div>

@@ -8,4 +8,5 @@ class info_pendaftaran extends CI_Model
         $query = $this->db->query("SELECT * FROM list_mahasiswa WHERE Nama = '$hasil_search' OR NIM = '$hasil_search'");
         return $query->result_array();
     }
+}
 ?>

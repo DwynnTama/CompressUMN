@@ -1,12 +1,16 @@
 <?= $nav ?>
 <title>Compress UMN</title>
 <div class="container">
-    <p class="title">
+    <div class="title">
         COMPRESS UMN</br>
-        <span class="sub-title">Under Construction<span>
-    </p>
+        <span class="sub-title">Under Construction</span>
+    </div>
 </div>
-<div class="content-container">
+<div class="content-container" id="section1">
+    <span class="instruction-title">
+        SCROLL BELOW
+        <img src="<?= base_url("assets/images/below.png") ?>"/>
+    </span>
     <div class="compress-section">
         <b></b>
         <h2>THE LATEST UPCOMING EVENT !</h2>
@@ -45,8 +49,8 @@
         <div class="text">Caption 3</div>
     </div>
 
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <a class="prev" onclick="plusSlides(-1)">&#11164;</a>
+    <a class="next" onclick="plusSlides(1)">&#11166;</a>
 
     </div>
     <br>
@@ -56,7 +60,8 @@
         <span class="dot" onclick="currentSlide(2)"></span> 
         <span class="dot" onclick="currentSlide(3)"></span> 
     </div>
-
+</div>
+<div class="content-container" id="section2">
     <div class="compress-section">
         <b></b>
         <h2>CHECK US OUT !</h2>

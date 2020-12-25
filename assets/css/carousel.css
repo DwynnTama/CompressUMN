@@ -1,3 +1,4 @@
+/*Carousel large*/
 .compress-carousel{
     width: 800px;
     height: 300px;
@@ -94,14 +95,9 @@
     background: brown;
 }
 
-@media(max-width: 700px)
-{
-    .btn-manual,.btn-auto1,.btn-auto2,.btn-auto3{
-        transform: scale(1.5);
-    }
-
+@media(max-width: 768px){
     .compress-slide, .compress-carousel{
-        width: 100vw;
+        max-width: 100%;
     }
 
     .compress-slide, .compress-carousel, .compress-slides{
@@ -113,8 +109,8 @@
     }
 
     .compress-slide img{
-        width: 100vw;
         height: auto;
+        max-width: 100%;
     }
 
     .compress-btn-auto{
@@ -128,16 +124,15 @@
     }
 }
 
+/*Carousel small*/
 .mySlides {display: none}
 
-/* Slideshow container */
 .slideshow-container {
   max-width: 500px;
   position: relative;
   margin: auto;
 }
 
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -145,7 +140,7 @@
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
+  color: #f3eb9b;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -153,18 +148,15 @@
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(165,42,42,0.8);
 }
 
-/* Caption text */
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -174,23 +166,21 @@
   text-align: center;
 }
 
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #f3eb9b;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #a39b63;
 }
 
-/* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;

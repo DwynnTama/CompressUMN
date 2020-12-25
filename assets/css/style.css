@@ -17,6 +17,10 @@ html{
     width: 100%;
 }
 
+body{
+    margin:0;
+}
+
 .navbar{
     position: fixed;
     top: 0;
@@ -54,7 +58,7 @@ html{
     width: 100%;
     justify-content: center;
     align-items:center;
-    height: 100%;
+    height: 90%;
     margin: 0;
     padding: 0;
     top: 150;
@@ -63,18 +67,15 @@ html{
 }
 
 .content-container{
-    border-radius: 10px;
-    position: static;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin: 0;
+    padding: 0 0 1em 0;
     height: auto;
-    background: #f3eb9b;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #cac184, #ebe9d8, #f3eb9b);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #cac184, #ebe9d8,#f3eb9b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: white;
 }
 
 .title{
@@ -85,10 +86,27 @@ html{
     font-size: 70px;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .sub-title{
     font-size: 25px;
+}
+
+.instruction-title{
+    font-family: "Barlow-bold";
+    color: #f3eb9b;
+    padding-top: 1vh;
+    font-size: 2vw;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.instruction-title img{
+    width: 2vw;
 }
 
 .footer{
@@ -104,10 +122,25 @@ html{
 }
 
 .compress-section b{
-    background-color: #645f40;
     width: 300px;
     padding: 1px;
     margin: 0 2em 0 2em;
+}
+
+#section1 b{
+    background-color: #f3eb9b;
+}
+
+#section2 b{
+    background-color: brown;
+}
+
+#section1 h2{
+    color: #f3eb9b;
+}
+
+#section2 h2{
+    color: brown;
 }
 
 .compress-section h2{
@@ -137,12 +170,26 @@ html{
     display: flex;
 }
 
+#section1{
+    background-color: brown;
+}
+
+#section2{
+    background-image: url("../images/landing-bg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 
 @media (max-width: 700px){
     .navbar{
         width: 100%;
         justify-content: center;
         padding: 1em 0 1em 0;
+    }
+
+    .container{
+        height: 92%;
     }
 
     .sub-bar{
@@ -174,11 +221,33 @@ html{
     .title{
         font-size: 50px;
     }
+
+    .instruction-title{
+        font-size: 5vw;
+    }
+
+    .instruction-title img{
+        padding-top: 5px;
+        width: 5vw;
+    }
 }
 
 @media (width: 768px){
+    .container{
+        height: 90%;
+    }
+
     .compress-section b{
         width: 200px;
         margin: 0 1em 0 1em;
+    }
+
+    .instruction-title{
+        font-size: 5vw;
+    }
+
+    .instruction-title img{
+        padding-top: 10px;
+        width: 5vw;
     }
 }

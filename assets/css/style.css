@@ -45,7 +45,7 @@ body{
     left: 0;
     height: 10vh;
     width: 100%;
-    background-color: brown;
+    background-color: #333452;
     color: white;
     text-align: center;
     display: flex;
@@ -183,7 +183,7 @@ body{
 }
 
 #section1{
-    background-color: brown;
+    background-color: #333452;
 }
 
 #section2{

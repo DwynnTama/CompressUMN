@@ -35,12 +35,12 @@
     <div class="slideshow-container">
 
     <div class="mySlides fade">
-        <img src="https://wallpaperaccess.com/full/1313700.jpg" style="width:100%;border-radius:10px">
+        <img src="<?= base_url("assets/images/pic1.jpeg") ?>" style="width:100%;border-radius:10px">
         <div class="text">Caption 1</div>
     </div>
 
     <div class="mySlides fade">
-        <img src="https://images.wallpapersden.com/image/download/hyper-beast-csgo-art-cool_a25sZWyUmZqaraWkpJRmbmdlrWZlbWU.jpg" style="width:100%;border-radius:10px">
+        <img src="<?= base_url("assets/images/pic2.jpeg") ?>" style="width:100%;border-radius:10px">
         <div class="text">Caption 2</div>
     </div>
 

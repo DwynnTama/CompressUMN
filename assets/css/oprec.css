@@ -4,6 +4,15 @@
     justify-content: center;
 }
 
+.text-nama{
+    height: 10px;
+    padding-top: 20px;
+}
+
+.text-NIM{
+    
+}
+
 .oprec{
     text-align: center;
     height: 90%;
@@ -17,16 +26,24 @@
     text-transform: uppercase;
     font-family: "Avenir-bold";
     letter-spacing: 2px;
-    margin: 5px 0 10px 0;
+    margin: 5px 0 20px 0;
 }
 
 .oprec h2{
     text-transform: uppercase;
     font-family: "Avenir-bold";
-    font-size: 40px;
+    font-size: 50px;
     letter-spacing: 2px;
-    margin-bottom: 10px;
-    text-shadow: 0px 5px 3px rgba(0,0,0,0.2);
+    margin-bottom: -5px;
+    text-shadow: 0px 5px 3px rgba(0,0,0,0.0);
+}
+
+.oprec h1{
+    font-family: "Avenir-bold";
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+
 }
 
 .compress-form input{

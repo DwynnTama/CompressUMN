@@ -18,6 +18,10 @@
     font-family: "Avenir-bold";
     src: url("../fonts/Avenir/AvenirLTProBlack.otf") format("opentype");
 }
+@font-face {
+    font-family: "Avenir-medium";
+    src: url("../fonts/Avenir/AvenirLTProLightOblique.otf") format("truetype");
+}
 
 *{
     font-family: 'Anastik';
@@ -90,6 +94,7 @@ body{
 }
 
 .copyright{
+    font-family: "Avenir-light";
     font-size: 20px;
 }
 
@@ -156,7 +161,7 @@ body{
 }
 
 .sub-title{
-    font-size: 40px;
+    font-size: 75px;
 }
 
 .instruction-title{

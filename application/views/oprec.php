@@ -1,10 +1,11 @@
 <?php error_reporting(0); ?>
 <title>Open Recruitment</title>
 <div class="container oprec">
-    <h2>Hasil Interview<br/>Open Recruitment</h2>
+    <h2>Open Recruitment</h2>
+    <h1>Cek namamu di sini!</h1>
     <form method="POST" action="<?= base_url('Oprec/Result') ?>" class="compress-form">
         <div>
-            <input name="nama" type="text" placeholder="Masukkan Nama atau NIM...">
+            <input name="nama" type="text" placeholder="Masukkan NIM...">
         </div>
         <button type="submit" value="submit" class="compress-btn">SUBMIT</button>
     </form>

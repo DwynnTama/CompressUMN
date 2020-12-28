@@ -4,7 +4,7 @@
     <div class="container-bg"></div>
     <div class="title">
         COMMPRESS UMN</br>
-        <span class="sub-title">Coming Soon !</span>
+        <span class="sub-title">Coming Soon</span>
     </div>
 </div>
 <div class="content-container" id="section1">

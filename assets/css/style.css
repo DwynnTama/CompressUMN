@@ -6,12 +6,49 @@
     font-family: "Barlow-bold";
     src: url("../fonts/Barlow/Barlow-Bold.ttf") format("truetype");
 }
+@font-face{
+    font-family: "Anastik";
+    src: url("../fonts/Anastik/Anastik.ttf") format("truetype");
+}
+@font-face{
+    font-family: "Avenir-light";
+    src: url("../fonts/Avenir/AvenirLTProLight.otf") format("opentype");
+}
+@font-face{
+    font-family: "Avenir-bold";
+    src: url("../fonts/Avenir/AvenirLTProBlack.otf") format("opentype");
+}
+
+*{
+    font-family: 'Anastik';
+    font-weight: 500;
+}
+
+.text-red{
+    color: brown;
+}
+
+::-webkit-scrollbar {
+    background-color: #333452;
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    margin: 10px 0 10px 0;
+    background: #333452; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f3eb9b; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #645f40; 
+}
+
 html{
-    font-family: 'Barlow-light';
-    background-image: url("../images/landing-bg.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
     padding: 0;
     margin: 0;
     width: 100%;
@@ -45,7 +82,7 @@ body{
     left: 0;
     height: 10vh;
     width: 100%;
-    background-color: brown;
+    background-color: #333452;
     color: white;
     text-align: center;
     display: flex;
@@ -64,6 +101,7 @@ body{
 }
 
 .navbar a{
+    font-family: "Avenir-light";
     text-decoration: none;
     color: white;
     font-size: 25px;
@@ -75,12 +113,23 @@ body{
     width: 100%;
     justify-content: center;
     align-items:center;
-    height: 90%;
+    height: 88%;
     margin: 0;
     padding: 0;
     top: 150;
-    color:brown;
+    color:#333452;
     flex-direction: column;
+}
+
+.container-bg{
+    background-image: url("../images/landing-bg.png");
+    position: fixed;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
 }
 
 .content-container{
@@ -92,11 +141,10 @@ body{
     margin: 0;
     padding: 0 0 1em 0;
     height: auto;
-    background-color: white;
 }
 
 .title{
-    font-family: "Barlow-bold";
+    font-family: "Avenir-bold";
     z-index: -1;
     text-align: center;
     position: fixed;
@@ -108,7 +156,7 @@ body{
 }
 
 .sub-title{
-    font-size: 25px;
+    font-size: 40px;
 }
 
 .instruction-title{
@@ -124,6 +172,7 @@ body{
 
 .instruction-title img{
     width: 2vw;
+    margin-top: 2vh;
 }
 
 .compress-section{
@@ -144,15 +193,17 @@ body{
 }
 
 #section2 b{
-    background-color: brown;
+    background-color: #333452;
 }
 
 #section1 h2{
+    font-family: "Avenir-light";
     color: #f3eb9b;
 }
 
 #section2 h2{
-    color: brown;
+    font-family: "Avenir-light";
+    color: #333452;
 }
 
 .compress-section h2{
@@ -160,37 +211,39 @@ body{
     text-align: center;
 }
 
-.compress-card{
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    margin: 10px;
-    width: 200px;
-    height: 250px;
-    border-radius: 10px;
-    background-color: rgb(31, 29, 29);
-    text-align: center;
-    color: white;
-}
-
-.compress-card-img{
-    width: 150px;
-    height: auto;
-}
-
-.compress-card-deck{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: flex;
-}
-
 #section1{
-    background-color: brown;
+    background-color: #333452;
 }
 
 #section2{
     background-image: url("../images/landing-bg.png");
+    background-position: fixed;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
+}
+
+.compress-vid{
+    width: 560px;
+    height: 315px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px #fff,0px 0px 5px #333452;  
+}
+
+.compress-card{
+    color: #f3eb9b;
+    background-color: #333452;
+    text-transform: uppercase;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.compress-card h3{
+    font-family: "Avenir-bold";
+}
+
+.compress-card h5{
+    font-family: "Avenir-light";
 }
 
 @media (max-width: 700px){
@@ -209,25 +262,20 @@ body{
     }
 
     .compress-section b{
-        width: 20%;
         margin: 0 0.7em 0 0.7em;
+    }
+
+    #section1 b{
+        width: 70px;
+    }
+
+    #section2 b{
+        width: 100px;
     }
 
     .compress-section h2{
         text-align: center;
         font-size: 20px;
-    }
-
-    .compress-card{
-        width: 250px;
-    }
-
-    .compress-card-img{
-        width: 200px;
-    }
-
-    .compress-card-deck{
-        flex-direction: column;
     }
 
     .title{
@@ -239,8 +287,16 @@ body{
     }
 
     .instruction-title img{
+        margin-top: 0;
         padding-top: 5px;
         width: 5vw;
+    }
+    
+    .compress-vid{
+        width: 100%;
+        height: 56.25vw;
+        box-shadow: 0 0 10px 5px grey;
+        border-radius: 0;
     }
 }
 
@@ -259,6 +315,7 @@ body{
     }
 
     .instruction-title img{
+        margin-top: 0;
         padding-top: 10px;
         width: 5vw;
     }

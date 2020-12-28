@@ -24,7 +24,7 @@ class Oprec extends CI_Controller
                 $hasil_search = $this->input->post('nama', true);
                 $data['mhs'] = $this->info_pendaftaran->get_user($hasil_search);
                 $this->load->view('templates/compress-navbar');
-                $this->load->view('search', $data);
+                $this->load->view('oprec', $data);
                 $this->load->view('templates/compress-footer');
         }
 }

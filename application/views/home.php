@@ -1,9 +1,10 @@
 <?= $nav ?>
 <title>Compress UMN</title>
 <div class="container">
+    <div class="container-bg"></div>
     <div class="title">
-        COMPRESS UMN</br>
-        <span class="sub-title">Under Construction</span>
+        COMMPRESS UMN</br>
+        <span class="sub-title">Coming Soon !</span>
     </div>
 </div>
 <div class="content-container" id="section1">
@@ -13,61 +14,9 @@
     </span>
     <div class="compress-section">
         <b></b>
-        <h2>THE LATEST UPCOMING EVENT !</h2>
+        <h2>UPCOMING EVENT</h2>
         <b></b>
     </div>
-
-    <div class="compress-card-deck"> 
-        <div class="compress-card">
-            <p>aku adalah ...<p>
-            <img src="https://wallpapercave.com/wp/wp2841697.jpg" class="compress-card-img"/>
-        </div>
-        <div class="compress-card">
-            <p>aku adalah ...<p>
-            <img src="https://wallpapercave.com/wp/wp2841697.jpg" class="compress-card-img"/>
-        </div>
-        <div class="compress-card">
-            <p>aku adalah ...<p>
-            <img src="https://wallpapercave.com/wp/wp2841697.jpg" class="compress-card-img"/>
-        </div>
-    </div>
-
-    <div class="slideshow-container">
-
-    <div class="mySlides fade">
-        <img src="https://wallpaperaccess.com/full/1313700.jpg" style="width:100%;border-radius:10px">
-        <div class="text">Caption 1</div>
-    </div>
-
-    <div class="mySlides fade">
-        <img src="https://images.wallpapersden.com/image/download/hyper-beast-csgo-art-cool_a25sZWyUmZqaraWkpJRmbmdlrWZlbWU.jpg" style="width:100%;border-radius:10px">
-        <div class="text">Caption 2</div>
-    </div>
-
-    <div class="mySlides fade">
-        <img src="https://wonderfulengineering.com/wp-content/uploads/2016/01/cool-wallpaper-4.jpg" style="width:100%;border-radius:10px">
-        <div class="text">Caption 3</div>
-    </div>
-
-    <a class="prev" onclick="plusSlides(-1)">&#11164;</a>
-    <a class="next" onclick="plusSlides(1)">&#11166;</a>
-
-    </div>
-    <br>
-
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
-    </div>
-</div>
-<div class="content-container" id="section2">
-    <div class="compress-section">
-        <b></b>
-        <h2>CHECK US OUT !</h2>
-        <b></b>
-    </div>
-    
     <div class="compress-carousel">
         <div class="compress-slides">
             <input type="radio" name ="radio-btn" id="btn1">
@@ -98,5 +47,13 @@
             <label for="btn3" class="btn-manual"></label>
         </div>
     </div>
+</div>
+<div class="content-container" id="section2">
+    <div class="compress-section">
+        <b></b>
+        <h2>CHECK US OUT !</h2>
+        <b></b>
+    </div>
+    <iframe class="compress-vid" src="https://www.youtube.com/embed/enbNUqSZdD8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <?= $footer ?>

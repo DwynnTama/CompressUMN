@@ -9,6 +9,7 @@ class Oprec extends CI_Controller
         {
                 parent::__construct();
                 $this->load->model('info_pendaftaran');
+                $this->load->library('form_validation');
         }
 
         public function index()
@@ -21,10 +22,28 @@ class Oprec extends CI_Controller
         //Penambahan Function Result() dalam controller Oprec.php
         public function Result()
         {
-                $hasil_search = $this->input->post('nama', true);
-                $data['mhs'] = $this->info_pendaftaran->get_user($hasil_search);
-                $this->load->view('templates/compress-navbar');
-                $this->load->view('oprec', $data);
-                $this->load->view('templates/compress-footer');
+                $this->form_validation->set_rules('nama', 'Nama', 'required', [
+                        'required' => "NIM yang dicari tidak boleh kosong"
+                ]);
+
+                if ($this->form_validation->run() == false) {
+                        $this->load->view('templates/compress-navbar');
+                        $this->load->view('oprec');
+                        $this->load->view('templates/compress-footer');
+                } else {
+                        $hasil_search = $this->input->post('nama', true);
+
+                        //Error Handling
+                        if (($data['mhs'] = $this->info_pendaftaran->get_user($hasil_search)) == false) {
+                                $data['alert'] = "NIM yang dicari tidak ditemukan";
+                                $this->load->view('templates/compress-navbar');
+                                $this->load->view('oprec', $data);
+                                $this->load->view('templates/compress-footer');
+                        } else {
+                                $this->load->view('templates/compress-navbar');
+                                $this->load->view('oprec', $data);
+                                $this->load->view('templates/compress-footer');
+                        }
+                }
         }
 }

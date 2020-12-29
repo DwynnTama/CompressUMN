@@ -249,6 +249,11 @@ body{
 
 .compress-card h5{
     font-family: "Avenir-light";
+    font-weight: 900;
+}
+
+.compress-card p{
+    font-family: "Avenir-light";
 }
 
 @media (max-width: 700px){

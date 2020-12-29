@@ -289,7 +289,13 @@ body{
     }
 
     .title{
-        font-size: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 40px;
+    }
+
+    .sub-title{
+        font-size: 40px;
     }
 
     .instruction-title{

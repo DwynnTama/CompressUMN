@@ -118,11 +118,18 @@
     }
 
     .oprec h2{
-        font-size: 30px;
+        font-size: 25px;
         margin-left: 10px;
         margin-right: 10px;
     }
 
+    .oprec h5{
+        font-size: 15px;
+    }
+
+    .text-lower{
+        font-size: 15px;
+    }
     .compress-form{
         display: flex;
         flex-direction: column;

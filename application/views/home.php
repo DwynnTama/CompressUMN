@@ -1,5 +1,5 @@
 <?= $nav ?>
-<title>Compress UMN</title>
+<title>COMMPRESS UMN</title>
 <div class="container">
     <div class="container-bg"></div>
     <div class="title">

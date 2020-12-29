@@ -23,7 +23,7 @@ class Oprec extends CI_Controller
         public function Result()
         {
                 $this->form_validation->set_rules('nama', 'Nama', 'required', [
-                        'required' => "NIM yang dicari tidak boleh kosong"
+                        'required' => "NIM yang dicari tidak boleh kosong !"
                 ]);
 
                 if ($this->form_validation->run() == false) {
@@ -35,7 +35,7 @@ class Oprec extends CI_Controller
 
                         //Error Handling
                         if (($data['mhs'] = $this->info_pendaftaran->get_user($hasil_search)) == false) {
-                                $data['alert'] = "NIM yang dicari tidak ditemukan";
+                                $data['alert'] = "NIM yang dicari tidak ditemukan !";
                                 $this->load->view('templates/compress-navbar');
                                 $this->load->view('oprec', $data);
                                 $this->load->view('templates/compress-footer');

@@ -53,6 +53,19 @@
     margin-bottom: 20px;
 }
 
+.oprec h6{
+    color: #f3eb9b;
+    font-size: 18px;
+    margin: 0;
+    padding: 5px 10px 5px 10px;
+    background-color: #333452;
+}
+
+.oprec h6 p{
+    font-size: 18px;
+    margin: 0;
+}
+
 .compress-form input{
     position: relative;
     display: inline-block;

@@ -9,10 +9,7 @@
         </div>
         <button type="submit" value="submit" class="compress-btn">SUBMIT</button>
     </form>
-    <?php 
-        echo "<p class='text-warning'>".form_error('nama')"</p>";
-        echo "<p>".$alert."</p>"; 
-    ?>
+    <h6><?= form_error('nama'); ?><?= $alert; ?></h6>
     <?php
     foreach ($mhs as $row) { ?>
         <h3 class="text-red">HASIL PENCARIAN :</h3>

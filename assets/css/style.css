@@ -26,6 +26,7 @@
 *{
     font-family: 'Avenir-light';
     font-weight: 500;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .text-red{
@@ -58,6 +59,11 @@ html{
     width: 100%;
 }
 
+nav{
+    z-index: 10;
+    display: none;
+}
+
 body{
     margin:0;
 }
@@ -75,9 +81,10 @@ body{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: white;
     width: 100%;
     z-index: 100;
+    box-shadow: 0px 0px 2px #fff,0px 0px 5px #333452;  
 }
 
 .footer{
@@ -108,7 +115,7 @@ body{
 .navbar a{
     font-family: "Avenir-light";
     text-decoration: none;
-    color: white;
+    color: #333452;
     font-size: 25px;
     padding: 0.2em 1.5em 0.2em 1.5em;
 }
@@ -258,10 +265,14 @@ body{
 }
 
 @media (max-width: 700px){
-    .navbar{
+    nav{
+        display: block;
+        position: fixed;
         width: 100%;
-        justify-content: center;
-        padding: 1em 0 1em 0;
+    }
+
+    .navbar{
+        display: none;
     }
 
     .container{
@@ -290,8 +301,6 @@ body{
     }
 
     .title{
-        margin-left: 10px;
-        margin-right: 10px;
         font-size: 40px;
     }
 
@@ -315,6 +324,10 @@ body{
         box-shadow: 0 0 10px 5px grey;
         border-radius: 0;
     }
+
+    .copyright{
+        font-size: 15px;
+    }
 }
 
 @media (width: 768px){
@@ -336,4 +349,148 @@ body{
         padding-top: 10px;
         width: 5vw;
     }
+}
+
+/*Hamburger*/
+.navbar-logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-toogle{
+    height: 90px;
+    background-color: white;
+    display: block;
+    position: relative;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+ 
+.nav-toogle a{
+    text-decoration: none;
+    color: #f3eb9b;
+
+    transition: color 0.3s ease;
+}
+ 
+.nav-toogle a:hover{
+    color: #645f40;
+}
+ 
+ 
+.nav-toogle input{
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: 28px;
+    left: 20px;
+    cursor: pointer;
+    outline: none;
+    opacity: 0; 
+    z-index: 2; 
+    -webkit-touch-callout: none;
+}
+
+.nav-toogle span{
+    left: 25px;
+    top: 35px;
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #333452;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+            background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+            opacity 0.55s ease;
+}
+
+.nav-toogle span:first-child{
+    transform-origin: 0% 0%;
+}
+ 
+.nav-toogle span:nth-last-child(2){
+    transform-origin: 0% 100%;
+}
+
+.nav-toogle input:checked ~ span{
+    opacity: 1;
+    background: #f3eb9b;
+}
+
+.nav-toogle input:checked ~ span:nth-last-child(3){
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.nav-menu{
+    background: #333452;
+    
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 125px 10px 30px 50px;
+
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+.nav-menu li{
+    font-family: "Avenir-bold";
+    text-align: left;
+    padding: 10px 0;
+    padding-left: 1.2em;
+    font-size: 22px;
+    left: 10px;
+}
+
+.nav-menu b{
+    width: 90%;
+    padding: 1px;
+    margin: 10px 2em 0 1em;
+    background-color: #f3eb9b;
+}
+
+.nav-menu li:active{
+    text-decoration: underline;
+}
+
+.nav-toogle input:checked ~ ul{
+    transform: none;
+}
+
+.nav-container{
+    font-family: "Anastik";
+    font-size: 20px;
+    color: #f3eb9b;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-container img{
+    width: 30px;
+    margin-top: 10px;
+    padding: 0 3px 0 3px;
 }

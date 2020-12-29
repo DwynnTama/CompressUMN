@@ -24,15 +24,15 @@
             <input type="radio" name ="radio-btn" id="btn3">
 
             <div class="compress-slide first">
-                <img src="https://wallpaperaccess.com/full/1313700.jpg" alt="">
+                <img src="<?= base_url("assets/images/pic1.jpeg") ?>" alt="Image 1">
             </div>
 
             <div class="compress-slide">
-                <img src="https://images.wallpapersden.com/image/download/hyper-beast-csgo-art-cool_a25sZWyUmZqaraWkpJRmbmdlrWZlbWU.jpg" alt="">
+                <img src="<?= base_url("assets/images/pic2.jpeg") ?>" alt="Image 2">
             </div>
 
             <div class="compress-slide">
-                <img src="https://wonderfulengineering.com/wp-content/uploads/2016/01/cool-wallpaper-4.jpg" alt="">
+                <img src="<?= base_url("assets/images/pic3.jpeg") ?>" alt="Image 3">
             </div>
 
             <div class="compress-btn-auto">

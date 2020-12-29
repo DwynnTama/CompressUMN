@@ -5,9 +5,34 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/oprec.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/carousel.css'); ?>">
     <span class="navbar">
-        <img src="<?= base_url('assets/images/compress.png'); ?>" style="width:100px"/>
+        <a href="<?= base_url(); ?>"><img src="<?= base_url('assets/images/compress.png'); ?>" style="width:100px"/></a>
         <div class="sub-bar">
             <a href="<?= base_url(); ?>">Home</a>
             <a href="<?= base_url('Oprec'); ?>">Oprec</a>
         </div>
     </span>
+    <nav role="navigation">
+        <div class="nav-toogle">
+            <input type="checkbox"/>
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <div class="navbar-logo">
+                <a href="<?= base_url(); ?>"><img src="<?= base_url('assets/images/compress.png'); ?>" style="width:100px"/></a>
+            </div>
+
+            <ul class="nav-menu">
+                <a href="<?= base_url(); ?>"><li>Home</li></a>
+                <a href="<?= base_url('Oprec'); ?>"><li>Oprec</li></a>
+                <b></b>
+                <div class="nav-container">
+                    FOLLOW US ON
+                    <div class="nav-content">
+                        <img src="<?= base_url('assets/images/insta-logo.png'); ?>"/>
+                        <img src="<?= base_url('assets/images/youtube-logo.png'); ?>"/>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>

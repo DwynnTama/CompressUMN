@@ -2,19 +2,19 @@
         <div class="copyright">© Commpress UMN 2020 | All Rights Reserved</div>
     </div>
     <script>
-        function onlynum() {
-            var fm = document.getElementById("form1");
-            var ip = document.getElementById("num");
-            var res = ip.value;
+        function numcheck() {
+            var form = document.getElementById("form-oprec");
+            var nim = document.getElementById("inp-nim");
+            var res = nim.value;
 
             if (res != '') {
                 if (isNaN(res)) {
 
                     // Set input value empty 
-                    ip.value = "";
+                    nim.value = "";
 
                     // Reset the form 
-                    fm.reset();
+                    form.reset();
                     return false;
                 } else {
                     return true
@@ -22,5 +22,4 @@
             }
         }
     </script>
-
-    </html>
+</html>

@@ -3,9 +3,9 @@
 <div class="container oprec">
     <h2>Open Recruitment</h2>
     <h5>Cek namamu di sini!</h5>
-    <form method="POST" action="<?= base_url('Oprec/Result') ?>" class="compress-form" id="form1">
+    <form method="POST" action="<?= base_url('Oprec/Result') ?>" class="compress-form" id="form-oprec">
         <div>
-            <input maxlength="5" name="nama" type="text" placeholder="Masukkan NIM..." id="num" oninput="return onlynum()">
+            <input maxlength="5" name="nama" type="text" placeholder="Masukkan 6-Digits NIM Kamu" id="inp-nim" oninput="return numcheck()">
         </div>
         <button type="submit" value="submit" class="compress-btn">SUBMIT</button>
     </form>

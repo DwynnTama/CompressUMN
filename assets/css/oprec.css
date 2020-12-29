@@ -54,14 +54,15 @@
 }
 
 .oprec h6{
-    color: #f3eb9b;
+    font-weight: 600;
+    color: brown;
     font-size: 18px;
     margin: 0;
     padding: 5px 10px 5px 10px;
-    background-color: #333452;
 }
 
 .oprec h6 p{
+    font-weight: 600;
     font-size: 18px;
     margin: 0;
 }

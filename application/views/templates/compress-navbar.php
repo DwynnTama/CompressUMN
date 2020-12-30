@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/oprec.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/carousel.css'); ?>">
     <span class="navbar">
-        <a href="<?= base_url(); ?>"><img src="<?= base_url('assets/images/compress.png'); ?>" style="width:100px"/></a>
+        <a href="<?= base_url(); ?>"><img src="<?= base_url('assets/images/compress.png'); ?>" style="width:95px; padding-bottom: 3px; padding-top: 3px;"/></a>
         <div class="sub-bar">
             <a href="<?= base_url(); ?>">Home</a>
             <a href="<?= base_url('Oprec'); ?>">Oprec</a>
@@ -29,8 +29,8 @@
                 <div class="nav-container">
                     FOLLOW US ON
                     <div class="nav-content">
-                        <img src="<?= base_url('assets/images/insta-logo.png'); ?>"/>
-                        <img src="<?= base_url('assets/images/youtube-logo.png'); ?>"/>
+                        <a href="https://www.instagram.com/commpressumn/"><img src="<?= base_url('assets/images/insta.png'); ?>"/></a>
+                        <img src="<?= base_url('assets/images/utube.png'); ?>"/>
                     </div>
                 </div>
             </ul>

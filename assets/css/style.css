@@ -107,6 +107,7 @@ body{
 
 .sub-bar{
     width: 100%;
+    padding-right: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -236,8 +237,8 @@ body{
 }
 
 .compress-vid{
-    width: 560px;
-    height: 315px;
+    width: 682px;
+    height: 388px;
     border-radius: 10px;
     box-shadow: 0px 0px 2px #fff,0px 0px 5px #333452;  
 }
@@ -269,16 +270,10 @@ body{
     text-shadow: 2px 2px black;
 }
 
-#text2{
+#text2, #text3, #text4, #text5, #text6{
     opacity: 0;
     text-shadow: 2px 2px black;
 }
-
-#text3{
-    opacity: 0;
-    text-shadow: 2px 2px black;
-}
-
 @media (max-width: 700px){
     nav{
         display: block;

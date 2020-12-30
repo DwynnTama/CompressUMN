@@ -44,8 +44,17 @@
     margin-top: 45px;
     display: flex;
     justify-content: center;
-    z-index: 50;
+    z-index: 5;
 }
+
+.text {
+    color: #f2f2f2;
+    font-size: 20px;
+    position: absolute;
+    bottom: 8px;
+    width: 70%;
+    text-align: center;
+  }
 
 .btn-manual{
     border: 2px solid #f3eb9b;
@@ -57,30 +66,6 @@
 
 .btn-manual:not(:last-child){
     margin-right: 40px;
-}
-
-#btn1:not(:checked) ~ .text1{
-    animation: fadingout 2s ease-in-out;
-}
-
-#btn1:checked ~ .text1{
-    animation: fadingin 2s ease-in-out;
-}
-
-#btn2:not(:checked) ~ .text2{
-    animation: fadingout 2s ease-in-out;
-}
-
-#btn2:checked ~ .text2{
-    animation: fadingin 2s ease-in-out;
-}
-
-#btn3:not(:checked) ~ .text3{
-    animation: fadingout 2s ease-in-out;
-}
-
-#btn3:checked ~ .text3{
-    animation: fadingin 2s ease-in-out;
 }
 
 .btn-manual:hover{
@@ -97,6 +82,18 @@
 
 #btn3:checked ~ .first{
     margin-left: -40%; 
+}
+
+#btn4:checked ~ .first{
+    margin-left: -60%; 
+}
+
+#btn5:checked ~ .first{
+    margin-left: -80%; 
+}
+
+#btn6:checked ~ .first{
+    margin-left: -100%; 
 }
 
 .compress-btn-auto {
@@ -130,6 +127,19 @@
     background: #f3eb9b;
 }
 
+#btn4:checked ~ .navigation-auto .btn-auto4{
+    background: #f3eb9b;
+}
+
+#btn5:checked ~ .navigation-auto .btn-auto5{
+    background: #f3eb9b;
+}
+
+#btn6:checked ~ .navigation-auto .btn-auto6{
+    background: #f3eb9b;
+}
+
+
 @media(max-width: 768px){
     .compress-slide, .compress-carousel{
         max-width: 100%;
@@ -145,17 +155,19 @@
 
     .compress-slide img{
         height: auto;
-        max-width: 100%;
+        width: 100%;
     }
 
     .compress-btn-auto{
         display: none;
+        z-index: 5;
     }
 
     .compress-btn-manual{
         margin-top: 3.5vh;
         left: 0;
         width: 100%;
+        z-index: 5;
     }
     
     .caption{
@@ -163,6 +175,43 @@
         margin-top: 1em;
         font-size: 20px;
     }
+
+    .text{
+        font-size: 10px;
+        letter-spacing: 1px;
+        width: 90%;
+        margin-bottom: 2em;
+    }
+
+    .first{
+        width: 25%;
+        height: 180px;
+    }
+
+    #btn1:checked ~ .first{
+        margin-left: 0; 
+    }
+    
+    #btn2:checked ~ .first{
+        margin-left: -25%; 
+    }
+    
+    #btn3:checked ~ .first{
+        margin-left: -45%; 
+    }
+    
+    #btn4:checked ~ .first{
+        margin-left: -65%; 
+    }
+    
+    #btn5:checked ~ .first{
+        margin-left: -85%; 
+    }
+    
+    #btn6:checked ~ .first{
+        margin-left: -105%; 
+    }
+    
 }
 
 /*Carousel small*/
@@ -196,15 +245,6 @@
 
 .prev:hover, .next:hover {
   background-color: rgba(165,42,42,0.8);
-}
-
-.text {
-  color: #f2f2f2;
-  font-size: 20px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
 }
 
 .dot {

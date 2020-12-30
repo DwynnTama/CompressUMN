@@ -1,4 +1,5 @@
 <?= $nav ?>
+    <script src="<?= base_url("assets/js/slide.js") ?>"></script>
 <title>COMMPRESS UMN</title>
 <div class="container">
     <div class="container-bg"></div>
@@ -19,9 +20,9 @@
     </div>
     <div class="compress-carousel">
         <div class="compress-slides">
-            <input type="radio" name ="radio-btn" id="btn1">
-            <input type="radio" name ="radio-btn" id="btn2">
-            <input type="radio" name ="radio-btn" id="btn3">
+            <input type="radio" name ="radio-btn" id="btn1" onclick="fadeInbtn1()">
+            <input type="radio" name ="radio-btn" id="btn2" onclick="fadeInbtn2()">
+            <input type="radio" name ="radio-btn" id="btn3" onclick="fadeInbtn3()">
 
             <div class="compress-slide first">
                 <img src="<?= base_url("assets/images/pic1.jpeg") ?>" alt="Image 1">
@@ -45,6 +46,11 @@
             <label for="btn1" class="btn-manual"></label>
             <label for="btn2" class="btn-manual"></label>
             <label for="btn3" class="btn-manual"></label>
+        </div>
+        <div class="caption">
+            <p class="text" id ="text1">Bazaar COMMPRESS 2020</p>
+            <p class="text" id ="text2">Foto Bersama Panitia COMMPRESS 2020</p>
+            <p class="text" id ="text3">Malam Puncak COMM Keseruan Young Journalist Award (YJA)</p>
         </div>
     </div>
 </div>

@@ -20,7 +20,7 @@
 }
 @font-face {
     font-family: "Avenir-medium";
-    src: url("../fonts/Avenir/AvenirLTProLightOblique.otf") format("truetype");
+    src: url("../fonts/Avenir/AvenirLTProMedium.otf") format("truetype");
 }
 
 *{
@@ -113,7 +113,7 @@ body{
 }
 
 .navbar a{
-    font-family: "Avenir-light";
+    font-family: "Avenir-medium";
     text-decoration: none;
     color: #333452;
     font-size: 25px;
@@ -175,7 +175,7 @@ body{
 .instruction-title{
     font-family: "Barlow-bold";
     color: #f3eb9b;
-    padding-top: 1vh;
+    margin-top: 1vh;
     font-size: 2vw;
     display: flex;
     text-align: center;
@@ -264,6 +264,21 @@ body{
     font-family: "Avenir-light";
 }
 
+#text1{
+    opacity: 1;
+    text-shadow: 2px 2px black;
+}
+
+#text2{
+    opacity: 0;
+    text-shadow: 2px 2px black;
+}
+
+#text3{
+    opacity: 0;
+    text-shadow: 2px 2px black;
+}
+
 @media (max-width: 700px){
     nav{
         display: block;
@@ -309,6 +324,7 @@ body{
     }
 
     .instruction-title{
+        margin-top: -2.1vh;
         font-size: 5vw;
     }
 
@@ -328,6 +344,10 @@ body{
     .copyright{
         font-size: 15px;
     }
+
+    #section1{
+        height: 325px;
+    }
 }
 
 @media (width: 768px){
@@ -341,6 +361,7 @@ body{
     }
 
     .instruction-title{
+        margin-top: -3.0vh;
         font-size: 5vw;
     }
 
@@ -348,6 +369,10 @@ body{
         margin-top: 0;
         padding-top: 10px;
         width: 5vw;
+    }
+
+    #section1{
+        height: 35vh;
     }
 }
 
@@ -478,8 +503,8 @@ body{
 }
 
 .nav-container{
-    font-family: "Anastik";
-    font-size: 20px;
+    font-family: "Avenir-medium";
+    font-size: 15px;
     color: #f3eb9b;
     flex-direction: column;
     margin-top: 10px;

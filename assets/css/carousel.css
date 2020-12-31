@@ -34,7 +34,7 @@
     margin-top: 60px;
     display: flex;
     justify-content: center;
-    z-index: 100;
+    z-index: 99;
 }
 
 .caption {
@@ -155,7 +155,7 @@
 
     .compress-slide img{
         height: auto;
-        width: 100%;
+        width: 100vw;
     }
 
     .compress-btn-auto{
@@ -184,32 +184,7 @@
     }
 
     .first{
-        width: 25%;
-        height: 180px;
-    }
-
-    #btn1:checked ~ .first{
-        margin-left: 0; 
-    }
-    
-    #btn2:checked ~ .first{
-        margin-left: -25%; 
-    }
-    
-    #btn3:checked ~ .first{
-        margin-left: -45%; 
-    }
-    
-    #btn4:checked ~ .first{
-        margin-left: -65%; 
-    }
-    
-    #btn5:checked ~ .first{
-        margin-left: -85%; 
-    }
-    
-    #btn6:checked ~ .first{
-        margin-left: -105%; 
+        width: 100vw;
     }
     
 }

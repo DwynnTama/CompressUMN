@@ -8,7 +8,7 @@ var intervalID = 0;
 
 function fadeInbtn1()
 {
-    intervalID = setInterval(btn1,30);
+    intervalID = setInterval(btn1,20);
 }
 
 function btn1()
@@ -27,7 +27,7 @@ function btn1()
     opacity6 = Number(window.getComputedStyle(text6).getPropertyValue("opacity"));
     if(opacity1 < 1)
     {
-        opacity1 = opacity1 + 0.1;
+        opacity1 = opacity1 + 0.2;
         if(opacity2 > 0)
         {
             opacity2 = 0;
@@ -63,7 +63,7 @@ function btn1()
 
 function fadeInbtn2()
 {
-    intervalID = setInterval(btn2,30);
+    intervalID = setInterval(btn2,20);
 }
 
 function btn2()
@@ -82,7 +82,7 @@ function btn2()
     opacity6 = Number(window.getComputedStyle(text6).getPropertyValue("opacity"));
     if(opacity2 < 1)
     {
-        opacity2 = opacity2 + 0.1;
+        opacity2 = opacity2 + 0.2;
         if(opacity1 > 0)
         {
             opacity1 = 0;
@@ -118,7 +118,7 @@ function btn2()
 
 function fadeInbtn3()
 {
-    intervalID = setInterval(btn3,30);
+    intervalID = setInterval(btn3,20);
 }
 
 function btn3()
@@ -137,7 +137,7 @@ function btn3()
     opacity6 = Number(window.getComputedStyle(text6).getPropertyValue("opacity"));
     if(opacity3 < 1)
     {
-        opacity3 = opacity3 + 0.1;
+        opacity3 = opacity3 + 0.2;
         if(opacity2 > 0)
         {
             opacity2 = 0;
@@ -192,7 +192,7 @@ function btn4()
     opacity6 = Number(window.getComputedStyle(text6).getPropertyValue("opacity"));
     if(opacity4 < 1)
     {
-        opacity4 = opacity4 + 0.1;
+        opacity4 = opacity4 + 0.2;
         if(opacity2 > 0)
         {
             opacity2 = 0;
@@ -228,7 +228,7 @@ function btn4()
 
 function fadeInbtn5()
 {
-    intervalID = setInterval(btn5,30);
+    intervalID = setInterval(btn5,20);
 }
 
 function btn5()
@@ -247,7 +247,7 @@ function btn5()
     opacity6 = Number(window.getComputedStyle(text6).getPropertyValue("opacity"));
     if(opacity5 < 1)
     {
-        opacity5 = opacity5 + 0.1;
+        opacity5 = opacity5 + 0.2;
         if(opacity2 > 0)
         {
             opacity2 = 0;
@@ -283,7 +283,7 @@ function btn5()
 
 function fadeInbtn6()
 {
-    intervalID = setInterval(btn6,30);
+    intervalID = setInterval(btn6,20);
 }
 
 function btn6()
@@ -302,7 +302,7 @@ function btn6()
     opacity6 = Number(window.getComputedStyle(text6).getPropertyValue("opacity"));
     if(opacity6 < 1)
     {
-        opacity6 = opacity6 + 0.1;
+        opacity6 = opacity6 + 0.2;
         if(opacity2 > 0)
         {
             opacity2 = 0;

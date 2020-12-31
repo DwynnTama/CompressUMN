@@ -1,7 +1,7 @@
 /*Carousel large*/
 .compress-carousel{
     width: 800px;
-    height: 515px;
+    height: 490px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -31,10 +31,10 @@
 .compress-btn-manual{
     position: absolute;
     width: 800px;
-    margin-top: 60px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
-    z-index: 99;
+    z-index: 50;
 }
 
 .caption {
@@ -101,7 +101,7 @@
     display: flex;
     width: 800px;
     justify-content: center;
-    margin-top: 510px;
+    margin-top: 500px;
 }
 
 .compress-btn-auto div{

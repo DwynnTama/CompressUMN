@@ -152,7 +152,7 @@ body{
     align-items: center;
     width: 100%;
     margin: 0;
-    padding: 0 0 2em 0;
+    padding: 0 0 3em 0;
     height: auto;
 }
 
@@ -287,6 +287,10 @@ body{
 
     .container{
         height: 92%;
+    }
+
+    .content-container{
+        padding-bottom: 2em;
     }
 
     .sub-bar{

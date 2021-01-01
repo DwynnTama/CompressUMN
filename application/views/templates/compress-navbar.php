@@ -8,7 +8,7 @@
         <a href="<?= base_url(); ?>"><img src="<?= base_url('assets/images/compress.png'); ?>" style="width:95px; padding-bottom: 3px; padding-top: 3px;"/></a>
         <div class="sub-bar">
             <a href="<?= base_url(); ?>">Home</a>
-            <a href="<?= base_url('Oprec'); ?>">Oprec</a>
+            <a href="<?= base_url('Oprec'); ?>">Announcement</a>
         </div>
     </span>
     <nav role="navigation">
@@ -24,7 +24,7 @@
 
             <ul class="nav-menu">
                 <a href="<?= base_url(); ?>"><li>Home</li></a>
-                <a href="<?= base_url('Oprec'); ?>"><li>Oprec</li></a>
+                <a href="<?= base_url('Oprec'); ?>"><li>Announcement</li></a>
                 <b></b>
                 <div class="nav-container">
                     FOLLOW US ON

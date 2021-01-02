@@ -15,7 +15,7 @@
     </span>
     <div class="compress-section">
         <b></b>
-        <h2>UPCOMING EVENT</h2>
+        <h2>EVENTS</h2>
         <b></b>
     </div>
     <div class="compress-carousel">

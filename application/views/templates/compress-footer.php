@@ -1,5 +1,5 @@
     <div class="footer">
-        <div class="copyright">© Commpress UMN 2020 | All Rights Reserved</div>
+        <div class="copyright">© COMMPRESS UMN 2021 | All Rights Reserved</div>
     </div>
     <script>
         function numcheck() {

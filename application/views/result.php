@@ -22,21 +22,21 @@
             }
             if($row['Divisi'] == "Lomba" || $row['Divisi'] == "Acara")
             { ?>
-                <img src="<?=base_url("assets//images//Day2.png")?>">;
+                <img src="<?=base_url("assets//images//Day2.png")?>">; <br>
                 <p class="link"> atau klik tautan di bawah ini <br>
                 <a href="http://tiny.cc/COMMPRESS2021Day2">http://tiny.cc/COMMPRESS2021Day2</a> </p>
                 <?php
             }
             if($row['Divisi'] == "Keamanan" || $row['Divisi'] == "Dokumentasi Foto")
             { ?>
-                <img src="<?=base_url("assets//images//Day3.png")?>">;
+                <img src="<?=base_url("assets//images//Day3.png")?>">; <br>
                 <p class="link"> atau klik tautan di bawah ini <br>
                 <a href="http://tiny.cc/COMMPRESS2021Day3">http://tiny.cc/COMMPRESS2021Day3</a> </p>
                 <?php
             }
             if($row['Divisi'] == "Publikasi" || $row['Divisi'] == "Perlengkapan")
             { ?>
-                <img src="<?=base_url("assets//images//Day4.png")?>">;
+                <img src="<?=base_url("assets//images//Day4.png")?>">; <br>
                 <p class="link"> atau klik tautan di bawah ini <br>
                 <a href="http://tiny.cc/COMMPRESS2021Day4">http://tiny.cc/COMMPRESS2021Day4</a> </p>
                 <?php

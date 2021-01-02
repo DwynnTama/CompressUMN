@@ -1,6 +1,4 @@
 <title>About Us</title>
-<link rel="stylesheet" href="<?= base_url("assets/css/about.css") ?>">
-
 <div class="container-tl">
     <div class="about-title"><h1>Apa itu COMMPRESS?</h1></div> 
         <div class="pembuka">

@@ -5,8 +5,8 @@ class Aboutus extends CI_Controller {
 
     public function index()
     {
-        $this->load->view('templates/compress-navbar');
+        $this->load->view('templates/commpress-navbar');
         $this->load->view('aboutus');
-        $this->load->view('templates/compress-footer');
+        $this->load->view('templates/commpress-footer');
     }
 }

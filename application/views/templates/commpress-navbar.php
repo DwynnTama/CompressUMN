@@ -4,6 +4,8 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/style.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/oprec.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/carousel.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url("assets/css/about.css") ?>">
+
     <head>
     <span class="navbar">
         <a href="<?= base_url(); ?>"><img src="<?= base_url('assets/images/compress.png'); ?>" style="width:95px; padding-bottom: 3px; padding-top: 3px;"/></a>
@@ -27,6 +29,7 @@
             <ul class="nav-menu">
                 <a href="<?= base_url(); ?>"><li>Home</li></a>
                 <a href="<?= base_url('Oprec'); ?>"><li>Announcement</li></a>
+                <a href="<?= base_url('Aboutus'); ?>"><li>About</li></a>
                 <b></b>
                 <div class="nav-container">
                     FOLLOW US ON

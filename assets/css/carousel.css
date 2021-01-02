@@ -1,34 +1,34 @@
 /*Carousel large*/
-.compress-carousel{
+.commpress-carousel{
     width: 800px;
     height: 490px;
     border-radius: 10px;
     overflow: hidden;
 }
 
-.compress-slides{
+.commpress-slides{
     width: 500%;
     height: 450px;
     display: flex;
 }
 
-.compress-slides input{
+.commpress-slides input{
     display: none;
 }
 
-.compress-slide {
+.commpress-slide {
     width: 20%;
     transition: 2s;
     display: flex;
     align-items: center;
 }
 
-.compress-slide img{
+.commpress-slide img{
     width: 800px;
     height: 533.33px;
 }
 
-.compress-btn-manual{
+.commpress-btn-manual{
     position: absolute;
     width: 800px;
     margin-top: 50px;
@@ -96,7 +96,7 @@
     margin-left: -100%; 
 }
 
-.compress-btn-auto {
+.commpress-btn-auto {
     position: absolute;
     display: flex;
     width: 800px;
@@ -104,14 +104,14 @@
     margin-top: 500px;
 }
 
-.compress-btn-auto div{
+.commpress-btn-auto div{
     border: 2px solid #f3eb9b;
     padding: 5px;
     border-radius: 10px;
     transition: 1s;
 }
 
-.compress-btn-auto div:not(:last-child){
+.commpress-btn-auto div:not(:last-child){
     margin-right: 40px;
 }
 
@@ -141,29 +141,29 @@
 
 
 @media(max-width: 768px){
-    .compress-slide, .compress-carousel{
+    .commpress-slide, .commpress-carousel{
         max-width: 100%;
     }
 
-    .compress-slide, .compress-carousel, .compress-slides{
+    .commpress-slide, .commpress-carousel, .commpress-slides{
         height: 180px;
     }
 
-    .compress-carousel{
+    .commpress-carousel{
         border-radius: 0px;
     }
 
-    .compress-slide img{
+    .commpress-slide img{
         height: auto;
         width: 100vw;
     }
 
-    .compress-btn-auto{
+    .commpress-btn-auto{
         display: none;
         z-index: 5;
     }
 
-    .compress-btn-manual{
+    .commpress-btn-manual{
         margin-top: 3.5vh;
         left: 0;
         width: 100%;

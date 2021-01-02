@@ -14,9 +14,9 @@ class Oprec extends CI_Controller
 
         public function index()
         {
-                $this->load->view('templates/compress-navbar');
+                $this->load->view('templates/commpress-navbar');
                 $this->load->view('oprec');
-                $this->load->view('templates/compress-footer');
+                $this->load->view('templates/commpress-footer');
         }
 
         //Penambahan Function Result() dalam controller Oprec.php
@@ -27,22 +27,22 @@ class Oprec extends CI_Controller
                 ]);
 
                 if ($this->form_validation->run() == false) {
-                        $this->load->view('templates/compress-navbar');
+                        $this->load->view('templates/commpress-navbar');
                         $this->load->view('oprec');
-                        $this->load->view('templates/compress-footer');
+                        $this->load->view('templates/commpress-footer');
                 } else {
                         $hasil_search = $this->input->post('nama', true);
 
                         //Error Handling
                         if (($data['mhs'] = $this->info_pendaftaran->get_user($hasil_search)) == false) {
                                 $data['alert'] = "NIM yang dicari tidak ditemukan !";
-                                $this->load->view('templates/compress-navbar');
+                                $this->load->view('templates/commpress-navbar');
                                 $this->load->view('oprec', $data);
-                                $this->load->view('templates/compress-footer');
+                                $this->load->view('templates/commpress-footer');
                         } else {
-                                $this->load->view('templates/compress-navbar');
-                                $this->load->view('oprec', $data);
-                                $this->load->view('templates/compress-footer');
+                                $this->load->view('templates/commpress-navbar');
+                                $this->load->view('result', $data);
+                                $this->load->view('templates/commpress-footer');
                         }
                 }
         }

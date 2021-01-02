@@ -1,4 +1,4 @@
-.compress-form{
+.commpress-form{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -13,10 +13,12 @@
 }
 
 .text-lower{
+    font-size: 18px;
     margin: 20px 0 10px 0;
 }
 
 .oprec{
+    padding-top: 3em;
     text-align: center;
     height: 90%;
     background-image: url("../images/landing-bg.png");
@@ -26,6 +28,7 @@
 }
 
 .oprec strong{
+    font-size: 20px;
     font-family: "Avenir-bold";
 }
 
@@ -67,7 +70,7 @@
     margin: 0;
 }
 
-.compress-form input{
+.commpress-form input{
     position: relative;
     display: inline-block;
     box-sizing: border-box;
@@ -75,7 +78,7 @@
     margin: 0 10px 0 10px;
 }
 
-.compress-form input[type="text"]{
+.commpress-form input[type="text"]{
     font-family: "Avenir-light";
     background: #fff;
     width: 340px;
@@ -90,13 +93,13 @@
     border-bottom-left-radius: 30px;
 }
 
-.compress-form input[type="text"]:focus{
+.commpress-form input[type="text"]:focus{
     border: 1px solid white;
     box-shadow: 0px 0px 2px #fff,0px 0px 5px #333452;  
     border-radius: 10px;
 }
 
-.compress-btn{
+.commpress-btn{
     -webkit-appearance: none;
     font-family: "Barlow-bold";
     text-transform: uppercase;
@@ -116,7 +119,7 @@
     margin-right: 5px;
 }
 
-.compress-btn:hover{
+.commpress-btn:hover{
     background: rgb(119, 29, 29);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     border-top-left-radius: 30px;
@@ -125,10 +128,28 @@
     border-bottom-left-radius: 3px;
 }
 
+.text-result{
+    width: 600px;
+}
+
+.text-result img{
+    width: 200px;
+    height: 200px;
+}
+
+.text-lower span{
+    color: #2a2b44;
+    font-family: "Avenir";
+}
+
 @media (max-width: 700px){
     .oprec{
-        padding-top: 1em;
+        padding-top: 5em;
         height: 100%;
+    }
+
+    .oprec .container{
+        align-items: flex-start;
     }
 
     .oprec h2{
@@ -144,7 +165,8 @@
     .text-lower{
         font-size: 15px;
     }
-    .compress-form{
+    .commpress-form{
+        margin-bottom: 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -152,17 +174,30 @@
         width: 100%;
     }
 
-    .compress-form input[type="text"]{
+    .commpress-form input[type="text"]{
         max-width: 300px;
         text-align: center;
         padding: 0;
     }
 
-    .compress-btn{
+    .commpress-btn{
         border-top-left-radius: 30px;
         border-bottom-right-radius: 30px;
         border-top-right-radius: 3px;
         border-bottom-left-radius: 3px;
         margin-top: 10px;
+    }
+    
+    .text-result{
+        height: auto;
+        width: 300px;
+    }
+
+    .oprec strong{
+        font-size: 20px;
+    }
+
+    .text-lower span{
+        font-size: 18px;
     }
 }

@@ -81,7 +81,7 @@
 <div class="content-container" id="section2">
     <div class="commpress-section">
         <b></b>
-        <h2>CHECK US OUT !</h2>
+        <h2>CHECK US OUT!</h2>
         <b></b>
     </div>
     <iframe class="commpress-vid" src="<?= base_url("assets/video/VIDEO.mp4")?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

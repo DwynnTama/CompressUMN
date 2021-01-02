@@ -21,7 +21,7 @@
         <div class="text-result">
         <?php
         if($row['Informasi'] == "Lolos"){
-            echo '<p class="text-lower"><strong>SELAMAT! Kamu berkesempatan menjadi bagian dari solusi.</strong><span> Pastikan kamu masuk ke grup chat LINE melalui tautan atau pindai barcode di bawah ini untuk mengetahui jadwal wawancara dan informasi lainnya.<br/></span></p><img src=""/>';
+            echo '<p class="text-lower"><strong>SELAMAT! Kamu berkesempatan menjadi bagian dari solusi.</strong><span> Pastikan kamu masuk ke grup chat LINE melalui tautan atau pindai barcode di bawah ini untuk mengetahui jadwal wawancara dan informasi lainnya.<br/></span></p>';
         }else if($row['Informasi'] == "Tidak Lolos"){
             echo '<p class="text-lower"><strong>Maaf, kamu belum berhasil lolos ke tahap wawancara.</strong><span> Tetap semangat dan selalu menjadi bagian dari solusi dimanapun kamu berada. Sampai jumpa di lain kesempatan!<span></p>';
         }

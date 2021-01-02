@@ -91,6 +91,7 @@
             </div>
 
         <div class="about-now">
+            <img src="<?= base_url("assets/images/TAGLINE.png")?>" alt="">
             <div class="about-now-text">
                 COMMPRESS 2021 mengusung tema jurnalisme solusi dengan tagline “Escalate Optimism Through Journalism”. 
                 Pada masa sulit seperti masa pandemi sekarang ini, timbul rasa kekhawatiran pada masyarakat terhadap keadaan sekitarnya. 
@@ -102,6 +103,9 @@
 
         <div class="timeline">
             <ul>
+                <li style="top:-24px;">
+                    <br><br><br><br><br><br><br><br>
+                </li>
                 <li>
                     <div class="content-tl">
                         <h3>Collabo in Action</h3>
@@ -110,7 +114,7 @@
                             Lewat karya-karyanya tersebut, jurnalis meningkatkan optimisme dan memberikan solusi kepada masyarakat akan harapan hidup ke depannya.
                         </p>
                         <div class="time">
-                            <h4>COMMPRESS 2020</h4>
+                            <h4>2020</h4>
                         </div>
                     </div>
                 </li>
@@ -121,7 +125,7 @@
                         esse iure, assumenda voluptas, excepturi quisquam possimus veritatis modi culpa quo odio inventore.
                         </p>
                         <div class="time">
-                            <h4>COMMPRESS 2019</h4>
+                            <h4>2019</h4>
                         </div>
                     </div>
                 </li>
@@ -132,7 +136,7 @@
                         esse iure, assumenda voluptas, excepturi quisquam possimus veritatis modi culpa quo odio inventore.
                         </p>
                         <div class="time">
-                            <h4>COMMPRESS 2018</h4>
+                            <h4>2018</h4>
                         </div>
                     </div>
                 </li>
@@ -143,7 +147,7 @@
                         esse iure, assumenda voluptas, excepturi quisquam possimus veritatis modi culpa quo odio inventore.
                         </p>
                         <div class="time">
-                            <h4>COMMPRESS 2017</h4>
+                            <h4>2017</h4>
                         </div>
                     </div>
                 </li>
@@ -154,7 +158,7 @@
                         esse iure, assumenda voluptas, excepturi quisquam possimus veritatis modi culpa quo odio inventore.
                         </p>
                         <div class="time">
-                            <h4>COMMPRESS 2016</h4>
+                            <h4>2016</h4>
                         </div>
                     </div>
                 </li>
@@ -165,7 +169,7 @@
                         esse iure, assumenda voluptas, excepturi quisquam possimus veritatis modi culpa quo odio inventore.
                         </p>
                         <div class="time">
-                            <h4>COMMPRESS 2015</h4>
+                            <h4>2015</h4>
                         </div>
                     </div>
                 </li>

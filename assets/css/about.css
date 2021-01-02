@@ -61,6 +61,7 @@
     font-size: 30px;
     width: 80%;
     text-align: justify;
+    font-family: "Avenir";
 }
 
 .about span{
@@ -109,15 +110,22 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 30vh;
+    padding-top: 10vh;
     width: 100%;
+}
+
+.about-now img{
+    height: auto;
+    width: 40vw;
 }
 
 .about-now-text{
     width: 80%;
     font-size: 28px;
+    padding-top: 3vh;
     text-align: justify;
-    color: #333452;
+    font-family: "Avenir";
+    color: black;
 }
 
 .timeline{
@@ -130,8 +138,8 @@
     content: '';
     position: absolute;
     left: 50%;
-    width: 3px;
-    height: 100%;
+    width: 5px;
+    height: 105%;
     background: #333452;
 }
 
@@ -164,13 +172,19 @@
     padding-bottom: 50px;
 }
 
+.timeline .content-tl h3{
+    font-size: 30px;
+    font-family: "Avenir";
+    color: #ec2424;
+}
+
 .timeline ul li:nth-child(odd):before{
     content: '';
     position: absolute;
     top: 24px;
-    right: -6px;
-    width: 10px;
-    height: 10px;
+    right: -10px;
+    width: 15px;
+    height: 15px;
     background: #333452;
     border-radius: 50%;
     box-shadow: 0 0 0 4px rgba(72, 76, 177, 0.55); 
@@ -180,9 +194,9 @@
     content: '';
     position: absolute;
     top: 24px;
-    left: -4px;
-    width: 10px;
-    height: 10px;
+    left: -5px;
+    width: 15px;
+    height: 15px;
     background: #333452;
     border-radius: 50%;
     box-shadow: 0 0 0 4px rgba(72, 76, 177, 0.55); 
@@ -206,12 +220,13 @@
     margin: 0;
     padding: 0;
     font-family: "Avenir-bold";
+    font-size: 30px;
 }
 
 .timeline ul li:nth-child(odd) .time{
     position: absolute;
-    top: 12px;
-    left: 290px;
+    top: 0;
+    left: 350px;
     margin: 0;
     padding: 8px 16px;
     background: #333452;
@@ -222,8 +237,8 @@
 
 .timeline ul li:nth-child(even) .time{
     position: absolute;
-    top: 12px;
-    right: 290px;
+    top: 0;
+    right: 350px;
     margin: 0;
     padding: 8px 16px;
     background: #333452;
@@ -237,6 +252,14 @@
         width: 100%;
     }
 
+    .about-now img{
+        width: 250px;
+    }
+
+    .about-now-text{
+        font-size: 15px;
+    }
+
     .container-tl{
         padding-top: 15vh;
         height: 75vh;
@@ -246,28 +269,42 @@
         padding-bottom: 10vh;
     }
 
+    .about-content-mobile ul li{
+        list-style: none;
+    }
+
+    .content-tl :nth-child(odd){
+        padding-right: -60px;
+    }
+
+    .timeline .content-tl h3{
+        font-size: 18px;
+    }
+
     .timeline ul li:nth-child(odd):before{
+        right: -6.4px;
         width: 8px;
         height: 8px;
-        right: -5.45px;
     }
 
     .timeline ul li:nth-child(even):before{
-        left: -4px;
-        width: 10px;
-        height: 10px;
+        left: -1.7px;
+        width: 8px;
+        height: 8px;
     }
 
     .timeline ul li .time h4{
-        font-size: 11px;
+        font-size: 15px;
     }
 
     .timeline ul li:nth-child(odd) .time{
-        left: 1em;
+        left: 20vw;
+        top: 10px;
     }
 
     .timeline ul li:nth-child(even) .time{
-        right: 0.8em;
+        right: 20vw;
+        top: 10px;
     }
 
     .about{
@@ -368,6 +405,10 @@
         padding-top: 30px;
     }
 
+    .about-content-mobile ul li{
+        list-style: none;
+    }
+
     .about span img{
         height: auto;
         width: 400px;
@@ -375,6 +416,11 @@
 
     .about-content{
         display: none;
+    }
+
+    .timeline .content-tl h3{
+        font-size: 28px;
+        padding-top: 15px;
     }
 
     .pembuka{
@@ -392,6 +438,20 @@
     .pembuka-text{
         font-size: 30px;
         width: 80%;
+    }
+
+    .timeline ul li:nth-child(odd) .time{
+        top: 2px;
+        left: 30vw;
+    }
+    
+    .timeline ul li:nth-child(even) .time{
+        top: 2px;
+        right: 30vw;
+    }
+
+    .about-now img{
+        width: 450px;
     }
 
 }

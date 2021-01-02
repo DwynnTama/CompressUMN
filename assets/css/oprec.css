@@ -15,6 +15,7 @@
 .text-lower{
     font-size: 18px;
     margin: 20px 0 10px 0;
+    font-family: "Avenir";
 }
 
 .oprec{
@@ -137,6 +138,10 @@
     height: 200px;
 }
 
+.link{
+    display: none;
+}
+
 .text-lower span{
     color: #2a2b44;
     font-family: "Avenir";
@@ -165,6 +170,13 @@
     .text-lower{
         font-size: 15px;
     }
+
+    .link{
+        display: contents;
+        font-family: "Avenir";
+        font-size: 15px;
+    }
+
     .commpress-form{
         margin-bottom: 0px;
         display: flex;

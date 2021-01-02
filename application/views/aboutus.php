@@ -89,6 +89,17 @@
                     </li>
                 </ul>
             </div>
+
+        <div class="about-now">
+            <div class="about-now-text">
+                COMMPRESS 2021 mengusung tema jurnalisme solusi dengan tagline “Escalate Optimism Through Journalism”. 
+                Pada masa sulit seperti masa pandemi sekarang ini, timbul rasa kekhawatiran pada masyarakat terhadap keadaan sekitarnya. 
+                Di sinilah jurnalis berperan membawa kabar baik dan positif dalam pemberitaannya. Lewat karya-karyanya tersebut, 
+                jurnalis meningkatkan optimisme dan memberikan solusi kepada masyarakat akan harapan hidup ke depannya.
+            </div>
+        </div>
+
+
         <div class="timeline">
             <ul>
                 <li>

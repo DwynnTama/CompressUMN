@@ -5,7 +5,7 @@
     <h5>Cek namamu di sini!</h5>
     <form method="POST" action="<?= base_url('Oprec/Result') ?>" class="commpress-form" id="form-oprec">
         <div>
-            <input maxlength="5" name="nama" type="text" placeholder="Masukkan 5-Digits NIM Kamu" id="inp-nim" oninput="return numcheck()">
+            <input maxlength="5" name="nama" type="text" placeholder="Masukkan 5 Digit NIM Kamu" id="inp-nim" oninput="return numcheck()">
         </div>
         <button type="submit" value="submit" class="commpress-btn">SUBMIT</button>
     </form>

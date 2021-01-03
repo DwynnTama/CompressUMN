@@ -1,14 +1,10 @@
 .container-tl{
     width: 100%;
-    height: 78vh;
+    height: auto;
     overflow-y: auto;
     margin: 0;
     padding: 0;
-    padding-top: 12vh;
-    background-image: url("../images/landing-bg.png");
-    background-position: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding-top: 65px;
 }
 
 .pembuka{
@@ -252,6 +248,10 @@
         width: 100%;
     }
 
+    .about-now{
+        padding-top: 5vh;
+    }
+    
     .about-now img{
         width: 250px;
     }
@@ -261,12 +261,11 @@
     }
 
     .container-tl{
-        padding-top: 15vh;
-        height: 75vh;
+        padding-top: 70px;
     }
 
     .content-tl{
-        padding-bottom: 10vh;
+        padding-bottom: 5vh;
     }
 
     .about-content-mobile ul li{
@@ -312,6 +311,7 @@
     }
 
     .about-title h1{
+        padding-top: 15px;
         font-size: 30px;
     }
 

@@ -196,9 +196,18 @@ body{
 }
 
 .instruction-title img{
+    position: relative;
     width: 2vw;
     margin-top: 2vh;
+    animation: float 1s infinite;
 }
+
+@keyframes float{
+    0% {top: -5px;}
+    50% {top: 0px;}
+    100%{top: -5px;}
+}
+
 
 .commpress-section{
     display: flex;
@@ -248,19 +257,31 @@ body{
 }
 
 .commpress-vid{
+    background-color: #333452;
     width: 682px;
     height: 388px;
     border-radius: 10px;
     box-shadow: 0px 0px 2px #fff,0px 0px 5px #333452;  
 }
 
+.commpress-vid:focus{
+    outline: 0;
+}
+
 .commpress-card{
+    position: relative;
     color: #f3eb9b;
     background-color: #333452;
     border-radius: 10px;
     width: 300px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    animation: fadein 2s;
 }
+
+@keyframes fadein{
+    from {top: -100px;opacity:0;}
+    to {top: 0px;opacity:1;}
+} 
 
 .commpress-card h3{
     font-family: "Avenir-bold";

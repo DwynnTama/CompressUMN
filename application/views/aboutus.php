@@ -1,6 +1,8 @@
 <title>About Us</title>
+<?= $nav ?>
 <div class="container-tl">
-    <div class="about-title"><h1>Apa itu COMMPRESS?</h1></div> 
+    <div class="container-bg"></div>
+    <div class="about-title"><h1>Apa itu COMMPRESS?</h1></div>
         <div class="pembuka">
             <div class="pembuka-text">
                 COMMPRESS merupakan acara tahunan yang digelar oleh program studi Jurnalistik, Universitas Multimedia Nusantara (UMN) sejak tahun 2012 dan 
@@ -176,4 +178,6 @@
                 <div style="clear: both;"></div>
             </ul>
         </div>
+        
+<?= $footer ?>
 </div>

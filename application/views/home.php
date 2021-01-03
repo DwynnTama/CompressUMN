@@ -84,6 +84,8 @@
         <h2>CHECK US OUT!</h2>
         <b></b>
     </div>
-    <iframe class="commpress-vid" src="<?= base_url("assets/video/VIDEO.mp4")?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <video class="commpress-vid" controls>
+        <source src="<?= base_url("assets/video/check_us_out.mp4")?>"/>
+    </video>
 </div>
 <?= $footer ?>

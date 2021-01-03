@@ -1,6 +1,6 @@
 <?php error_reporting(0); ?>
 <title>Open Recruitment</title>
-<div class="container oprec">
+<div class="container oprec" style="padding-top:0" id="oprec-input">
     <h2>Open Recruitment</h2>
     <h5>Cek namamu di sini!</h5>
     <form method="POST" action="<?= base_url('Oprec/Result') ?>" class="commpress-form" id="form-oprec">

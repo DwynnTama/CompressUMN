@@ -175,6 +175,39 @@
                         </div>
                     </div>
                 </li>
+                <li>
+                    <div class="content-tl">
+                        <h3>Kemanakah Ekspresiku?</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas et ipsum consectetur mollitia sunt minima saepe dolore,
+                        esse iure, assumenda voluptas, excepturi quisquam possimus veritatis modi culpa quo odio inventore.
+                        </p>
+                        <div class="time">
+                            <h4>2014</h4>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="content-tl">
+                        <h3>Titian Langkah Jurnalis</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas et ipsum consectetur mollitia sunt minima saepe dolore,
+                        esse iure, assumenda voluptas, excepturi quisquam possimus veritatis modi culpa quo odio inventore.
+                        </p>
+                        <div class="time">
+                            <h4>2013</h4>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="content-tl">
+                        <h3>Titian Langkah Jurnalis</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas et ipsum consectetur mollitia sunt minima saepe dolore,
+                        esse iure, assumenda voluptas, excepturi quisquam possimus veritatis modi culpa quo odio inventore.
+                        </p>
+                        <div class="time">
+                            <h4>2012</h4>
+                        </div>
+                    </div>
+                </li>
                 <div style="clear: both;"></div>
             </ul>
         </div>

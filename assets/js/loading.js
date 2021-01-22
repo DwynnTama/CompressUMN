@@ -1,4 +1,5 @@
-setTimeout(function(){ 
+ function loaded() {
     const loader = document.querySelector('.loader');
     loader.className += ' hidden';
- }, 9000);
+  }
+  

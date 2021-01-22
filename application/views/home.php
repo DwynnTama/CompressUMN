@@ -5,7 +5,7 @@
 <div class="loader">
     <img src="<?= base_url("assets/images/loader.gif") ?>" alt="">
 </div>
-<div class="container" id="bg">
+<div class="container">
     <div class="container-bg"></div>
     <div class="title">
         COMMPRESS UMN</br>
@@ -36,7 +36,7 @@
             </div>
 
             <div class="commpress-slide">
-                <img src="<?= base_url("assets/images/pic1.jpeg") ?>" alt="Image 2">
+                <img src="<?= base_url("assets/images/pic1.jpeg") ?>" onload="loaded()" alt="Image 2">
             </div>
 
             <div class="commpress-slide">

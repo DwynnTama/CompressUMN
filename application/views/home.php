@@ -1,17 +1,20 @@
 <?= $nav ?>
     <script src="<?= base_url("assets/js/slide.js") ?>"></script>
-    <script src="<?= base_url("assets/js/loading.js") ?>"></script>
 <title>COMMPRESS UMN</title>
 <div class="loader">
     <img src="<?= base_url("assets/images/loader.gif") ?>" alt="">
 </div>
-<div class="container">
+<div class="container" id="bg">
     <div class="container-bg"></div>
     <div class="title">
         COMMPRESS UMN</br>
         <span class="sub-title">Coming Soon</span>
     </div>
 </div>
+<script>
+    const loader = document.querySelector('.loader');
+    loader.className += ' hidden';
+</script>
 <div class="content-container" id="section1">
     <span class="instruction-title">
         SCROLL BELOW

@@ -176,7 +176,7 @@ body{
 }
 
 .container-bg{
-    background-image: url("../images/landing-bg.png");
+    background-image: url("../images/landing-bg.jpg");
     position: fixed;
     background-position: fixed;
     background-repeat: no-repeat;
@@ -280,7 +280,7 @@ body{
 }
 
 #section2{
-    background-image: url("../images/landing-bg.png");
+    background-image: url("../images/landing-bg.jpg");
     background-position: fixed;
     background-repeat: no-repeat;
     background-size: cover;

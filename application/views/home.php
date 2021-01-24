@@ -2,9 +2,9 @@
     <script src="<?= base_url("assets/js/slide.js") ?>"></script>
     <script src="<?= base_url("assets/js/loading.js") ?>"></script>
 <title>COMMPRESS UMN</title>
-<div class="loader">
-    <img src="<?= base_url("assets/images/loader.gif") ?>" alt="">
-</div>
+    <div class="loader">
+        <img src="<?= base_url("assets/images/loader.gif") ?>" alt="">
+    </div>
 <div class="container">
     <div class="container-bg"></div>
     <div class="title">
@@ -15,7 +15,7 @@
 <div class="content-container" id="section1">
     <span class="instruction-title">
         SCROLL BELOW
-        <img src="<?= base_url("assets/images/below.png") ?>"/>
+        <img src="<?= base_url("assets/images/below.png") ?>" />
     </span>
     <div class="commpress-section">
         <b></b>
@@ -32,27 +32,27 @@
             <input type="radio" name ="radio-btn" id="btn6" onclick="fadeInbtn6()">
 
             <div class="commpress-slide first">
-                <img src="<?= base_url("assets/images/pic5.jpeg") ?>" alt="Image 1">
+                <img src="<?= base_url("assets/images/pic5.jpg") ?>" alt="Image 1">
             </div>
 
             <div class="commpress-slide">
-                <img src="<?= base_url("assets/images/pic1.jpeg") ?>" onload="loaded()" alt="Image 2">
+                <img src="<?= base_url("assets/images/pic1.jpg") ?>"  alt="Image 2">
             </div>
 
             <div class="commpress-slide">
-                <img src="<?= base_url("assets/images/pic4.jpeg") ?>" alt="Image 3">
+                <img src="<?= base_url("assets/images/pic4.jpg") ?>" alt="Image 3">
             </div>
 
             <div class="commpress-slide">
-                <img src="<?= base_url("assets/images/pic3.jpeg") ?>" alt="Image 4">
+                <img src="<?= base_url("assets/images/pic3.jpg") ?>" alt="Image 4">
             </div>
 
             <div class="commpress-slide">
-                <img src="<?= base_url("assets/images/pic6.jpeg") ?>" alt="Image 5">
+                <img src="<?= base_url("assets/images/pic6.jpg") ?>" alt="Image 5">
             </div>
 
             <div class="commpress-slide">
-                <img src="<?= base_url("assets/images/pic2.jpeg") ?>" alt="Image 6">
+                <img src="<?= base_url("assets/images/pic2.jpg") ?>" onload="loaded()" alt="Image 6">
             </div>
 
             <div class="commpress-btn-auto">

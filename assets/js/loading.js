@@ -1,5 +1,5 @@
- function loaded() {
-    const loader = document.querySelector('.loader');
-    loader.className += ' hidden';
-  }
+window.onload = function loaded() {
+  const loader = document.querySelector('.loader');
+  loader.className += ' hidden';
+}
   

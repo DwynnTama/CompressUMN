@@ -52,7 +52,7 @@
             </div>
 
             <div class="commpress-slide">
-                <img src="<?= base_url("assets/images/pic2.jpg") ?>" onload="loaded()" alt="Image 6">
+                <img src="<?= base_url("assets/images/pic2.jpg") ?>" alt="Image 6">
             </div>
 
             <div class="commpress-btn-auto">

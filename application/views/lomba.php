@@ -9,6 +9,13 @@
         <label>Email</label>
         <input type="email" name="email"/><br/>
         <?= form_error('email'); ?>
+        <input type="radio" name="optlomba" id="podcast"/>
+        <label for="podcast">Podcast</label>
+        <input type="radio" name="optlomba" id="karyatulis"/>
+        <label for="karyatulis">Karya Tulis</label>
+        <input type="radio" name="optlomba" id="bothlomba"/>
+        <label for="bothlomba">Keduanya</label>
+        <br/>
         <button type="submit">SUBMIT</button>
     </form>
 </div>

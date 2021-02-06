@@ -9,12 +9,12 @@
         <label>Email</label>
         <input type="email" name="email"/><br/>
         <?= form_error('email'); ?>
-        <input type="radio" name="optlomba" id="podcast"/>
+        <input type="radio" name="optlomba" id="podcast" value="Podcast" required/>
         <label for="podcast">Podcast</label>
-        <input type="radio" name="optlomba" id="karyatulis"/>
+        <input type="radio" name="optlomba" id="karyatulis" value="Karya Tulis"/>
         <label for="karyatulis">Karya Tulis</label>
-        <input type="radio" name="optlomba" id="bothlomba"/>
-        <label for="bothlomba">Keduanya</label>
+        <input type="radio" name="optlomba" id="bothlomba" value="Both"/>
+        <label for="bothlomba">Karya Tulis dan Podcast</label>
         <br/>
         <button type="submit">SUBMIT</button>
     </form>

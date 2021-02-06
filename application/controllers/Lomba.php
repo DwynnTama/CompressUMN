@@ -41,7 +41,8 @@ class Lomba extends CI_Controller
                 'nama'  => htmlspecialchars($this->input->post('nama', true)),
                 'nim'   => $this->input->post('nim'),
                 'email' => htmlspecialchars($this->input->post('email', true)),
-                'date' => date("Y-m-d",time())
+                'lomba' => $this->input->post('optlomba'),
+                'date'   => date("Y-m-d",time())
             ];
 
             $this->db->insert('list_lomba', $data);

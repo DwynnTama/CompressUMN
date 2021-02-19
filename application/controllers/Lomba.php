@@ -11,9 +11,9 @@ class Lomba extends CI_Controller
 
         public function index()
         {
-                $this->load->view('templates/commpress-navbar');
+                //$this->load->view('templates/commpress-navbar');
                 $this->load->view('lomba');
-                $this->load->view('templates/commpress-footer');
+                //$this->load->view('templates/commpress-footer');
         }
 
         public function registration()
@@ -33,9 +33,9 @@ class Lomba extends CI_Controller
         ]);
 
         if ($this->form_validation->run() == false) {
-            $this->load->view('templates/commpress-navbar');
+            //$this->load->view('templates/commpress-navbar');
             $this->load->view('lomba');
-            $this->load->view('templates/commpress-footer');
+            //$this->load->view('templates/compress-footer');
         } else {
             $data = [
                 'nama'  => htmlspecialchars($this->input->post('nama', true)),

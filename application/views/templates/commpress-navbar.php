@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/oprec.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/carousel.css'); ?>">
     <link rel="stylesheet" href="<?= base_url("assets/css/about.css") ?>">
+    <link rel="stylesheet" href="<?= base_url("assets/css/lomba.css") ?>">
 
     <head>
     <span class="navbar">

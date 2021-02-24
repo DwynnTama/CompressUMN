@@ -28,7 +28,7 @@
 <div class="container oprec" style="padding-top:0" id="oprec-input">
     <h2>Submit Karyamu</h2>
     <div>
-    <form action="<?= base_url('Lomba/registration_feature'); ?>" method="POST">
+    <form action="<?= base_url('Lomba/registration'); ?>" method="POST">
         <label>Nama</label>
         <input type="text" name="nama"/><br/>
         <?= form_error('nama'); ?>

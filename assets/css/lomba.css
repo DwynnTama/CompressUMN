@@ -10,7 +10,12 @@
 }
 
 .event-select ul{
+    margin-right:20px;
     list-style-type: circle;
+}
+
+.event-select h3{
+    margin-bottom: 0px;
 }
 
 .event-card-left{
@@ -21,8 +26,8 @@
     align-items:center;
     border-radius: 30px;
     background-color: white;
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
     margin: 50px;
     animation: zoomout 0.4s;
 }
@@ -41,8 +46,8 @@
     align-items:center;	
     border-radius: 30px;
     background-color: white;
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
     margin: 50px;
     animation: zoomout 0.1s;
 }
@@ -64,20 +69,88 @@
 }
 
 .event-select-illus{
-    width:200px;
+    width:400px;
     height:auto;
 }
 
 @keyframes zoomin{
-    0%{width: 300px;
-    height: 300px;}
-      100% {width: 330px;
-    height: 330px;}
+    0%{width: 500px;
+    height: 500px;}
+      100% {width: 530px;
+    height: 530px;}
 }
 
 @keyframes zoomout{
-    from {width: 330px;
-    height: 330px;}
-      to {width: 300px;
-    height: 300px;}
+    from {width: 530px;
+    height: 530px;}
+      to {width: 500px;
+    height: 500px;}
+}
+
+#tex{
+    background-color: #333452;
+    color: #f3eb9b;
+}
+
+.form-lomba h2{
+    margin-right: 50px;
+    color: #f3eb9b;
+    background-color: brown;
+    border-radius: 10px;
+}
+
+.lomba-center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-lomba #form-lomba{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.submit-lomba{
+    transform: translateY(-20px);
+    width: 500px;
+    height: auto;
+    margin-right: 50px;
+}
+
+@media (max-width: 700px){
+    .event-select{
+        flex-direction: column;
+        height: 110%;
+        padding-top: 100px;
+    }
+
+    .event-card-left{
+        width: 250px;
+        height: 250px;
+        animation: none;
+        margin: 10px 10px 20px 10px;
+    }
+
+    .event-card-right{
+        width: 250px;
+        height: 250px;
+        animation: none;
+        margin: 20px 10px 10px 10px;
+    }
+
+    .event-select-illus{
+        width: 150px;
+        height: auto;
+    }
+
+    .event-card-left:hover{
+        background-color:none;
+        animation: none;
+    }
+    
+    .event-card-right:hover{
+        background-color:none;
+        animation: none;
+    }
 }

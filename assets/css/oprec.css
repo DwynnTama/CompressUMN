@@ -121,6 +121,23 @@
     border-radius: 10px;
 }
 
+.commpress-rad{
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 50px;
+    padding: 5px 40px 5px 40px;
+    margin: 0 20px 0 20px;
+    background-color: #333452;
+    color: #f3eb9b;
+    font-family: 'Avenir-bold';
+    border-radius:10px;
+}
+
+.commpress-rad:hover{
+    background-color: #4d4e7c;
+}
+
 .commpress-btn{
     -webkit-appearance: none;
     font-family: "Barlow-bold";

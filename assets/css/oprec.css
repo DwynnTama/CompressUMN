@@ -69,6 +69,13 @@
     padding: 5px 10px 5px 10px;
 }
 
+.oprec h7{
+    font-family: "Avenir-bold";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
 .oprec h6 p{
     font-weight: 600;
     font-size: 18px;

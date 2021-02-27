@@ -7,7 +7,7 @@
         <ul>
             <li>Registration Fee 50k</li>
             <li>Max 3 anggota</li>
-            <li>Mahasiswa Aktif</li>
+            <li>Biaya pendaftaran dibayarkan <br> melalui rekening BCA 6042980532 <br> a.n. Elisabeth Anggitasari H</li>
         </ul>
     </div>
     <div class="event-card-right">
@@ -17,7 +17,7 @@
         <ul>
             <li>Registration Fee 25k</li>
             <li>Max 1 orang</li>
-            <li>Mahasiswa Aktif</li>
+            <li>Biaya pendaftaran dibayarkan <br> melalui rekening BCA 6042980532 <br> a.n. Elisabeth Anggitasari H</li>
         </ul>
     </div>
 </div>

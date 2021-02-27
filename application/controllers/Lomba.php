@@ -52,17 +52,17 @@ class Lomba extends CI_Controller
     public function registration_podcast()
     {
         $this->form_validation->set_rules('nama', 'Nama', 'required|trim', [
-            'required' => "<p class='text-danger'>Username juga tidak boleh kosong!</p>"
+            'required' => "<h10 style='margin:0;'>Username juga tidak boleh kosong!</h10>"
         ]);
 
         $this->form_validation->set_rules('nim', 'NIM', 'required|trim|integer|is_unique[list_lomba.NIM]', [
-            'required' => "<p>NIM tidak boleh kosong</p>",
-            'is_unique' => "<p>NIM yang dimasukkan sudah terdaftar!</p>"
+            'required' => "<h10 style='margin:0;'>NIM tidak boleh kosong</h10>",
+            'is_unique' => "<h10 style='margin:0;'>NIM yang dimasukkan sudah terdaftar!</h10>"
         ]);
 
         $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|is_unique[list_lomba.Email]', [
-            'required' => "<p>Email tidak boleh kosong!</p>",
-            'is_unique' => "<p>Email yang dimasukkan sudah terdaftar!</p>"
+            'required' => "<h10 style='margin:0;'>Email tidak boleh kosong!</h10>",
+            'is_unique' => "<h10 style='margin:0;'>Email yang dimasukkan sudah terdaftar!</h10>"
         ]);
 
         if ($this->form_validation->run() == false) {

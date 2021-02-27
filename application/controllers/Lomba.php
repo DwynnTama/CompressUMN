@@ -26,7 +26,7 @@ class Lomba extends CI_Controller
             'required' => "<p>NIM tidak boleh kosong</p>"
         ]);
 
-        $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|is_unique[list_lomba_podcast.Email]', [
+        $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|is_unique[list_lomba_writing.Email]', [
             'required' => "<p>Email tidak boleh kosong!</p>",
             'is_unique' => "<p>Email yang dimasukkan sudah terdaftar!</p>"
         ]);

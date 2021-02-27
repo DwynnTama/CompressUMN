@@ -140,35 +140,64 @@
         }
     },2000);
     function aaa(){
-        document.getElementById("form-multi").reset();
+        document.getElementById("form-1").reset();
+        document.getElementById("form-2").reset();
+        document.getElementById("form-3").reset();
         document.getElementById("form-1").style.display="flex";
         document.getElementById("form-2").style.display="none";
         document.getElementById("form-3").style.display="none";
-        document.getElementById("form-next").style.display="none";
-        document.getElementById("form-btn-next").style.display="block";
+        document.getElementById("form-main-1").style.display="flex";
+        document.getElementById("form-main-2").style.display="none";
+        document.getElementById("form-main-3").style.display="none";
+        document.getElementById("form1-next").style.display="none";
+        document.getElementById("form2-next").style.display="none";
+        document.getElementById("form3-next").style.display="none";
+        document.getElementById("form1-btn-next").style.display="block";
     }
     function bbb(){
-        document.getElementById("form-multi").reset();
+        document.getElementById("form-1").reset();
+        document.getElementById("form-2").reset();
+        document.getElementById("form-3").reset();
         document.getElementById("form-1").style.display="none";
         document.getElementById("form-2").style.display="flex";
         document.getElementById("form-3").style.display="none";
-        document.getElementById("form-next").style.display="none";
-        document.getElementById("form-btn-next").style.display="block";
+        document.getElementById("form-main-1").style.display="none";
+        document.getElementById("form-main-2").style.display="flex";
+        document.getElementById("form-main-3").style.display="none";
+        document.getElementById("form1-next").style.display="none";
+        document.getElementById("form2-next").style.display="none";
+        document.getElementById("form3-next").style.display="none";
+        document.getElementById("form2-btn-next").style.display="block";
     }
     function ccc(){
-        document.getElementById("form-multi").reset();
+        document.getElementById("form-1").reset();
+        document.getElementById("form-2").reset();
+        document.getElementById("form-3").reset();
         document.getElementById("form-1").style.display="none";
         document.getElementById("form-2").style.display="none";
         document.getElementById("form-3").style.display="flex";
-        document.getElementById("form-next").style.display="none";
-        document.getElementById("form-btn-next").style.display="block";
+        document.getElementById("form-main-1").style.display="none";
+        document.getElementById("form-main-2").style.display="none";
+        document.getElementById("form-main-3").style.display="flex";
+        document.getElementById("form1-next").style.display="none";
+        document.getElementById("form2-next").style.display="none";
+        document.getElementById("form3-next").style.display="none";
+        document.getElementById("form3-btn-next").style.display="block";
     }
     function ddd(){
-        document.getElementById("form-1").style.display="none";
-        document.getElementById("form-2").style.display="none";
-        document.getElementById("form-3").style.display="none";
-        document.getElementById("form-next").style.display="flex";
-        document.getElementById("form-btn-next").style.display="none";
+        document.getElementById("form-main-1").style.display="none";
+        document.getElementById("form1-next").style.display="flex";
+        document.getElementById("form1-btn-next").style.display="none";
+    }
+    function eee(){
+        document.getElementById("form-main-2").style.display="none";
+        document.getElementById("form2-next").style.display="flex";
+        document.getElementById("form2-btn-next").style.display="none";
+    }
+    function fff(){
+        document.getElementById("form-main-3").style.display="none";
+        document.getElementById("form3-next").style.display="flex";
+        document.getElementById("form3-btn-next").style.display="none";
     }
 </script>
 
@@ -176,16 +205,16 @@
 
 <?php error_reporting(0); ?>
 <title>Podcast</title>
-<div class="event-select oprec form-lomba" style="height:110%" id="oprec-input">
-    <div id="form-lomba">
-        <form action="<?= base_url('Lomba/registration_podcast'); ?>" method="POST" class="commpress-form form-center" id="form-multi">
-            <h3>JUMLAH ANGGOTA KELOMPOK</h3>
-            <div style="padding: 10px">
-                <span class="commpress-rad" onclick="aaa()">1</span>
-                <span class="commpress-rad" onclick="bbb()">2</span>
-                <span class="commpress-rad" onclick="ccc()">3</span>
-            </div>
-            <div style="display:flex;" id="form-1">
+<div class="event-select oprec form-lomba" style="height:100%;" id="oprec-input">
+    <div id="form-lomba" style="transform:scale(0.7)">
+        <h3>JUMLAH ANGGOTA KELOMPOK</h3>
+        <div style="padding: 10px">
+            <span class="commpress-rad" onclick="aaa()">1</span>
+            <span class="commpress-rad" onclick="bbb()">2</span>
+            <span class="commpress-rad" onclick="ccc()">3</span>
+        </div>
+        <form action="<?= base_url('Lomba/registration_podcast'); ?>" method="POST" class="commpress-form form-center" id="form-1">
+            <div style="display:flex;" id="form-main-1">
                 <div class="commpress-card commpress-verticer">
                     <h3>Nama</h3>
                     <input type="text" name="nama" style="width:100%"/><br/>
@@ -201,7 +230,31 @@
                     <h4 id="tex1">Please submit your file to finish this form</h4>
                 </div>
             </div>
-            <div style="display:none;" id="form-2">
+            <div style="display:none;" id="form1-next">
+                <div class="commpress-card commpress-verticer">
+                    <h3>Nama Podcast</h3>
+                    <input type="text" name="podcast" style="width:100%"/><br/>
+                    <h3>ID LINE</h3>
+                    <h7>(Perwakilan)</h7>
+                    <input type="text" name="id_line" style="width:100%"/><br/>
+                    <?= form_error('id_line'); ?>
+                    <h3>No. Telp</h3>
+                    <h7>(Perwakilan)</h7>
+                    <input type="text" name="no_telp" style="width:100%"/><br/>
+                    <?= form_error('no_telp'); ?>
+                    <h3>Email</h3>
+                    <h7>(Perwakilan)</h7>
+                    <input type="email" name="email" style="width:100%"/><br/>
+                    <?= form_error('email'); ?>
+                    <iframe id="framefinal" src="https://script.google.com/macros/s/AKfycbz-1GxESg8GExn8FMmRx7stmYPDxwzOQCheYJUN6DX-mWVw33X563kLyw/exec" frameborder="1" width="auto" height="auto"></iframe>
+                    <h4 id="texfinal">Please submit your file to finish this form</h4>
+                    <button id="butt" disabled type="submit">SUBMIT</button>
+                </div>
+            </div>
+            <span class="commpress-rad" onclick="ddd()" id="form1-btn-next">NEXT</span>
+        </form>
+        <form action="<?= base_url('Lomba/registration_podcast'); ?>" method="POST" class="commpress-form form-center" id="form-2" style="display:none;">
+            <div style="display:flex" id="form-main-2">
                 <div class="commpress-card commpress-verticer">
                     <h3>Nama</h3>
                     <input type="text" name="nama" style="width:100%"/><br/>
@@ -231,7 +284,31 @@
                     <h4 id="tex3">Please submit your file to finish this form</h4>
                 </div>
             </div>
-            <div style="display:none;" id="form-3">
+            <div style="display:none;" id="form2-next">
+                <div class="commpress-card commpress-verticer">
+                    <h3>Nama Podcast</h3>
+                    <input type="text" name="podcast" style="width:100%"/><br/>
+                    <h3>ID LINE</h3>
+                    <h7>(Perwakilan)</h7>
+                    <input type="text" name="id_line" style="width:100%"/><br/>
+                    <?= form_error('id_line'); ?>
+                    <h3>No. Telp</h3>
+                    <h7>(Perwakilan)</h7>
+                    <input type="text" name="no_telp" style="width:100%"/><br/>
+                    <?= form_error('no_telp'); ?>
+                    <h3>Email</h3>
+                    <h7>(Perwakilan)</h7>
+                    <input type="email" name="email" style="width:100%"/><br/>
+                    <?= form_error('email'); ?>
+                    <iframe id="framefinal" src="https://script.google.com/macros/s/AKfycbz-1GxESg8GExn8FMmRx7stmYPDxwzOQCheYJUN6DX-mWVw33X563kLyw/exec" frameborder="1" width="auto" height="auto"></iframe>
+                    <h4 id="texfinal">Please submit your file to finish this form</h4>
+                    <button id="butt" disabled type="submit">SUBMIT</button>
+                </div>
+            </div>
+            <span class="commpress-rad" onclick="eee()" id="form2-btn-next">NEXT</span>
+        </form>
+        <form action="<?= base_url('Lomba/registration_podcast'); ?>" method="POST" class="commpress-form form-center" id="form-3" style="display:none;">
+            <div style="display:flex" id="form-main-3">
                 <div class="commpress-card commpress-verticer">
                     <h3>Nama</h3>
                     <input type="text" name="nama" style="width:100%"/><br/>
@@ -275,7 +352,7 @@
                     <h4 id="tex6">Please submit your file to finish this form</h4>
                 </div>
             </div>
-            <div style="display:none;" id="form-next">
+            <div style="display:none;" id="form3-next">
                 <div class="commpress-card commpress-verticer">
                     <h3>Nama Podcast</h3>
                     <input type="text" name="podcast" style="width:100%"/><br/>
@@ -296,7 +373,7 @@
                     <button id="butt" disabled type="submit">SUBMIT</button>
                 </div>
             </div>
-            <span class="commpress-rad" onclick="ddd()" id="form-btn-next" >NEXT</span>
+            <span class="commpress-rad" onclick="fff()" id="form3-btn-next">NEXT</span>
         </form>
     </div>
 </div>

@@ -16,7 +16,7 @@
             }
             console.log("ga ketemu woi wat the hek");
             if (text1 != "Success") {
-                $.getJSON('https://script.google.com/macros/s/AKfycbz7BgMxoU9nrHX7WETQ6CDBGh1n5y-9jLw4c1z_sJwBPVm-eXhVsULXcg/exec?prefix=?', null, function(results) {
+                $.getJSON('https://script.google.com/macros/s/AKfycbxM9sS5KBrdO7LxAmnYOPcguB3p_E855NZK3Krv4OJzUaEMJ99G7DTu/exec?prefix=?', null, function(results) {
                     $('#tex1').html(results);
                 });
             }
@@ -55,7 +55,7 @@
                     <input type="text" name="nim" style="width:100%" /><br />
                     <?= form_error('nim'); ?>
 
-                    <iframe id="frame1" src="https://script.google.com/macros/s/AKfycbz7BgMxoU9nrHX7WETQ6CDBGh1n5y-9jLw4c1z_sJwBPVm-eXhVsULXcg/exec" frameborder="1" width="auto" height="auto"></iframe>
+                    <iframe id="frame1" src="https://script.google.com/macros/s/AKfycbxM9sS5KBrdO7LxAmnYOPcguB3p_E855NZK3Krv4OJzUaEMJ99G7DTu/exec" frameborder="1" width="auto" height="auto"></iframe>
                     <h4 id="tex1" style="margin-bottom:0">Please submit your file to finish this form</h4>
                 </div>
             </div>

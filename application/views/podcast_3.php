@@ -59,7 +59,7 @@
 <title>Podcast</title>
 <div class="event-select oprec form-lomba" style="height:105%;" id="oprec-input">
     <div style="margin-top:15px">
-        <form action="<?= base_url('Lomba/registration_podcast2'); ?>" method="POST" class="commpress-form form-center" id="form-1">
+        <form action="<?= base_url('Lomba/registration_podcast3'); ?>" method="POST" class="commpress-form form-center" id="form-1">
             <div style="display:flex;" id="form-main-1">
                 <div class="commpress-card commpress-verticer" style="margin-bottom:10px;width:350px">
                     <h3>Nama Lengkap</h3>
@@ -78,14 +78,14 @@
                 </div>
                 <div class="commpress-card commpress-verticer" style="margin-bottom:10px;width:350px">
                     <h3>Nama Lengkap</h3>
-                    <input type="text" name="nama" style="width:100%" /><br />
+                    <input type="text" name="nama2" style="width:100%" /><br />
                     <?= form_error('nama'); ?>
                     <h3>Asal Kampus</h3>
-                    <input type="text" name="kampus" style="width:100%" /><br />
+                    <input type="text" name="kampus2" style="width:100%" /><br />
                     <?= form_error('kampus'); ?>
                     <h3>NIM</h3>
                     <h7>(Khusus Mahasiswa UMN)</h7>
-                    <input type="text" name="nim" style="width:100%" /><br />
+                    <input type="text" name="nim2" style="width:100%" /><br />
                     <?= form_error('nim'); ?>
 
                     <iframe id="frame2" src="https://script.google.com/macros/s/AKfycbyFk0TTRMDBMI8_STIiIZfI0s8035Mucutcz13sNS2ELzrWKOtpsvJ_/exec" frameborder="1" width="auto" height="auto"></iframe>
@@ -93,14 +93,14 @@
                 </div>
                 <div class="commpress-card commpress-verticer" style="margin-bottom:10px;width:350px">
                     <h3>Nama Lengkap</h3>
-                    <input type="text" name="nama" style="width:100%" /><br />
+                    <input type="text" name="nama3" style="width:100%" /><br />
                     <?= form_error('nama'); ?>
                     <h3>Asal Kampus</h3>
-                    <input type="text" name="kampus" style="width:100%" /><br />
+                    <input type="text" name="kampus3" style="width:100%" /><br />
                     <?= form_error('kampus'); ?>
                     <h3>NIM</h3>
                     <h7>(Khusus Mahasiswa UMN)</h7>
-                    <input type="text" name="nim" style="width:100%" /><br />
+                    <input type="text" name="nim3" style="width:100%" /><br />
                     <?= form_error('nim'); ?>
 
                     <iframe id="frame3" src="https://script.google.com/macros/s/AKfycbwCiTBPkuO-GUfzKhR1FPckCcwKnip5blcqkHvOjAbyMMIZwmfuqoGSvQ/exec" frameborder="1" width="auto" height="auto"></iframe>

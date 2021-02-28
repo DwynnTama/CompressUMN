@@ -46,7 +46,7 @@ class Lomba extends CI_Controller
                 'date'              => date("Y-m-d", time())
             ];
 
-            $this->db->insert('list_lomba_feature', $data);
+            $this->db->insert('list_lomba_writing', $data);
             header('Location: ' . base_url() . 'Lomba');
         }
     }

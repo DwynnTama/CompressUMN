@@ -69,14 +69,14 @@
                 </div>
                 <div class="commpress-card commpress-verticer" style="margin-bottom:10px;width:350px">
                     <h3>Nama Lengkap</h3>
-                    <input type="text" name="nama" style="width:100%" /><br />
+                    <input type="text" name="nama2" style="width:100%" /><br />
                     <?= form_error('nama'); ?>
                     <h3>Asal Kampus</h3>
-                    <input type="text" name="kampus" style="width:100%" /><br />
+                    <input type="text" name="kampus2" style="width:100%" /><br />
                     <?= form_error('kampus'); ?>
                     <h3>NIM</h3>
                     <h7>(Khusus Mahasiswa UMN)</h7>
-                    <input type="text" name="nim" style="width:100%" /><br />
+                    <input type="text" name="nim2" style="width:100%" /><br />
                     <?= form_error('nim'); ?>
 
                     <iframe id="frame2" src="https://script.google.com/macros/s/AKfycbxvW7YVE9lwArbs47mGmV3JZhxUITiVDXTp8tQUVpz2XD0-TjrLoWVISg/exec" frameborder="1" width="auto" height="auto"></iframe>

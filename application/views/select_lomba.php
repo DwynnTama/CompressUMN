@@ -4,7 +4,7 @@
         <div class="commpress-verticer" style="margin:0;padding:0">
             <div class="event-card-left-upper">
                 <a href="<?= base_url("Lomba/podcast")?>"></a>
-                <img src="<?= base_url("assets/images/pod.svg")?>" class="event-select-illus"/>
+                <img src="<?= base_url("assets/images/journo_podcast.png")?>" class="event-select-illus"/>
                 <h3>PODCAST (SOLO)</h3>
                 <ul>
                     <li>Registration Fee 50k</li>
@@ -14,7 +14,7 @@
             </div>
             <div class="event-card-left-bottom">
             <a href="<?= base_url("Lomba/podcast_3")?>"></a>
-                <img src="<?= base_url("assets/images/pod.svg")?>" class="event-select-illus"/>
+                <img src="<?= base_url("assets/images/journo_podcast.png")?>" class="event-select-illus"/>
                 <h3>PODCAST (TRIO)</h3>
                 <ul>
                     <li>Registration Fee 50k</li>
@@ -26,7 +26,7 @@
         <div class="commpress-verticer" style="margin:0;padding:0">
             <div class="event-card-right-upper">
                 <a href="<?= base_url("Lomba/podcast_2")?>"></a>
-                <img src="<?= base_url("assets/images/pod.svg")?>" class="event-select-illus"/>
+                <img src="<?= base_url("assets/images/journo_podcast.png")?>" class="event-select-illus"/>
                 <h3>PODCAST (DUO)</h3>
                 <ul>
                     <li>Registration Fee 50k</li>
@@ -36,7 +36,7 @@
             </div>
             <div class="event-card-right-bottom">
             <a href="<?= base_url("Lomba/feature")?>"></a>
-                <img src="<?= base_url("assets/images/writ.svg")?>" class="event-select-illus"/>
+                <img src="<?= base_url("assets/images/journo_writing.png")?>" class="event-select-illus"/>
                 <h3>FEATURE WRITTING</h3>
                 <ul>
                     <li>Registration Fee 25k</li>

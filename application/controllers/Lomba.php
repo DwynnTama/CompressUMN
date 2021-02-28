@@ -23,7 +23,7 @@ class Lomba extends CI_Controller
         ]);
 
         $this->form_validation->set_rules('nim', 'NIM', 'required|trim|integer', [
-            'required' => "<p>NIM tidak boleh kosong</p>"
+
         ]);
 
         $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|is_unique[list_lomba_writing.Email]', [
@@ -58,7 +58,7 @@ class Lomba extends CI_Controller
         ]);
 
         $this->form_validation->set_rules('nim', 'NIM', 'required|trim|integer', [
-            'required' => "<p>NIM tidak boleh kosong</p>"
+            
         ]);
 
         $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|is_unique[list_lomba_podcast.Email]', [
@@ -94,7 +94,7 @@ class Lomba extends CI_Controller
         ]);
 
         $this->form_validation->set_rules('nim', 'NIM', 'required|trim|integer', [
-            'required' => "<p>NIM tidak boleh kosong</p>"
+            
         ]);
 
         $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|is_unique[list_lomba_podcast.Email]', [
@@ -133,7 +133,7 @@ class Lomba extends CI_Controller
         ]);
 
         $this->form_validation->set_rules('nim', 'NIM', 'required|trim|integer', [
-            'required' => "<p>NIM tidak boleh kosong</p>"
+            
         ]);
 
         $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|is_unique[list_lomba_podcast.Email]', [

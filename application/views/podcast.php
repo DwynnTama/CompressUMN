@@ -45,10 +45,10 @@
             <div style="display:flex;" id="form-main-1">
                 <div class="commpress-card commpress-verticer" style="margin-bottom:10px;width:350px">
                     <h3>Nama Lengkap</h3>
-                    <input type="text" name="nama" style="width:100%" /><br />
+                    <input type="text" name="nama" style="width:100%" required /><br />
                     <?= form_error('nama'); ?>
                     <h3>Asal Kampus</h3>
-                    <input type="text" name="kampus" style="width:100%" /><br />
+                    <input type="text" name="kampus" style="width:100%" required /><br />
                     <?= form_error('kampus'); ?>
                     <h3>NIM</h3>
                     <h7>(Khusus Mahasiswa UMN)</h7>
@@ -62,24 +62,24 @@
             <div style="display:none;" id="form1-next">
                 <div class="commpress-card commpress-verticer" style="width:500px;">
                     <h3>Nama Podcast</h3>
-                    <input type="text" name="podcast" style="width:100%" /><br />
+                    <input type="text" name="podcast" style="width:100%" required/><br />
                     <div style="display:flex">
                         <div style="display:flex;flex-direction:column;">
                             <h3>ID LINE</h3>
                             <h7>(Perwakilan)</h7>
-                            <input type="text" name="id_line" style="width:auto;padding:10px" /><br />
+                            <input type="text" name="id_line" style="width:auto;padding:10px" required/><br />
                             <?= form_error('id_line'); ?>
                         </div>
                         <div style="display:flex;flex-direction:column;">
                             <h3>No. Telp</h3>
                             <h7>(Perwakilan)</h7>
-                            <input type="text" name="no_telp" style="width:auto" /><br />
+                            <input type="text" name="no_telp" style="width:auto" required /><br />
                             <?= form_error('no_telp'); ?>
                         </div>
                     </div>
                     <h3>Email</h3>
                     <h7>(Perwakilan)</h7>
-                    <input type="email" name="email" style="width:100%" /><br />
+                    <input type="email" name="email" style="width:100%" required /><br />
                     <?= form_error('email'); ?>
                     <h7>Upload bukti pembayaran di bawah ini.</h7>
                     <iframe id="framefinal1" src="https://script.google.com/macros/s/AKfycbz-1GxESg8GExn8FMmRx7stmYPDxwzOQCheYJUN6DX-mWVw33X563kLyw/exec" frameborder="1" width="auto" height="auto"></iframe>

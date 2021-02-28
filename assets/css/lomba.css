@@ -1,5 +1,5 @@
 li{
-    font-size: 22px;
+    font-size: 0.7vw;
     text-align: left;
 }
 
@@ -20,11 +20,12 @@ li{
 }
 
 .event-select h3{
+    font-size: 1vw;
     margin-top: 10px;
     margin-bottom: 0px;
 }
 
-.event-card-left{
+.event-card-left-upper{
     padding: 10px;
     display:flex;
     flex-direction:column;
@@ -32,20 +33,39 @@ li{
     align-items:center;
     border-radius: 30px;
     background-color: white;
-    width: 30vw;
-    height: 30vw;
-    margin: 50px;
-    margin-top: 100px;
+    width: 15vw;
+    height: 15vw;
+    margin: 20px;
     animation: zoomout 0.4s;
 }
 
-.event-card-left a{
+.event-card-left-upper a{
     width:inherit;
     height:inherit;
     position:absolute;
 }
 
-.event-card-right{
+.event-card-left-bottom{
+    padding: 10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-radius: 30px;
+    background-color: white;
+    width: 15vw;
+    height: 15vw;
+    margin: 20px;
+    animation: zoomout 0.4s;
+}
+
+.event-card-left-bottom a{
+    width:inherit;
+    height:inherit;
+    position:absolute;
+}
+
+.event-card-right-upper{
     padding: 10px;
     display:flex;
     flex-direction:column;
@@ -53,46 +73,74 @@ li{
     align-items:center;	
     border-radius: 30px;
     background-color: white;
-    width: 30vw;
-    height: 30vw;
-    margin: 50px;
-    margin-top: 100px;
+    width: 15vw;
+    height: 15vw;
+    margin: 20px;
     animation: zoomout 0.1s;
 }
 
-.event-card-right a{
+.event-card-right-upper a{
     width:inherit;
     height:inherit;
     position:absolute;
 }
 
-.event-card-left:hover{
+.event-card-right-bottom{
+    padding: 10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;	
+    border-radius: 30px;
+    background-color: white;
+    width: 15vw;
+    height: 15vw;
+    margin: 20px;
+    animation: zoomout 0.1s;
+}
+
+.event-card-right-bottom a{
+    width:inherit;
+    height:inherit;
+    position:absolute;
+}
+
+.event-card-left-upper:hover{
+    background-color:none;
+    animation: zoomin 0.2s forwards;
+}
+.event-card-left-bottom:hover{
     background-color:none;
     animation: zoomin 0.2s forwards;
 }
 
-.event-card-right:hover{
+.event-card-right-upper:hover{
+    background-color:none;
+    animation: zoomin 0.2s forwards;
+}
+
+.event-card-right-bottom:hover{
     background-color:none;
     animation: zoomin 0.2s forwards;
 }
 
 .event-select-illus{
-    width:200px;
+    width:5vw;
     height:auto;
 }
 
 @keyframes zoomin{
-    0%{width: 30vw;
-    height: 30vw;}
-      100% {width: 32vw;
-    height: 32vw;}
+    0%{width: 15vw;
+    height: 15vw;}
+      100% {width: 17vw;
+    height: 17vw;}
 }
 
 @keyframes zoomout{
-    from {width: 32vw;
-    height: 32vw;}
-      to {width: 30vw;
-    height: 30vw}
+    from {width: 17vw;
+    height: 17vw;}
+      to {width: 15vw;
+    height: 15vw}
 }
 
 #tex{

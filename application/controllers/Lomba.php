@@ -104,7 +104,7 @@ class Lomba extends CI_Controller
 
         if ($this->form_validation->run() == false) {
             $this->load->view('templates/commpress-navbar');
-            $this->load->view('podcast');
+            $this->load->view('podcast_2');
             $this->load->view('templates/commpress-footer');
         } else {
             $data = [
@@ -143,7 +143,7 @@ class Lomba extends CI_Controller
 
         if ($this->form_validation->run() == false) {
             $this->load->view('templates/commpress-navbar');
-            $this->load->view('podcast');
+            $this->load->view('podcast_3');
             $this->load->view('templates/commpress-footer');
         } else {
             $data = [
@@ -172,6 +172,20 @@ class Lomba extends CI_Controller
     {
         $this->load->view('templates/commpress-navbar');
         $this->load->view('podcast');
+        $this->load->view('templates/commpress-footer');
+    }
+
+    public function podcast_2()
+    {
+        $this->load->view('templates/commpress-navbar');
+        $this->load->view('podcast_2');
+        $this->load->view('templates/commpress-footer');
+    }
+
+    public function podcast_3()
+    {
+        $this->load->view('templates/commpress-navbar');
+        $this->load->view('podcast_3');
         $this->load->view('templates/commpress-footer');
     }
 

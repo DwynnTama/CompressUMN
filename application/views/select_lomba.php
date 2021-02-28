@@ -17,7 +17,7 @@
                 <img src="<?= base_url("assets/images/pod.svg")?>" class="event-select-illus"/>
                 <h3>PODCAST (TRIO)</h3>
                 <ul>
-                    <li>Registration Fee 25k</li>
+                    <li>Registration Fee 50k</li>
                     <li>Max 3 orang</li>
                     <li>Biaya pendaftaran dibayarkan <br> melalui rekening BCA 6042980532 <br> a.n. Elisabeth Anggitasari H</li>
                 </ul>

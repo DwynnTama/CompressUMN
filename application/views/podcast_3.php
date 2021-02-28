@@ -15,7 +15,7 @@
                 document.getElementById("frame3").style.display = "none";
             }
             if (text == "Success") {
-                document.getElementById("framefinal2").style.display = "none";
+                document.getElementById("framefinal1").style.display = "none";
             }
             if (text1 == "Success" && text2 == "Success" && text3 == "Success" && text == "Success") {
                 console.log("berhasil berhasil hore");
@@ -24,23 +24,23 @@
             }
             console.log("ga ketemu woi wat the hek");
             if (text1 != "Success") {
-                $.getJSON('https://script.google.com/macros/s/AKfycbxXHsmC_wYyK42tkcOqTXVQP9UGT4CKYTh2VEE9TbvA-ScH9wEglSp4dw/exec?prefix=?', null, function(results) {
+                $.getJSON('https://script.google.com/macros/s/AKfycbxwZz5Z5aggc7x9A2ckKlxPi_gXT_8tjlUPcgzp6Q7_co46j9dxlJcGMg/exec?prefix=?', null, function(results) {
                     $('#tex1').html(results);
                 });
             }
             if (text2 != "Success") {
-                $.getJSON('https://script.google.com/macros/s/AKfycbxvW7YVE9lwArbs47mGmV3JZhxUITiVDXTp8tQUVpz2XD0-TjrLoWVISg/exec?prefix=?', null, function(results) {
+                $.getJSON('https://script.google.com/macros/s/AKfycbyFk0TTRMDBMI8_STIiIZfI0s8035Mucutcz13sNS2ELzrWKOtpsvJ_/exec?prefix=?', null, function(results) {
                     $('#tex2').html(results);
                 });
             }
             if (text3 != "Success") {
-                $.getJSON('https://script.google.com/macros/s/AKfycbxvW7YVE9lwArbs47mGmV3JZhxUITiVDXTp8tQUVpz2XD0-TjrLoWVISg/exec?prefix=?', null, function(results) {
+                $.getJSON('https://script.google.com/macros/s/AKfycbwCiTBPkuO-GUfzKhR1FPckCcwKnip5blcqkHvOjAbyMMIZwmfuqoGSvQ/exec?prefix=?', null, function(results) {
                     $('#tex3').html(results);
                 });
             }
             if (text != "Success") {
                 $.getJSON('https://script.google.com/macros/s/AKfycbz-1GxESg8GExn8FMmRx7stmYPDxwzOQCheYJUN6DX-mWVw33X563kLyw/exec?prefix=?', null, function(results) {
-                    $('#texfinal2').html(results);
+                    $('#texfinal1').html(results);
                 });
             }
         } 
@@ -73,7 +73,7 @@
                     <input type="text" name="nim" style="width:100%" /><br />
                     <?= form_error('nim'); ?>
 
-                    <iframe id="frame1" src="https://script.google.com/macros/s/AKfycbz7BgMxoU9nrHX7WETQ6CDBGh1n5y-9jLw4c1z_sJwBPVm-eXhVsULXcg/exec" frameborder="1" width="auto" height="auto"></iframe>
+                    <iframe id="frame1" src="https://script.google.com/macros/s/AKfycbxwZz5Z5aggc7x9A2ckKlxPi_gXT_8tjlUPcgzp6Q7_co46j9dxlJcGMg/exec" frameborder="1" width="auto" height="auto"></iframe>
                     <h4 id="tex1" style="margin-bottom:0">Please submit your file to finish this form</h4>
                 </div>
                 <div class="commpress-card commpress-verticer" style="margin-bottom:10px;width:350px">
@@ -88,7 +88,7 @@
                     <input type="text" name="nim" style="width:100%" /><br />
                     <?= form_error('nim'); ?>
 
-                    <iframe id="frame2" src="https://script.google.com/macros/s/AKfycbz7BgMxoU9nrHX7WETQ6CDBGh1n5y-9jLw4c1z_sJwBPVm-eXhVsULXcg/exec" frameborder="1" width="auto" height="auto"></iframe>
+                    <iframe id="frame2" src="https://script.google.com/macros/s/AKfycbyFk0TTRMDBMI8_STIiIZfI0s8035Mucutcz13sNS2ELzrWKOtpsvJ_/exec" frameborder="1" width="auto" height="auto"></iframe>
                     <h4 id="tex2" style="margin-bottom:0">Please submit your file to finish this form</h4>
                 </div>
                 <div class="commpress-card commpress-verticer" style="margin-bottom:10px;width:350px">
@@ -103,7 +103,7 @@
                     <input type="text" name="nim" style="width:100%" /><br />
                     <?= form_error('nim'); ?>
 
-                    <iframe id="frame3" src="https://script.google.com/macros/s/AKfycbz7BgMxoU9nrHX7WETQ6CDBGh1n5y-9jLw4c1z_sJwBPVm-eXhVsULXcg/exec" frameborder="1" width="auto" height="auto"></iframe>
+                    <iframe id="frame3" src="https://script.google.com/macros/s/AKfycbwCiTBPkuO-GUfzKhR1FPckCcwKnip5blcqkHvOjAbyMMIZwmfuqoGSvQ/exec" frameborder="1" width="auto" height="auto"></iframe>
                     <h4 id="tex3" style="margin-bottom:0">Please submit your file to finish this form</h4>
                 </div>
             </div>

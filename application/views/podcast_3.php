@@ -14,6 +14,13 @@
             if (text3 == "Success") {
                 document.getElementById("frame3").style.display = "none";
             }
+            if(text1 == "Success" && text2 == "Success" && text3 == "Success")
+            {
+                if(document.getElementById("form1-btn-next"))
+                {
+                    document.getElementById("form1-btn-next").style.display = "block";
+                }
+            }
             if (text == "Success") {
                 document.getElementById("framefinal1").style.display = "none";
             }
@@ -49,7 +56,7 @@
     function ddd() {
         document.getElementById("form-main-1").style.display = "none";
         document.getElementById("form1-next").style.display = "flex";
-        document.getElementById("form1-btn-next").style.display = "none";
+        document.getElementById("form1-btn-next").remove();
     }
 </script>
 
@@ -135,7 +142,7 @@
                     <button id="butt1" disabled type="submit">SUBMIT</button>
                 </div>
             </div>
-            <span class="commpress-rad" onclick="ddd()" id="form1-btn-next">NEXT</span>
+            <span class="commpress-rad" onclick="ddd()" style="display:none;" id="form1-btn-next">NEXT</span>
         </form>
     </div>
 </div>

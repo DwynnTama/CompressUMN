@@ -15,7 +15,7 @@
 <div class="content-container" id="section1">
     <span class="instruction-title">
         SCROLL BELOW
-        <img src="<?= base_url("assets/images/below.png") ?>" />
+        <img src="<?= base_url("assets/images/below.png") ?>"/>
     </span>
     <div class="commpress-section">
         <b></b>

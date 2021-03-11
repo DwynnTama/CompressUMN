@@ -1,47 +1,3 @@
-<script>
-    var test = setInterval(function() {
-        if (document.getElementById("form-main-1").style.display === "flex" || document.getElementById("form1-next").style.display === "flex") {
-            var text = document.getElementById("texfinal1").textContent;
-            var text1 = document.getElementById("tex1").textContent;
-            if (text1 == "Success") {
-                document.getElementById("frame1").style.display = "none";
-                if(document.getElementById("form1-btn-next"))
-                {
-                    document.getElementById("form1-btn-next").style.display ="block";
-                }
-                
-            }
-            if (text == "Success") {
-                document.getElementById("framefinal1").style.display = "none";
-            }
-            if (text == "Success" && text1 == "Success") {
-                console.log("berhasil berhasil hore");
-                document.getElementById("butt1").disabled = false;
-                clearInterval("test");
-            }
-            console.log("ga ketemu woi wat the hek");
-            if (text1 != "Success") {
-                $.getJSON('https://script.google.com/macros/s/AKfycbz7BgMxoU9nrHX7WETQ6CDBGh1n5y-9jLw4c1z_sJwBPVm-eXhVsULXcg/exec?prefix=?', null, function(results) {
-                    $('#tex1').html(results);
-                });
-            }
-            if (text != "Success") {
-                $.getJSON('https://script.google.com/macros/s/AKfycbz-1GxESg8GExn8FMmRx7stmYPDxwzOQCheYJUN6DX-mWVw33X563kLyw/exec?prefix=?', null, function(results) {
-                    $('#texfinal1').html(results);
-                });
-            }
-        }
-    }, 2000);
-
-    function ddd() {
-        document.getElementById("form-main-1").style.display = "none";
-        document.getElementById("form1-next").style.display = "flex";
-        document.getElementById("form1-btn-next").remove();
-    }
-</script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
 <?php error_reporting(0); ?>
 <title>Podcast</title>
 <div class="event-select oprec form-lomba" style="height:105%;" id="oprec-input">
@@ -52,47 +8,18 @@
                     <h3>Nama Lengkap</h3>
                     <input type="text" name="nama" style="width:100%" required /><br />
                     <?= form_error('nama'); ?>
-                    <h3>Asal Kampus</h3>
-                    <input type="text" name="kampus" style="width:100%" required /><br />
-                    <?= form_error('kampus'); ?>
                     <h3>NIM</h3>
-                    <h7>(Khusus Mahasiswa UMN)</h7>
-                    <input type="text" name="nim" style="width:100%" /><br />
+                    <input type="text" name="nim" style="width:100%" required/><br />
                     <?= form_error('nim'); ?>
-
-                    <iframe id="frame1" src="https://script.google.com/macros/s/AKfycbz7BgMxoU9nrHX7WETQ6CDBGh1n5y-9jLw4c1z_sJwBPVm-eXhVsULXcg/exec" frameborder="1" width="auto" height="auto"></iframe>
-                    <h4 id="tex1" style="margin-bottom:0">Please submit your file to finish this form</h4>
+                    <h3>Angkatan</h3>
+                    <input type="text" name="kampus" style="width:100%" required /><br />
+                    <h3>Link video (link gdrive atau youtube)</h3>
+                    <input type="text" name="link" style="width:100%" required /><br />
+                    <?= form_error('link'); ?>
+                    <button id="butt1" type="submit">SUBMIT</button>
                 </div>
             </div>
-            <div style="display:none;" id="form1-next">
-                <div class="commpress-card commpress-verticer" style="width:500px;">
-                    <h3>Nama Podcast</h3>
-                    <input type="text" name="podcast" style="width:100%" required/><br />
-                    <div style="display:flex">
-                        <div style="display:flex;flex-direction:column;">
-                            <h3>ID LINE</h3>
-                            <h7>(Perwakilan)</h7>
-                            <input type="text" name="id_line" style="width:auto;padding:10px" required/><br />
-                            <?= form_error('id_line'); ?>
-                        </div>
-                        <div style="display:flex;flex-direction:column;">
-                            <h3>No. Telp</h3>
-                            <h7>(Perwakilan)</h7>
-                            <input type="text" name="no_telp" style="width:auto" required /><br />
-                            <?= form_error('no_telp'); ?>
-                        </div>
-                    </div>
-                    <h3>Email</h3>
-                    <h7>(Perwakilan)</h7>
-                    <input type="email" name="email" style="width:100%" required /><br />
-                    <?= form_error('email'); ?>
-                    <h7>Upload bukti pembayaran di bawah ini.</h7>
-                    <iframe id="framefinal1" src="https://script.google.com/macros/s/AKfycbz-1GxESg8GExn8FMmRx7stmYPDxwzOQCheYJUN6DX-mWVw33X563kLyw/exec" frameborder="1" width="auto" height="auto"></iframe>
-                    <h4 id="texfinal1" style="margin-bottom:0">Please submit your file to finish this form</h4>
-                    <button id="butt1" disabled type="submit">SUBMIT</button>
-                </div>
             </div>
-            <span class="commpress-rad" onclick="ddd()" style="display: none;" id="form1-btn-next">NEXT</span>
         </form>
     </div>
 </div>

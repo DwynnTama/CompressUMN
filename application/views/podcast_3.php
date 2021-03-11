@@ -64,11 +64,11 @@
 
 <?php error_reporting(0); ?>
 <title>Podcast</title>
-<div class="event-select oprec form-lomba" style="height:105%;" id="oprec-input">
+<div class="event-select oprec form-lomba" id="oprec-input3">
     <div style="margin-top:15px">
         <form action="<?= base_url('Lomba/registration_podcast3'); ?>" method="POST" class="commpress-form form-center" id="form-1">
             <div style="display:flex;" id="form-main-1">
-                <div class="commpress-card commpress-verticer" style="margin-bottom:10px;width:350px">
+                <div class="commpress-card commpress-verticer" style="margin-bottom:10px;width:350px" id=card-pod-3>
                     <h3>Nama Lengkap</h3>
                     <input type="text" name="nama" style="width:100%" required /><br />
                     <?= form_error('nama'); ?>
@@ -83,7 +83,7 @@
                     <iframe id="frame1" src="https://script.google.com/macros/s/AKfycbxwZz5Z5aggc7x9A2ckKlxPi_gXT_8tjlUPcgzp6Q7_co46j9dxlJcGMg/exec" frameborder="1" width="auto" height="auto"></iframe>
                     <h4 id="tex1" style="margin-bottom:0">Please submit your file to finish this form</h4>
                 </div>
-                <div class="commpress-card commpress-verticer" style="margin-bottom:10px;width:350px">
+                <div class="commpress-card commpress-verticer" style="margin-bottom:10px;width:350px" id=card-pod-3>
                     <h3>Nama Lengkap</h3>
                     <input type="text" name="nama2" style="width:100%" required /><br />
                     <?= form_error('nama'); ?>
@@ -98,7 +98,7 @@
                     <iframe id="frame2" src="https://script.google.com/macros/s/AKfycbyFk0TTRMDBMI8_STIiIZfI0s8035Mucutcz13sNS2ELzrWKOtpsvJ_/exec" frameborder="1" width="auto" height="auto"></iframe>
                     <h4 id="tex2" style="margin-bottom:0">Please submit your file to finish this form</h4>
                 </div>
-                <div class="commpress-card commpress-verticer" style="margin-bottom:10px;width:350px">
+                <div class="commpress-card commpress-verticer" style="margin-bottom:10px;width:350px" id=card-pod-3>
                     <h3>Nama Lengkap</h3>
                     <input type="text" name="nama3" style="width:100%" required /><br />
                     <?= form_error('nama'); ?>

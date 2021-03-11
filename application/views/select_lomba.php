@@ -1,6 +1,6 @@
 <title>Events</title>
-<div class="oprec" style="height:100%">
-    <div class="event-select">
+<div class="oprec" id="cont-lomba">
+    <div class="event-select" id="content-lomba">
         <div class="commpress-verticer" style="margin:0;padding:0">
             <div class="event-card-left-upper">
                 <a href="<?= base_url("Lomba/podcast")?>"></a>

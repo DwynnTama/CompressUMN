@@ -183,26 +183,81 @@ li{
     padding:20px;
 }
 
-@media (max-width: 700px){
+#list{
+    flex-direction: row;
+}
 
+#cont-list{
+    height: 100%;
+}
+
+#cont-lomba{
+    height: 100%;
+}
+
+#row-pameran{
+    flex-direction: row;
+}
+
+@media (max-width: 700px){
+    #row-pameran{
+        flex-direction: column;
+    }
+
+    #form-main-1{
+        flex-direction: column;
+    }
     li{
-        font-size: 15px;
+        font-size: 12px;
+    }
+
+    .event-select ul{
+        margin-top: 0;
+    }
+
+    #cont-list{
+        height: 120%;
+    }
+
+    #cont-lomba{
+        height: 200%;
+    }
+
+    #content-lomba{
+        transform: translateY(-40px);
     }
 
     .event-select{
         flex-direction: column;
         height: 110%;
-        padding-top: 100px;
     }
 
-    .event-card-left{
+    .event-select h3{
+        font-size: 20px;
+    }
+
+    .event-card-left-upper{
         width: 250px;
         height: 250px;
         animation: none;
         margin: 10px 10px 20px 10px;
     }
 
-    .event-card-right{
+    .event-card-left-bottom{
+        width: 250px;
+        height: 250px;
+        animation: none;
+        margin: 10px 10px 20px 10px;
+    }
+
+    .event-card-right-upper{
+        width: 250px;
+        height: 250px;
+        animation: none;
+        margin: 20px 10px 10px 10px;
+    }
+
+    .event-card-right-bottom{
         width: 250px;
         height: 250px;
         animation: none;
@@ -214,13 +269,36 @@ li{
         height: auto;
     }
 
-    .event-card-left:hover{
+    .event-card-left-upper:hover{
+        background-color:none;
+        animation: none;
+    }
+
+    .event-card-left-bottom:hover{
         background-color:none;
         animation: none;
     }
     
-    .event-card-right:hover{
+    
+    .event-card-right-upper:hover{
         background-color:none;
         animation: none;
+    }
+
+    .event-card-right-bottom:hover{
+        background-color:none;
+        animation: none;
+    }
+
+    #list{
+        flex-direction: column;
+    }
+
+    #card-pod-2{
+        margin:0;
+    }
+
+    #card-pod-3{
+        margin:0;
     }
 }

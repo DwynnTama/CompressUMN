@@ -12,7 +12,7 @@
         <a href="<?= base_url(); ?>"><img src="<?= base_url('assets/images/compress.png'); ?>" style="width:95px; padding-bottom: 3px; padding-top: 3px;"/></a>
         <div class="sub-bar">
             <a href="<?= base_url(); ?>">Home</a>
-            <a href="<?= base_url('Lomba'); ?>">Events</a>
+            <a href="<?= base_url('Event/List'); ?>">Events</a>
             <a href="<?= base_url('Aboutus'); ?>">About</a>
         </div>
     </span>
@@ -29,7 +29,7 @@
 
             <ul class="nav-menu">
                 <a href="<?= base_url(); ?>"><li>Home</li></a>
-                <a href="<?= base_url('Oprec'); ?>"><li>Events</li></a>
+                <a href="<?= base_url('Event/List'); ?>"><li>Events</li></a>
                 <a href="<?= base_url('Aboutus'); ?>"><li>About</li></a>
                 <b></b>
                 <div class="nav-container">

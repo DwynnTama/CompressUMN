@@ -32,6 +32,10 @@
     height: 90%;
 }
 
+#oprec-input2, #oprec-input3{
+    height: 105%;
+}
+
 .oprec strong{
     font-size: 20px;
     font-family: "Avenir-bold";
@@ -256,5 +260,15 @@
 
     .text-lower span{
         font-size: 18px;
+    }
+
+    #oprec-input2{
+        height: 200%;
+        flex-direction: column;
+    }
+
+    #oprec-input3{
+        height: 300%;
+        flex-direction: column;
     }
 }

@@ -22,7 +22,7 @@ class Lomba extends CI_Controller
             'required' => "<p class='text-danger'>Harap masukkan nama kamu</p>"
         ]);
 
-        $this->form_validation->set_rules('nim', 'NIM', 'required|trim|integer', [
+        $this->form_validation->set_rules('nim', 'NIM', 'trim|integer', [
 
         ]);
 
@@ -57,7 +57,7 @@ class Lomba extends CI_Controller
             'required' => "<p class='text-danger'>Harap masukkan nama kamu</p>"
         ]);
 
-        $this->form_validation->set_rules('nim', 'NIM', 'required|trim|integer', [
+        $this->form_validation->set_rules('nim', 'NIM', 'trim|integer', [
             
         ]);
 
@@ -93,7 +93,7 @@ class Lomba extends CI_Controller
             'required' => "<p class='text-danger'>Harap masukkan nama kamu</p>"
         ]);
 
-        $this->form_validation->set_rules('nim', 'NIM', 'required|trim|integer', [
+        $this->form_validation->set_rules('nim', 'NIM', 'trim|integer', [
             
         ]);
 
@@ -132,7 +132,7 @@ class Lomba extends CI_Controller
             'required' => "<p class='text-danger'>Harap masukkan nama kamu</p>"
         ]);
 
-        $this->form_validation->set_rules('nim', 'NIM', 'required|trim|integer', [
+        $this->form_validation->set_rules('nim', 'NIM', 'trim|integer', [
             
         ]);
 

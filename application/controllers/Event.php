@@ -1,7 +1,8 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Event extends CI_Controller {
+class Event extends CI_Controller
+{
 
     public function __construct()
     {
@@ -16,13 +17,15 @@ class Event extends CI_Controller {
         $this->load->view('templates/commpress-footer');
     }
 
-    public function index(){
+    public function index()
+    {
         $this->load->view('templates/commpress-navbar');
         $this->load->view('select_pameran');
         $this->load->view('templates/commpress-footer');
     }
 
-    public function foto_tunggal(){
+    public function foto_tunggal()
+    {
         $this->form_validation->set_rules('nama', 'Nama', 'required|trim', [
             'required' => "<p class='text-danger'>Harap masukkan nama kamu</p>"
         ]);
@@ -32,7 +35,7 @@ class Event extends CI_Controller {
         ]);
 
         $this->form_validation->set_rules('angkatan', 'Angkatan', 'required|trim|integer', [
-            'required' => "<p>Tahun Angkatan tidak boleh kosong!</p>"
+            'required' => "<p>Tahun Angkatan tidak boleh kosong!</p>",
             'integer' =>  "<p>Tahun Angkatan kok huruf? :(</p>"
         ]);
 
@@ -54,7 +57,8 @@ class Event extends CI_Controller {
         }
     }
 
-    public function foto_story(){
+    public function foto_story()
+    {
         $this->form_validation->set_rules('nama', 'Nama', 'required|trim', [
             'required' => "<p class='text-danger'>Harap masukkan nama kamu</p>"
         ]);
@@ -64,7 +68,7 @@ class Event extends CI_Controller {
         ]);
 
         $this->form_validation->set_rules('angkatan', 'Angkatan', 'required|trim|integer', [
-            'required' => "<p>Tahun Angkatan tidak boleh kosong!</p>"
+            'required' => "<p>Tahun Angkatan tidak boleh kosong!</p>",
             'integer' =>  "<p>Tahun Angkatan kok huruf? :(</p>"
         ]);
 
@@ -86,7 +90,8 @@ class Event extends CI_Controller {
         }
     }
 
-    public function video_dokumenter(){
+    public function video_dokumenter()
+    {
 
         $this->form_validation->set_rules('nama', 'Nama', 'required|trim', [
             'required' => "<p class='text-danger'>Harap masukkan nama kamu</p>"
@@ -97,7 +102,7 @@ class Event extends CI_Controller {
         ]);
 
         $this->form_validation->set_rules('angkatan', 'Angkatan', 'required|trim|integer', [
-            'required' => "<p>Tahun Angkatan tidak boleh kosong!</p>"
+            'required' => "<p>Tahun Angkatan tidak boleh kosong!</p>",
             'integer' =>  "<p>Tahun Angkatan kok huruf? :(</p>"
         ]);
 
@@ -114,7 +119,7 @@ class Event extends CI_Controller {
             $data = [
                 'Nama'    => htmlspecialchars($this->input->post('nama', true)),
                 'NIM'     => $this->input->post('nim'),
-                'Angkatan'=> htmlspecialchars($this->input->post('angkatan', true)),
+                'Angkatan' => htmlspecialchars($this->input->post('angkatan', true)),
                 'Jenis_Lomba' => $jenis,
                 'video_link'  => $this->input->post('link'),
                 'date'    => date("Y-m-d", time())

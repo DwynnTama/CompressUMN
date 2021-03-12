@@ -24,7 +24,7 @@
 <title>Podcast</title>
 <div class="event-select oprec form-lomba" style="height:105%;" id="oprec-input">
     <div style="margin-top:15px">
-        <form action="<?= base_url('Lomba/registration_podcast'); ?>" method="POST" class="commpress-form form-center" id="form-1">
+        <form action="<?= base_url('Event/foto_story'); ?>" method="POST" class="commpress-form form-center" id="form-1">
             <div style="display:flex;" id="form-main-1">
                 <div class="commpress-card commpress-verticer" style="margin-bottom:10px;width:350px">
                     <h3>Nama Lengkap</h3>
@@ -34,7 +34,7 @@
                     <input type="text" name="nim" style="width:100%" required/><br />
                     <?= form_error('nim'); ?>
                     <h3>Angkatan</h3>
-                    <input type="text" name="kampus" style="width:100%" required /><br />
+                    <input type="text" name="angkatan" style="width:100%" required /><br />
                     <?= form_error('angkatan'); ?>
                     <iframe id="frame1" src="https://script.google.com/macros/s/AKfycby1MTJAOmUlsBk_FhxUeBnwWBD3MgL23IcIeYAUcFXb1dz1nXVzG64gW3GKpzIj9HbI/exec" frameborder="1" width="auto" height="auto"></iframe>
                     <h4 id="tex1" style="margin-bottom:0">Please submit your file to finish this form</h4>

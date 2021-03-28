@@ -10,19 +10,8 @@ class Event extends CI_Controller
         $this->load->library('form_validation');
     }
 
-<<<<<<< Updated upstream
-    public function List()
-    {
-        $this->load->view('templates/commpress-navbar');
-        $this->load->view('event_list');
-        $this->load->view('templates/commpress-footer');
-    }
-
     public function index()
     {
-=======
-    public function index(){
->>>>>>> Stashed changes
         $this->load->view('templates/commpress-navbar');
         $this->load->view('select_pameran');
         $this->load->view('templates/commpress-footer');

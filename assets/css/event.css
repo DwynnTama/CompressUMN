@@ -1,0 +1,106 @@
+.com-deck{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.com-item img{
+    width: 10vw;
+    height: auto;
+}
+
+.com-item{
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);;
+    width: 20vw;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
+}
+
+.com-item:hover{
+    opacity: 1;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 2px #fff,0px 0px 5px #333452;  
+}
+
+.com-link{
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.item-title{
+    font-family: "Avenir-bold";
+    font-size: 1.5vw;
+    margin: 10px 0 10px 0;
+}
+
+.container-pameran{
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+
+body{
+    background-image: url("../images/landing-bg.jpg");
+    background-position: fixed;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cage{
+    background-color: black;
+    height: 50px;
+    margin: 45px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.mask{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 50px;
+    position: absolute;
+    color: white;
+}
+.cage:nth-child(3n+1) .kelas{
+    background-color: yellow;
+}
+
+.cage:nth-child(3n+2) .kelas{
+    background-color: red;
+}
+
+.kelas{
+    text-align: center;
+    background-color: darkblue;
+    width: 10px;
+    height: 50px;
+    transition: 0.5s;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.cage:hover .kelas{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cage:hover{
+    transform: translateX(20px) !important;
+}

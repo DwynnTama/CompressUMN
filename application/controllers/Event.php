@@ -13,11 +13,11 @@ class Event extends CI_Controller
     public function index()
     {
         $this->load->view('templates/commpress-navbar');
-        $this->load->view('select_pameran');
+        $this->load->view('select_event');
         $this->load->view('templates/commpress-footer');
     }
 
-    public function foto_tunggal()
+    /*public function foto_tunggal()
     {
         $this->form_validation->set_rules('nama', 'Nama', 'required|trim', [
             'required' => "<p class='text-danger'>Harap masukkan nama kamu</p>"
@@ -120,5 +120,16 @@ class Event extends CI_Controller
             $this->db->insert('list_pameran', $data);
             header('Location: ' . base_url() . 'Event');
         }
+    }*/
+
+    public function Podcast(){
+        $this->load->view('templates/commpress-navbar');
+        $this->load->view('lomba_podcast');
+    }
+
+    public function Feature(){
+        $this->load->view('templates/commpress-navbar');
+        $this->load->view('lomba_feature');
+        $this->load->view('templates/commpress-footer');
     }
 }

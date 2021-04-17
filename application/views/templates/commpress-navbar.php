@@ -6,9 +6,13 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/carousel.css'); ?>">
     <link rel="stylesheet" href="<?= base_url("assets/css/about.css") ?>">
     <link rel="stylesheet" href="<?= base_url("assets/css/lomba.css") ?>">
+    <link rel="stylesheet" href="<?= base_url("assets/css/event.css") ?>">
+    <link rel="stylesheet" href="<?= base_url("assets/css/comment_board.css") ?>">
     <link rel="stylesheet" href="<?= base_url("assets/css/page_pameran.css") ?>">
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <head>
     <span class="navbar">
         <a href="<?= base_url(); ?>"><img src="<?= base_url('assets/images/compress.png'); ?>" style="width:95px; padding-bottom: 3px; padding-top: 3px;"/></a>

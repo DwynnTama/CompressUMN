@@ -62,7 +62,7 @@ body{
 }
 
 .cage{
-    background-color: black;
+    background-color: #231F20;
     height: 50px;
     margin: 45px;
     transition: 0.5s;
@@ -78,17 +78,13 @@ body{
     position: absolute;
     color: white;
 }
-.cage:nth-child(3n+1) .kelas{
-    background-color: yellow;
-}
-
-.cage:nth-child(3n+2) .kelas{
-    background-color: red;
+.cage:nth-child(even) .kelas{
+    background-color: #A0000F;
 }
 
 .kelas{
     text-align: center;
-    background-color: darkblue;
+    background-color: #333452;
     width: 10px;
     height: 50px;
     transition: 0.5s;

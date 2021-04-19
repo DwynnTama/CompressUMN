@@ -22,40 +22,40 @@
                 <div class="content-podcast">
                     <h3>XONE PODCAST</h3>
                     <br>
-                <audio controls style="width:100%;">
-                    <source src="<?= base_url('assets/audio/xone.mp3'); ?>">
-                </audio>
-                <br>
-                <h5>CREATED BY : </h5>
-                <h5>Celine Febriani Rusli</h5>
-                <h5>Thefanny</h5>
-                <h5>Winnie</h5>
+                    <audio controls style="width:100%;">
+                        <source src="<?= base_url('assets/audio/xone.mp3'); ?>">
+                    </audio>
+                    <br>
+                    <h5>CREATED BY : </h5>
+                    <h5>Celine Febriani Rusli</h5>
+                    <h5>Thefanny</h5>
+                    <h5>Winnie</h5>
                 </div>
             </div>
             <div class="panel-group captions" id="accordion">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">CAPTIONS</a>
-                    </h4>
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">CAPTIONS</a>
+                        </h4>
                     </div>
                     <div id="collapse1" class="panel-collapse collapse in">
-                    <div class="panel-body text-capt">
-                        Keterbatasan yang diakibatkan pandemi memang menyebalkan. Masyarakat
-                        dipaksa untuk beradaptasi melakukan aktivitas normal dengan ruang gerak yang
-                        terbatas. Selama itu juga, manusia lebih banyak mengeluh dan berfokus pada kesulitan
-                        yang dibawa Pandemi. Pada episode kali ini, Celine, Winnie, dan Thefanny dalam
-                        Xonee Podcast membahas mengenai dampak positif dari keterbatasan yang dibawa
-                        pandemi. Dampaknya mungkin tidak disadari secara langsung, tetapi rasa kesendirian
-                        dan kesepian akibat kuncitara dan pembatasan fisik menumbuhkan kembali keinginan
-                        manusia untuk menjadi makhluk sosial. Selain membicarakan dampak positif, para host
-                        juga membagikan sedikit pengalaman mereka dalam melampaui jarak, baik fisik
-                        maupun emosional, yang tercipta karena pandemi. Melalui episode ini, Celine, Winnie,
-                        dan Fanny berharap Neos (pendengar Xonee Podcast) menyadari pentingnya
-                        berinteraksi, bersosialisasi, dan bersyukur dengan keberadaan orang lain di sekitarnya.
-                </div>
+                        <div class="panel-body text-capt">
+                            Keterbatasan yang diakibatkan pandemi memang menyebalkan. Masyarakat
+                            dipaksa untuk beradaptasi melakukan aktivitas normal dengan ruang gerak yang
+                            terbatas. Selama itu juga, manusia lebih banyak mengeluh dan berfokus pada kesulitan
+                            yang dibawa Pandemi. Pada episode kali ini, Celine, Winnie, dan Thefanny dalam
+                            Xonee Podcast membahas mengenai dampak positif dari keterbatasan yang dibawa
+                            pandemi. Dampaknya mungkin tidak disadari secara langsung, tetapi rasa kesendirian
+                            dan kesepian akibat kuncitara dan pembatasan fisik menumbuhkan kembali keinginan
+                            manusia untuk menjadi makhluk sosial. Selain membicarakan dampak positif, para host
+                            juga membagikan sedikit pengalaman mereka dalam melampaui jarak, baik fisik
+                            maupun emosional, yang tercipta karena pandemi. Melalui episode ini, Celine, Winnie,
+                            dan Fanny berharap Neos (pendengar Xonee Podcast) menyadari pentingnya
+                            berinteraksi, bersosialisasi, dan bersyukur dengan keberadaan orang lain di sekitarnya.
+                        </div>
                     </div>
-                </div>
+              </div>
         </div>
 
         <div class="wrap-podcast" data-aos="zoom-in">
@@ -64,14 +64,14 @@
                 <div class="content-podcast">
                     <h3>ANDALAS PODCAST</h3>
                     <br>
-                <audio controls style="width:100%;">
-                    <source src="<?= base_url('assets/audio/andalas.mp3'); ?>">
-                </audio>
-                <br>
-                <h5>CREATED BY : </h5>
-                <h5>Celine Febriani Rusli</h5>
-                <h5>Thefanny</h5>
-                <h5>Winnie</h5>
+                    <audio controls style="width:100%;">
+                        <source src="<?= base_url('assets/audio/andalas.mp3'); ?>">
+                    </audio>
+                    <br>
+                    <h5>CREATED BY : </h5>
+                    <h5>Celine Febriani Rusli</h5>
+                    <h5>Thefanny</h5>
+                    <h5>Winnie</h5>
                 </div>
             </div>
             <div class="panel-group captions" id="accordion1">
@@ -82,44 +82,48 @@
                     </h4>
                     </div>
                     <div id="collapse2" class="panel-collapse collapse in">
-                    <div class="panel-body text-capt">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.</div>
+                        <div class="panel-body text-capt">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                        </div>
                     </div>
                 </div>
+             </div>
         </div>
 
         <div class="wrap-podcast" data-aos="zoom-in">
             <div class="card-podcast">
-                <img src="<?= base_url('assets/images/xone.png'); ?>" alt="" width="100%" height="auto">
+                <img src="<?= base_url('assets/images/123.png'); ?>" alt="" width="100%" height="auto">
                 <div class="content-podcast">
-                    <h3>XONE PODCAST</h3>
+                    <h3>ANDALAS PODCAST</h3>
                     <br>
-                <audio controls style="width:100%;">
-                    <source src="<?= base_url('assets/audio/andalas.mp3'); ?>">
-                </audio>
-                <br>
-                <h5>CREATED BY : </h5>
-                <h5>Celine Febriani Rusli</h5>
-                <h5>Thefanny</h5>
-                <h5>Winnie</h5>
+                    <audio controls style="width:100%;">
+                        <source src="<?= base_url('assets/audio/andalas.mp3'); ?>">
+                    </audio>
+                    <br>
+                    <h5>CREATED BY : </h5>
+                    <h5>Celine Febriani Rusli</h5>
+                    <h5>Thefanny</h5>
+                    <h5>Winnie</h5>
                 </div>
             </div>
-            <div class="panel-group captions" id="accordion">
+            <div class="panel-group captions" id="accordion1">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">CAPTIONS</a>
+                        <a data-toggle="collapse" data-parent="#accordion1" href="#collapse2">CAPTIONS</a>
                     </h4>
                     </div>
-                    <div id="collapse1" class="panel-collapse collapse in">
-                    <div class="panel-body text-capt">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.</div>
+                    <div id="collapse2" class="panel-collapse collapse in">
+                        <div class="panel-body text-capt">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                        </div>
                     </div>
                 </div>
+             </div>
         </div>
 
         <div class="wrap-podcast" data-aos="zoom-in">
@@ -156,13 +160,13 @@
     </div>
     
     <style>
-        body{
+        /* body{
             background-image: url("https://i.pinimg.com/originals/77/3c/62/773c62498b4f8b37bde0deb955918cc4.jpg");
             background-position: fixed;
             background-attachment: fixed;
             background-size: cover;
             background-repeat: no-repeat;
-        }
+        } */
 
         .wrap-podcast
         {

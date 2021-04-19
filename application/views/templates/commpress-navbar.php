@@ -14,6 +14,7 @@
     
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>history.scrollRestoration = "manual"</script>
     <head>
     <span class="navbar">
         <a href="<?= base_url(); ?>"><img src="<?= base_url('assets/images/compress.png'); ?>" style="width:95px; padding-bottom: 3px; padding-top: 3px;"/></a>

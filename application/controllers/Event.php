@@ -124,8 +124,8 @@ class Event extends CI_Controller
 
     public function Podcast(){
         $this->load->view('templates/commpress-navbar');
-        $this->load->view('lomba_podcast');
-        // $this->load->view('templates/commpress-footer');
+        $this->load->view('pameran_fototunggal');
+        $this->load->view('templates/commpress-footer');
     }
 
     public function Feature(){

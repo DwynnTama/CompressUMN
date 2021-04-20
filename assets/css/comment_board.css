@@ -1,0 +1,39 @@
+.com-board{
+    border: 5px solid black;
+    padding: 2vw;
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 1vw;
+    height: auto;
+    border-radius: 20px;
+}
+
+.board-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.item-text{
+    font-size: 1vw;
+    font-family: "Avenir-Bold";
+    color: black;
+    width: 15vw;
+    display: flex;
+    border: 0.3vw solid black;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+    height: 10vh;
+    background-color: white;
+}
+
+.item-date{
+    font-size: 0.7vw;
+    border-left: 0.3vw solid black;
+    border-right: 0.3vw solid black;
+    border-bottom: 0.3vw solid black;
+    padding: 0.5vw;
+    text-align: center;
+    background-color: white;
+}

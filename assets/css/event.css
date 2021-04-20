@@ -1,0 +1,155 @@
+.com-deck{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.com-item img{
+    width: 10vw;
+    height: auto;
+}
+
+.com-item{
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);;
+    width: 20vw;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
+}
+
+.com-item:hover{
+    opacity: 1;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 2px #fff,0px 0px 5px #333452;  
+}
+
+.com-link{
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.item-title{
+    font-family: "Avenir-bold";
+    font-size: 1.5vw;
+    margin: 10px 0 10px 0;
+}
+
+.container-pameran{
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+
+body{
+    background-image: url("../images/landing-bg.jpg");
+    background-position: fixed;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cage{
+    background-color: #231F20;
+    height: 50px;
+    margin: 45px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.mask{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 50px;
+    position: absolute;
+    color: white;
+}
+.cage:nth-child(even) .kelas{
+    background-color: #A0000F;
+}
+
+.kelas{
+    text-align: center;
+    background-color: #333452;
+    width: 10px;
+    height: 50px;
+    transition: 0.5s;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.cage:hover .kelas{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cage:hover{
+    transform: translateX(20px) !important;
+}
+
+.wrap-podcast
+{
+    padding-top: 50px;
+}
+
+.card-podcast
+{
+    background: #333;
+    display: grid;
+    grid-template-columns: 15.625vw 24.83vw;
+    grid-gap: 1rem;
+    justify-content: center;
+    width: 45vw;
+    padding: 2vw;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.card-podcast .content-podcast
+{
+    background: #000;
+    padding: 10px 10px 10px 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.captions
+{
+    background: #333;
+    width: 45vw;
+    text-align: center;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.text-capt
+{
+    color: white;
+    padding: 10px 30px 40px 30px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.panel-title
+{
+    padding-bottom: 20px;
+    font-size: 1.5vw;
+}

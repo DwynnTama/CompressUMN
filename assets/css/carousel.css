@@ -1,43 +1,63 @@
 /*Carousel large*/
-.compress-carousel{
+.commpress-carousel{
     width: 800px;
-    height: 300px;
+    height: 490px;
     border-radius: 10px;
     overflow: hidden;
 }
 
-.compress-slides{
+.commpress-slides{
     width: 500%;
-    height: 300px;
+    height: 450px;
     display: flex;
 }
 
-.compress-slides input{
+.commpress-slides input{
     display: none;
 }
 
-.compress-slide {
+.commpress-slide {
     width: 20%;
     transition: 2s;
     display: flex;
     align-items: center;
 }
 
-.compress-slide img{
+.commpress-slide img{
     width: 800px;
-    height: auto;
+    height: 533.33px;
 }
 
-.compress-btn-manual{
+.commpress-btn-manual{
     position: absolute;
     width: 800px;
-    margin-top: -40px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
+    z-index: 50;
 }
 
+.caption {
+    font-family: "Avenir-medium";
+    position: absolute;
+    width: 800px;
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 20px;
+    position: absolute;
+    bottom: 8px;
+    width: 70%;
+    text-align: center;
+  }
+
 .btn-manual{
-    border: 2px solid brown;
+    border: 2px solid #f3eb9b;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -49,7 +69,7 @@
 }
 
 .btn-manual:hover{
-    background: brown
+    background: #f3eb9b
 }
 
 #btn1:checked ~ .first{
@@ -64,64 +84,109 @@
     margin-left: -40%; 
 }
 
-.compress-btn-auto {
+#btn4:checked ~ .first{
+    margin-left: -60%; 
+}
+
+#btn5:checked ~ .first{
+    margin-left: -80%; 
+}
+
+#btn6:checked ~ .first{
+    margin-left: -100%; 
+}
+
+.commpress-btn-auto {
     position: absolute;
     display: flex;
     width: 800px;
     justify-content: center;
-    margin-top: 260px;
+    margin-top: 500px;
 }
 
-.compress-btn-auto div{
-    border: 2px solid brown;
+.commpress-btn-auto div{
+    border: 2px solid #f3eb9b;
     padding: 5px;
     border-radius: 10px;
     transition: 1s;
 }
 
-.compress-btn-auto div:not(:last-child){
+.commpress-btn-auto div:not(:last-child){
     margin-right: 40px;
 }
 
 #btn1:checked ~ .navigation-auto .btn-auto1{
-    background: brown;
+    background: #f3eb9b;
 }
 
 #btn2:checked ~ .navigation-auto .btn-auto2{
-    background: brown;
+    background: #f3eb9b;
 }
 
 #btn3:checked ~ .navigation-auto .btn-auto3{
-    background: brown;
+    background: #f3eb9b;
 }
 
+#btn4:checked ~ .navigation-auto .btn-auto4{
+    background: #f3eb9b;
+}
+
+#btn5:checked ~ .navigation-auto .btn-auto5{
+    background: #f3eb9b;
+}
+
+#btn6:checked ~ .navigation-auto .btn-auto6{
+    background: #f3eb9b;
+}
+
+
 @media(max-width: 768px){
-    .compress-slide, .compress-carousel{
+    .commpress-slide, .commpress-carousel{
         max-width: 100%;
     }
 
-    .compress-slide, .compress-carousel, .compress-slides{
+    .commpress-slide, .commpress-carousel, .commpress-slides{
         height: 180px;
     }
 
-    .compress-carousel{
+    .commpress-carousel{
         border-radius: 0px;
     }
 
-    .compress-slide img{
+    .commpress-slide img{
         height: auto;
-        max-width: 100%;
+        width: 100vw;
     }
 
-    .compress-btn-auto{
+    .commpress-btn-auto{
         display: none;
+        z-index: 5;
     }
 
-    .compress-btn-manual{
-        margin-top: -35px;
+    .commpress-btn-manual{
+        margin-top: 3.5vh;
         left: 0;
         width: 100%;
+        z-index: 5;
     }
+    
+    .caption{
+        max-width: 100%;
+        margin-top: 1em;
+        font-size: 20px;
+    }
+
+    .text{
+        font-size: 10px;
+        letter-spacing: 1px;
+        width: 90%;
+        margin-bottom: 2em;
+    }
+
+    .first{
+        width: 100vw;
+    }
+    
 }
 
 /*Carousel small*/
@@ -155,15 +220,6 @@
 
 .prev:hover, .next:hover {
   background-color: rgba(165,42,42,0.8);
-}
-
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
 }
 
 .dot {

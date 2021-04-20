@@ -1,31 +1,49 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Oprec extends CI_Controller {
+class Oprec extends CI_Controller
+{
 
-        /*
-        //Model Query Database
+        //Parent Construct untuk model info_pendaftaran dalam controller Oprec.php
         public function __construct()
         {
-                parent:: __construct();
+                parent::__construct();
                 $this->load->model('info_pendaftaran');
+                $this->load->library('form_validation');
         }
-        */
 
-	public function index()
-	{
-        $this->load->view('templates/compress-navbar');
-        $this->load->view('oprec');
-        $this->load->view('templates/compress-footer');
-        }
-        
-        /*
-        public function search_result()
+        public function index()
         {
-                $hasil_search = $this->input->post('search');
-
-                //belum di test
-                $user   = $this->db->get_where('user', ['Nama' => $hasil_search || 'NIM' => $hasil_search])->row_array();
+                $this->load->view('templates/commpress-navbar');
+                $this->load->view('oprec');
+                $this->load->view('templates/commpress-footer');
         }
-        */
+
+        //Penambahan Function Result() dalam controller Oprec.php
+        public function Result()
+        {
+                $this->form_validation->set_rules('nama', 'Nama', 'required', [
+                        'required' => "NIM yang dicari tidak boleh kosong !"
+                ]);
+
+                if ($this->form_validation->run() == false) {
+                        $this->load->view('templates/commpress-navbar');
+                        $this->load->view('oprec');
+                        $this->load->view('templates/commpress-footer');
+                } else {
+                        $hasil_search = $this->input->post('nama', true);
+
+                        //Error Handling
+                        if (($data['mhs'] = $this->info_pendaftaran->get_user($hasil_search)) == false) {
+                                $data['alert'] = "NIM yang dicari tidak ditemukan !";
+                                $this->load->view('templates/commpress-navbar');
+                                $this->load->view('oprec', $data);
+                                $this->load->view('templates/commpress-footer');
+                        } else {
+                                $this->load->view('templates/commpress-navbar');
+                                $this->load->view('result', $data);
+                                $this->load->view('templates/commpress-footer');
+                        }
+                }
+        }
 }

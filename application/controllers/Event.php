@@ -8,6 +8,7 @@ class Event extends CI_Controller
     {
         parent::__construct();
         $this->load->library('form_validation');
+        $this->load->model('tampil_podcast');
     }
 
     public function index()
@@ -46,7 +47,7 @@ class Event extends CI_Controller
                 'date'        => date("Y-m-d", time())
             ];
             $this->db->insert('list_pameran', $data);
-            header('Location: ' . base_url() . 'Event');
+            header('Location: ' . base_u rl() . 'Event');
         }
     }
 
@@ -79,7 +80,7 @@ class Event extends CI_Controller
                 'date'        => date("Y-m-d", time())
             ];
             $this->db->insert('list_pameran', $data);
-            header('Location: ' . base_url() . 'Event');
+            header('Location: ' . base_u rl() . 'Event');
         }
     }
 
@@ -118,29 +119,34 @@ class Event extends CI_Controller
                 'date'    => date("Y-m-d", time())
             ];
             $this->db->insert('list_pameran', $data);
-            header('Location: ' . base_url() . 'Event');
+            header('Location: ' . base_u rl() . 'Event');
         }
     }*/
 
-    public function Podcast(){
+    public function Podcast()
+    {
+        $data['tampilkan'] = $this->tampil_podcast->get_podcast();
         $this->load->view('templates/commpress-navbar');
-        $this->load->view('lomba_podcast');
+        $this->load->view('lomba_podcast', $data);
         $this->load->view('templates/commpress-footer');
     }
 
-    public function Feature(){
+    public function Feature()
+    {
         $this->load->view('templates/commpress-navbar');
         $this->load->view('lomba_feature');
         $this->load->view('templates/commpress-footer');
     }
 
-    public function Pafotu(){
+    public function Pafotu()
+    {
         $this->load->view('templates/commpress-navbar');
         $this->load->view('pameran_fototunggal');
         $this->load->view('templates/commpress-footer');
     }
 
-    public function Pafosto(){
+    public function Pafosto()
+    {
         $this->load->view('templates/commpress-navbar');
         $this->load->view('pameran_fotostory');
         $this->load->view('templates/commpress-footer');

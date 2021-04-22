@@ -15,8 +15,9 @@
                     ESCALATE OPTIMISM THROUGH JOURNALISM
                 </span>
                 <div class="kontener">
-                    <button class="btn-event"><a href="<?= base_url('Event'); ?>" id="event">PAMERAN</a></button>
-                    <button class="btn-about"><a href="<?= base_url('Aboutus'); ?>" id="lomba">LOMBA</a></button>
+                    <button class="btn-event"><a href="<?= base_url('Lomba'); ?>" id="event">LOMBA</a></button>
+                    <button class="btn-event"><a href="<?= base_url('Event/Pafotu'); ?>" id="pameran">PAMERAN</a></button>
+                    <button class="btn-about"><a href="<?= base_url('Aboutus'); ?>" id="lomba">ABOUT US</a></button>
                 </div>
                 <span class="instruction-title" style="margin-top: 12.51vh;">
                     CHECK US OUT
@@ -26,11 +27,12 @@
         </div>
     </section>
     <section class="vertical-scrolling">
-        <div class="konten-punten" style="transform: translateY(-100px);">
-            <div class="commpress-section" >
+        <div class="horizontal-scrolling">
+            <!-- <div class="commpress-section" >
                 <h2>EVENTS</h2>
-            </div>
-            <div class="commpress-carousel">
+            </div> -->
+            <img src="<?= base_url("assets/images/pic5.jpg") ?>"width="100%" height="auto" alt="Image 1">
+            <!-- <div class="commpress-carousel">
                 <div class="commpress-slides">
                     <input type="radio" name ="radio-btn" id="btn1" onclick="fadeInbtn1()">
                     <input type="radio" name ="radio-btn" id="btn2" onclick="fadeInbtn2()">
@@ -88,7 +90,13 @@
                     <p class="text" id ="text5">Penampilan dari Club Dangdut Racun (CDR) melengkapi Young Journalist Award (YJA) COMMPRESS 2020</p>
                     <p class="text" id ="text6">Foto bersama panitia COMMPRESS 2020</p>
                 </div>
-            </div>
+            </div> -->
+        </div>
+        <div class="horizontal-scrolling">
+        <img src="<?= base_url("assets/images/pic6.jpg") ?>"width="100%" height="auto" style="object-fit: cover;" alt="Image 1">
+        </div>
+        <div class="horizontal-scrolling">
+        <img src="<?= base_url("assets/images/pic6.jpg") ?>"width="100%" height="auto" style="object-fit: cover;" alt="Image 1">
         </div>
     </section>
     <section class="vertical-scrolling">
@@ -126,7 +134,7 @@
 
 .vertical-scrolling
 {
-    max-height: 100vh;
+    height: inherit; /* forbidden jutsu stop right here*/
 }
 
 
@@ -176,6 +184,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-top: -5%;
 }
 
 section { 
@@ -256,54 +265,69 @@ h2 {
   </style>
 
 <script type="text/javascript">
-  // variables
-var $header_top = $(".header-top");
-var $nav = $("nav");
+// variables
+var $header_top = $('.header-top');
+var $nav = $('nav');
 
-// toggle menu
-$header_top.find("a").on("click", function () {
-  $(this).parent().toggleClass("open-menu");
+
+
+// toggle menu 
+$header_top.find('a').on('click', function() {
+  $(this).parent().toggleClass('open-menu');
 });
 
+
+
 // fullpage customization
-$("#fullpage").fullpage({
-  sectionsColor: ["#F4E89E", "#333452", "#F4E89E"],
-  sectionSelector: ".vertical-scrolling",
-  slideSelector: ".horizontal-scrolling",
+$('#fullpage').fullpage({
+  sectionsColor: ['#F4E89E', '#333452', '#F4E89E'],
+  sectionSelector: '.vertical-scrolling',
+  slideSelector: '.horizontal-scrolling',
   navigation: true,
   slidesNavigation: true,
   controlArrows: false,
-  anchors: [
-    "firstSection",
-    "secondSection",
-    "thirdSection"
-  ],
-  menu: "#menu",
+  anchors: ['firstSection', 'secondSection', 'thirdSection'],
+  menu: '#menu',
 
+  afterLoad: function(anchorLink, index) {
+    $header_top.css('background', 'rgba(0, 47, 77, .3)');
+    $nav.css('background', 'rgba(0, 47, 77, .25)');
+    if (index == 5) {
+        $('#fp-nav').hide();
+      }
+  },
 
-  afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
-    if (anchorLink == "fifthSection" && slideIndex == 1) {
-      $.fn.fullpage.setAllowScrolling(false, "up");
-      $header_top.css("background", "transparent");
-      $nav.css("background", "transparent");
-      $(this).css("background", "#374140");
-      $(this).find("h2").css("color", "white");
-      $(this).find("h3").css("color", "white");
-      $(this).find("p").css({
-        color: "#DC3522",
-        opacity: 1,
-        transform: "translateY(0)"
-      });
+  onLeave: function(index, nextIndex, direction) {
+    if(index == 5) {
+      $('#fp-nav').show();
     }
   },
 
-  onSlideLeave: function (anchorLink, index, slideIndex, direction) {
-    if (anchorLink == "fifthSection" && slideIndex == 1) {
-      $.fn.fullpage.setAllowScrolling(true, "up");
-      $header_top.css("background", "rgba(0, 47, 77, .3)");
-      $nav.css("background", "rgba(0, 47, 77, .25)");
+  afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex) {
+    if(anchorLink == 'fifthSection' && slideIndex == 1) {
+      $.fn.fullpage.setAllowScrolling(false, 'up');
+      $header_top.css('background', 'transparent');
+      $nav.css('background', 'transparent');
+      $(this).css('background', '#374140');
+      $(this).find('h2').css('color', 'white');
+      $(this).find('h3').css('color', 'white');
+      $(this).find('p').css(
+        {
+          'color': '#DC3522',
+          'opacity': 1,
+          'transform': 'translateY(0)'
+        }
+      );
     }
-  }
-});
+  },
+
+  onSlideLeave: function( anchorLink, index, slideIndex, direction) {
+    if(anchorLink == 'fifthSection' && slideIndex == 1) {
+      $.fn.fullpage.setAllowScrolling(true, 'up');
+      $header_top.css('background', 'rgba(0, 47, 77, .3)');
+      $nav.css('background', 'rgba(0, 47, 77, .25)');
+    }
+  } 
+}); 
 
   </script>

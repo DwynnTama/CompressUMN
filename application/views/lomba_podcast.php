@@ -22,6 +22,7 @@
                         <?php echo '<source src="' . base_url('assets/audio/' . $castmp3) . '">'; ?>
                     </audio>
                     <br>
+                    <br>
                     <?php
                     echo '<h5>CREATED BY : </h5>';
                     echo '<h5>' . $anggota1 . '</h5>';
@@ -32,11 +33,11 @@
             </div>
             <div class="panel-group captions" id="accordion1">
                 <div class="panel panel-default">
-                    <div class="panel-heading">
+                    <!-- <div class="panel-heading">
                         <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion1" href="#collapse2">CAPTIONS</a>
+                            CAPTIONS
                         </h4>
-                    </div>
+                    </div> -->
                     <div id="collapse2" class="panel-collapse collapse in">
                         <?php
                         echo '<div class="panel-body text-capt">' . $caption . '</div>';

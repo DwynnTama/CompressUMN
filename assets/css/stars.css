@@ -29,8 +29,8 @@
     margin: 30px;
     width: 9.1vw;
     height: auto;
-    border: 3px dashed #333452;
-    background-color: transparent;
+    border: 3px solid #ed2326;
+    background-color: #ed2326;
     border-radius: 6px;
     box-shadow: inset 0 0 0 0 #333452;
     transition: ease-out 0.4s;
@@ -39,8 +39,8 @@
 
 .kontener button:hover
 {
-    box-shadow: inset 175px 0 0 0 #333452;
-    border: 3px solid #333452;
+    box-shadow: inset 9.1vw 0 0 0 #333452;
+    border: 2px solid #333452;
 }
 
 .kontener button:hover #event
@@ -56,8 +56,8 @@
 #title a
 {
     text-decoration: none;
-    font-size: 1.25vw;
-    color: #ed2326;
+    font-size: 1.20vw;
+    color: #fff;
     padding: 15px;
     max-width: auto;
     display: inline-block;
@@ -148,7 +148,7 @@
   font-family: "Avenir-bold";
   font-size: 20px;
   color: #ed2326;
-  text-shadow: 1px 1px 3px #ed2326, 0 0 0.1em  red;
+  text-shadow: 1px 1px 3px #ed2326, 0 0 0.1px  red;
 }
 
 @keyframes animStar {
@@ -156,6 +156,6 @@
     transform: translateY(0px);
   }
   to {
-    transform: translateY(-3500px);
+    transform: translateY(-2500px);
   }
 }

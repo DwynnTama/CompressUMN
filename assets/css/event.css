@@ -6,7 +6,7 @@
 }
 
 .com-item img{
-    width: 10vw;
+    width: 15vw;
     height: auto;
 }
 
@@ -108,7 +108,7 @@ body{
 
 .card-podcast
 {
-    background: #333;
+    background: #333452;
     display: grid;
     grid-template-columns: 15.625vw 24.83vw;
     grid-gap: 1rem;
@@ -121,8 +121,8 @@ body{
 
 .card-podcast .content-podcast
 {
-    background: #000;
-    padding: 10px 10px 10px 10px;
+    background: transparent;
+    padding: 3.5vh 10px 10px 10px;
     width: 100%;
     height: auto;
     display: flex;
@@ -131,9 +131,22 @@ body{
     color: white;
 }
 
+.content-podcast h3
+{
+    font-size: 1.56vw;
+    text-align: justify;
+}
+
+.content-podcast h5
+{
+    font-size: 1vw;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
 .captions
 {
-    background: #333;
+    background: #333452;
     width: 45vw;
     text-align: center;
     border-bottom-right-radius: 30px;
@@ -152,4 +165,5 @@ body{
 {
     padding-bottom: 20px;
     font-size: 1.5vw;
+    color: white;
 }

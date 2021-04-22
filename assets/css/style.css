@@ -247,12 +247,6 @@ body{
     color: #645f40;
 }
 
-.commpress-section h2
-{
-    font-family: "Avenir";
-    color: #f4e89e;
-}
-
 .commpress-section b{
     width: 300px;
     padding: 1px;
@@ -295,8 +289,8 @@ body{
 
 .commpress-vid{
     background-color: #333452;
-    width: 682px;
-    height: 388px;
+    width: 35.52vw;
+    height: 40vh;
     border-radius: 10px;
     box-shadow: 0px 0px 2px #fff,0px 0px 5px #333452;  
 }

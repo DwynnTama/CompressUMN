@@ -1,10 +1,12 @@
 <title>Foto Tunggal</title>
+<script>history.scrollRestoration = "manual"</script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <link rel="stylesheet" href="<?= base_url("assets/css/fotu.css");?>">
     <div id="stars"></div>
     <div id="stars2"></div>
     <div id="stars3"></div>
 <div class="container-pameran">
+    <h1>PAMERAN FOTO TUNGGAL</h1>
     <div id="container">
         <div id="slider-container">
             <span onclick="slideRight()" class="btn"></span>

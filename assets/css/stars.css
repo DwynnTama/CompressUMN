@@ -52,6 +52,11 @@
     color: #f4e89e;
 }
 
+.kontener button:hover #pameran
+{
+    color: #f4e89e;
+}
+
 #title a
 {
     text-decoration: none;

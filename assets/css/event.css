@@ -50,6 +50,16 @@
     justify-content: center;
     align-items: center;
     height: auto;
+    background: #f4e89e;
+}
+
+.container-pameran h1
+{
+    font-size: 5vh;
+    padding-top: 18vh;
+    font-family: "Avenir-bold";
+    color: #333452;
+    text-align: center;
 }
 
 

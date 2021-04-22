@@ -1,4 +1,3 @@
-<script>history.scrollRestoration = "manual"</script>
 <script src="<?= base_url('assets/js/slide.js')?>"></script>
 <div id="fullpage" >
     <section class="vertical-scrolling">
@@ -6,7 +5,7 @@
             <div id='stars'></div>
             <div id='stars2'></div>
             <div id='stars3'></div>
-            <div id='title'style="transform: translateY(-100px);">
+            <div id='title' style="transform: translateY(-100px);">
                 <span class="big-title">
                     COMMPRESS 2021
                 </span>
@@ -19,9 +18,9 @@
                     <button class="btn-event"><a href="<?= base_url('Event/Pafotu'); ?>" id="pameran">PAMERAN</a></button>
                     <button class="btn-about"><a href="<?= base_url('Aboutus'); ?>" id="lomba">ABOUT US</a></button>
                 </div>
-                <span class="instruction-title" style="margin-top: 12.51vh;">
+                <span class="instruction-title" style="margin-top: 30vh;">
                     CHECK US OUT
-                    <img src="<?= base_url("assets/images/below.png") ?>" />
+                    <img src="<?= base_url("assets/images/scroll-below.png") ?>" />
                 </span>
             </div>
         </div>
@@ -121,6 +120,11 @@
   {
       display: none;
   }
+
+  nav{
+      display:none;
+  }
+
 
 .scroll-icon {
     position: absolute;

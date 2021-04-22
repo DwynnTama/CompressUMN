@@ -40,7 +40,6 @@
 .kontener button:hover
 {
     box-shadow: inset 9.1vw 0 0 0 #333452;
-    border: 2px solid #333452;
 }
 
 .kontener button:hover #event

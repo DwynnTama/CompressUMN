@@ -18,6 +18,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <head>
+    <script>history.scrollRestoration = "manual"</script>
     <span class="navbar">
         <a href="<?= base_url(); ?>"><img src="<?= base_url('assets/images/compress.png'); ?>" style="width:95px; padding-bottom: 3px; padding-top: 3px;"/></a>
         <div class="sub-bar">

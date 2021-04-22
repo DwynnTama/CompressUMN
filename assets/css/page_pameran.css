@@ -118,3 +118,36 @@
 {
     background: #e21212;
 }
+
+.title-bold{
+    font-family: "Avenir-bold";
+}
+
+.card-template{
+    background-color: rgba(51, 52, 82);
+    box-shadow: 10px 20px 40px rgba(0,0,0,0.55);
+}
+
+.left-feature, .right-writting{
+    text-align: center;
+    color: #f3eb9b;
+    font-size: 10vw;
+    font-weight: 900;
+    text-shadow: 0 0 0.1em #face21;
+}
+
+.curtain-template{
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#curt-left{
+    background: radial-gradient(ellipse at right, #333452, #2f3152, #23243d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+}
+
+#curt-right{
+    background: radial-gradient(ellipse at left, #333452, #2f3152, #23243d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+}

@@ -6,7 +6,7 @@
     <div class="cardlah">
         <div style="width: 500px;" class="cage"  data-aos="zoom-in">
             <div class="kelas">
-                <div class="mask"><h3>Pandemi dan Kemanusiaan</h3></div>
+                <a href="<?= base_url('Event/feature_detail') ?>"><div class="mask"><h3>Pandemi dan Kemanusiaan</h3></div></a>
             </div>
         </div>
         <div style="width: 500px;" class="cage" data-aos="zoom-in">

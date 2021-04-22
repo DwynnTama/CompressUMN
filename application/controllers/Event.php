@@ -138,6 +138,12 @@ class Event extends CI_Controller
         $this->load->view('templates/commpress-footer');
     }
 
+    public function feature_detail(){
+        $this->load->view('templates/commpress-navbar');
+        $this->load->view('feature_detail');
+        $this->load->view('templates/commpress-footer');
+    }
+
     public function Pafotu()
     {
         $this->load->view('templates/commpress-navbar');

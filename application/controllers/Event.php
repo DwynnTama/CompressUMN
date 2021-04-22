@@ -9,6 +9,7 @@ class Event extends CI_Controller
         parent::__construct();
         $this->load->library('form_validation');
         $this->load->model('tampil_podcast');
+        $this->load->model('model_feature');
     }
 
     public function index()
@@ -133,14 +134,21 @@ class Event extends CI_Controller
 
     public function Feature()
     {
+        $data['feature_writing'] = $this->model_feature->get_feature_list();
         $this->load->view('templates/commpress-navbar');
-        $this->load->view('lomba_feature');
+        $this->load->view('lomba_feature', $data);
         $this->load->view('templates/commpress-footer');
+        
+        //$feature_search = $this->input->post('feature_s');
+        //if($feature_search)
     }
 
-    public function feature_detail(){
+    public function feature_detail()
+    {
+        $id = $this->input->get('ID_writing');
+        $data['feature'] = $this->model_feature->get_feature($id);
         $this->load->view('templates/commpress-navbar');
-        $this->load->view('feature_detail');
+        $this->load->view('feature_detail', $data);
         $this->load->view('templates/commpress-footer');
     }
 

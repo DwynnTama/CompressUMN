@@ -149,7 +149,6 @@ class Event extends CI_Controller
         $data['feature'] = $this->model_feature->get_feature($id);
         $this->load->view('templates/commpress-navbar');
         $this->load->view('feature_detail', $data);
-        $this->load->view('templates/commpress-footer');
     }
 
     public function Pafotu()

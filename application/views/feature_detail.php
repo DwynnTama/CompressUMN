@@ -1,4 +1,4 @@
-<div class="container-pameran" style="height:100%;flex-direction:row;justify-content: space-between;">
+<div class="container-pameran" style="height:100%;flex-direction:row;justify-content: center;align-items: flex-start;">
     <div class="curtain-template" id="curt-left">
         <h2 class="left-feature">FEAT<br/>-URE</h2>
     </div>
@@ -8,20 +8,18 @@
             $caption = $row['isi_writing'];
             $pengarang = $row['nama_peserta'];
     ?>
-    <div class="card-template" style="width: 800px;height:auto;text-align:center;margin: 0 50px 0 50px;display:flex;flex-direction:column">
+    <div class="card-template" style="width: 40vw;height:auto;text-align:center;margin: 90px 50px 0 50px;display:flex;flex-direction:column">
         <span>
             <?php 
-                echo '<h3 class="title-bold" style="margin:20px;color: #f3eb9b">'.$judul.'</h3>';
+                echo '<h3 class="title-bold" style="margin:20px 20px 5px 20px;color: #f3eb9b">'.$judul.'</h3>';?>
+                <h5 class="author" style="color: #f3eb9b">by : </h5>
+            <?php
+                echo '<h4 class="author" style="margin:5px 20px 20px 20px;color: #f3eb9b">'.$pengarang.'</h4>';
             ?>
         </span>
         <span>
             <?php 
-                echo ' <p style="padding:10px 50px 10px 50px;text-align:justify;color: #f3eb9b">'.$caption.'</p>';
-            ?>
-        </span>
-        <span>
-            <?php 
-                echo $pengarang;
+                echo ' <p style="padding:0.52vw 2.6vw 0.52vw 2.6vw;text-align:justify;color: #f3eb9b;line-height:1.6">'.$caption.'</p>';
             ?>
         </span>
         <div>
@@ -35,4 +33,3 @@
         <h2 class="right-writting">WRI-<br/>TING</h2>
     </div>
 </div>
-<hr/>

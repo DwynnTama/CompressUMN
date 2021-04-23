@@ -123,6 +123,9 @@
     font-family: "Avenir-bold";
 }
 
+.author{
+    font-family: "Avenir";
+}
 .card-template{
     background-color: rgba(51, 52, 82);
     box-shadow: 10px 20px 40px rgba(0,0,0,0.55);
@@ -142,12 +145,15 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
+    position: fixed;
 }
 
 #curt-left{
+    left: 0;
     background: radial-gradient(ellipse at right, #333452, #2f3152, #23243d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
 }
 
 #curt-right{
+    right:0;
     background: radial-gradient(ellipse at left, #333452, #2f3152, #23243d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
 }

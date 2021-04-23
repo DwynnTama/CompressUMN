@@ -124,44 +124,5 @@ class Event extends CI_Controller
         }
     }*/
 
-    public function Podcast()
-    {
-        $data['tampilkan'] = $this->tampil_podcast->get_podcast();
-        $this->load->view('templates/commpress-navbar');
-        $this->load->view('lomba_podcast', $data);
-        $this->load->view('templates/commpress-footer');
-    }
-
-    public function Feature()
-    {
-        $data['feature_writing'] = $this->model_feature->get_feature_list();
-        $this->load->view('templates/commpress-navbar');
-        $this->load->view('lomba_feature', $data);
-        $this->load->view('templates/commpress-footer');
-        
-        //$feature_search = $this->input->post('feature_s');
-        //if($feature_search)
-    }
-
-    public function feature_detail()
-    {
-        $id = $this->input->get('ID_writing');
-        $data['feature'] = $this->model_feature->get_feature($id);
-        $this->load->view('templates/commpress-navbar');
-        $this->load->view('feature_detail', $data);
-    }
-
-    public function Pafotu()
-    {
-        $this->load->view('templates/commpress-navbar');
-        $this->load->view('pameran_fototunggal');
-        $this->load->view('templates/commpress-footer');
-    }
-
-    public function Pafosto()
-    {
-        $this->load->view('templates/commpress-navbar');
-        $this->load->view('pameran_fotostory');
-        $this->load->view('templates/commpress-footer');
-    }
+    
 }

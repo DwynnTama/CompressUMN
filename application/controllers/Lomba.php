@@ -7,15 +7,18 @@ class Lomba extends CI_Controller
     {
         parent::__construct();
         $this->load->library('form_validation');
+        $this->load->model('tampil_podcast');
+        $this->load->model('model_feature');
     }
 
     public function index()
     {
         $this->load->view('templates/commpress-navbar');
-        $this->load->view('umn_juice');
+        $this->load->view('select_lomba');
         $this->load->view('templates/commpress-footer');
     }
 
+    /*
     public function registration_feature()
     {
         $this->form_validation->set_rules('nama', 'Nama', 'required|trim', [
@@ -166,33 +169,33 @@ class Lomba extends CI_Controller
             $this->db->insert('list_lomba_podcast', $data);
             header('Location: ' . base_url() . 'Lomba');
         }
-    }
+    }*/
 
-    public function podcast()
+    
+    public function Podcast()
     {
+        $data['tampilkan'] = $this->tampil_podcast->get_podcast();
         $this->load->view('templates/commpress-navbar');
-        $this->load->view('podcast');
+        $this->load->view('lomba_podcast', $data);
         $this->load->view('templates/commpress-footer');
     }
 
-    public function podcast_2()
+    public function Feature()
     {
+        $data['feature_writing'] = $this->model_feature->get_feature_list();
         $this->load->view('templates/commpress-navbar');
-        $this->load->view('podcast_2');
+        $this->load->view('lomba_feature', $data);
         $this->load->view('templates/commpress-footer');
+        
+        //$feature_search = $this->input->post('feature_s');
+        //if($feature_search)
     }
 
-    public function podcast_3()
+    public function feature_detail()
     {
+        $id = $this->input->get('ID_writing');
+        $data['feature'] = $this->model_feature->get_feature($id);
         $this->load->view('templates/commpress-navbar');
-        $this->load->view('podcast_3');
-        $this->load->view('templates/commpress-footer');
-    }
-
-    public function feature()
-    {
-        $this->load->view('templates/commpress-navbar');
-        $this->load->view('feature');
-        $this->load->view('templates/commpress-footer');
+        $this->load->view('feature_detail', $data);
     }
 }

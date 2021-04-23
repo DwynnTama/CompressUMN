@@ -881,7 +881,7 @@ bersarang di tangan dan alas kaki tidak masuk ke area hidroponik. Ini bertujuan 
 
     .frame span{
         width: 100%;
-        height: 70px;
+        height: 3.9vw;
         border: 1px solid #ED2326;
         background-color: #ED2326;
     }

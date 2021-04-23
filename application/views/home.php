@@ -15,7 +15,7 @@
                 </span>
                 <div class="kontener">
                     <button class="btn-event"><a href="<?= base_url('Lomba'); ?>" id="event">LOMBA</a></button>
-                    <button class="btn-event"><a href="<?= base_url('Event/Pafotu'); ?>" id="pameran">PAMERAN</a></button>
+                    <button class="btn-event"><a href="<?= base_url('Pameran'); ?>" id="pameran">PAMERAN</a></button>
                     <button class="btn-about"><a href="<?= base_url('Aboutus'); ?>" id="lomba">ABOUT US</a></button>
                 </div>
                 <span class="instruction-title" style="margin-top: 30vh;">
@@ -153,10 +153,22 @@ h2 {
 
 #fp-nav ul li a span, 
 .fp-slidesNav ul li a span {
-    background: white;
+    background: #333452;
     width: 8px;
     height: 8px;
     margin: -4px 0 0 -4px;
+}
+
+.fp-slidesNav .active{
+  background: transparent;
+}
+
+#fp-nav .active{
+  background: transparent;
+}
+
+#fp-nav a span{
+  background: #333452 !important;
 }
 
 #fp-nav ul li a.active span, 
@@ -166,9 +178,8 @@ h2 {
     width: 16px;
     height: 16px;
     margin: -8px 0 0 -8px;
-    background: transparent;
+    background: #f4eb9b;
     box-sizing: border-box;
-    border: 1px solid #24221F;
 }
 
 

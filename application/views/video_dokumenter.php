@@ -271,10 +271,14 @@ h2 {
     width: 16px;
     height: 16px;
     margin: -8px 0 0 -8px;
-    background: transparent;
+    background: #333452;
     box-sizing: border-box;
-    border: 1px solid #ed2326;
 }
+
+.fp-slidesNav .active{
+  background: transparent;
+}
+
 
 @keyframes float-left{
     0% {left: 10px;}

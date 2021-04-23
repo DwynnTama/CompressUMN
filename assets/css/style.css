@@ -247,6 +247,10 @@ body{
     color: #645f40;
 }
 
+.commpress-section h2{
+    font-size: 3.33vw;
+}
+
 .commpress-section b{
     width: 300px;
     padding: 1px;
@@ -289,8 +293,8 @@ body{
 
 .commpress-vid{
     background-color: #333452;
-    width: 35.52vw;
-    height: 40vh;
+    width: 43.5vw;
+    height: 52.28vh;
     border-radius: 10px;
     box-shadow: 0px 0px 2px #fff,0px 0px 5px #333452;  
 }

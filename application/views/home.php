@@ -51,7 +51,7 @@
             <div>
                 <h2 style="color: #333452;">DOCUMENTATION</h2>
             </div>
-            <video class="commpress-vid" style="margin: 0px 30px 0px 30px;" controls>
+            <video class="commpress-vid" style="margin: 0px 30px 0px 30px; object-fit: scale-down;" controls>
                 <source src="<?= base_url("assets/video/check_us_out.mp4")?>"/>
             </video>
             <div>
@@ -124,8 +124,6 @@
     -webkit-transition-delay: 1s;
             transition-delay: 1s;
 }
-
-
 
 
 .konten-punten

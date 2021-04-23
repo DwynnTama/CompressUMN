@@ -155,7 +155,7 @@
         width: 100%;
         font-family: "Anastik";
         letter-spacing: 2px;
-        font-size: 60px;
+        font-size: 3.33vw;
         color: white;
         background-color: #ED2326;
     }

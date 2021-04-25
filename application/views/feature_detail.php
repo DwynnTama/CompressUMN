@@ -7,6 +7,7 @@
             $judul = $row['judul_writing'];
             $caption = $row['isi_writing'];
             $pengarang = $row['nama_peserta'];
+            $foto = $row['img_available'];
     ?>
     <div class="card-template" style="width: 40vw;height:auto;text-align:center;margin: 90px 50px 0 50px;display:flex;flex-direction:column">
         <span>
@@ -15,6 +16,14 @@
                 <h5 class="author" style="color: #f3eb9b">by : </h5>
             <?php
                 echo '<h4 class="author" style="margin:5px 20px 20px 20px;color: #f3eb9b">'.$pengarang.'</h4>';
+            ?>
+        </span>
+        <span>
+            <?php 
+                if(!is_null($foto)){?>
+                    <img src="<?= base_url('assets/images/fw/'.$foto."") ?>"/>   
+            <?php
+                }
             ?>
         </span>
         <span>

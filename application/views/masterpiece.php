@@ -4,6 +4,7 @@
         <div id="stars2"></div>
         <div id="stars3"></div>
         <div class="horizontal-scrolling">
+            <img src="<?= base_url("assets/images/MPC.png")?>" class="img-juice-small" alt="">
             <h1>MASTERPIECE</h1>
         </div>
     </section>
@@ -15,9 +16,23 @@
             <iframe src="https://drive.google.com/file/d/116phugmfUprdA67CzsnwdHAejVcOPIts/preview" class="pdf-view"></iframe>
         </div>
         <div class="horizontal-scrolling">
-            <audio controls="controls">
-                <source src="https://docs.google.com/uc?export=download&id=1nfp0oJeuiotg0P3XTAYreReN3uLyKoWQ">
-            </audio>
+            <iframe src="https://drive.google.com/file/d/1FwiJ4x90RGqfzNDNlKkxQ1dT76xCUGJt/preview" class="pdf-view"></iframe>
+        </div>
+        <div class="horizontal-scrolling">
+              <div class="konten-punten">
+                <h2 style="font-size: 3.33vw;">MASTERPIECE PODCAST</h2>
+                <audio controls="controls">
+                    <source src="https://docs.google.com/uc?export=download&id=1gVQV_r8PVc5HovhYotR7K7rWQLswOP9V">
+                </audio>
+              </div>
+        </div>
+        <div class="horizontal-scrolling">
+              <div class="konten-punten">
+                <h2 style="font-size: 3.33vw;">MASTERPIECE EPS 2</h2>
+                <audio controls="controls">
+                    <source src="https://docs.google.com/uc?export=download&id=1ExcMDI81Y_IyMLUPJxFOmGu4NbhWPcxG">
+                </audio>
+              </div>
         </div>
     </section>
 </div>
@@ -200,13 +215,35 @@ h2 {
 
 /* SLIDENAV STYLES - fullPage.js 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 #fp-nav ul li a span, 
 .fp-slidesNav ul li a span {
     background: #333452;
     width: 8px;
     height: 8px;
     margin: -4px 0 0 -4px;
+}
+
+.fp-slidesNav .active{
+  background: transparent;
+}
+
+#fp-nav .active{
+  background: transparent;
+}
+
+#fp-nav a span{
+  background: #333452 !important;
+}
+
+#fp-nav ul li a.active span, 
+.fp-slidesNav ul li a.active span, 
+#fp-nav ul li:hover a.active span, 
+.fp-slidesNav ul li:hover a.active span {
+    width: 16px;
+    height: 16px;
+    margin: -8px 0 0 -8px;
+    background: #ed2326;
+    box-sizing: border-box;
 }
 
 .fp-controlArrow.fp-prev
@@ -221,27 +258,6 @@ h2 {
   animation: float-right 1.25s infinite;
 }
 
-#fp-nav ul li a.active span, 
-.fp-slidesNav ul li a.active span, 
-#fp-nav ul li:hover a.active span, 
-.fp-slidesNav ul li:hover a.active span {
-    width: 16px;
-    height: 16px;
-    margin: -8px 0 0 -8px;
-    background: transparent;
-    box-sizing: border-box;
-    border: 1px solid #ed2326;
-}
-
-@keyframes float-left{
-    0% {left: 10px;}
-    100%{left: 0px;}
-}
-
-@keyframes float-right{
-    0% {right: 10px;}
-    100%{right: 0px;}
-}
 
 
 
@@ -301,7 +317,7 @@ $header_top.find('a').on('click', function() {
 
 // fullpage customization
 $('#fullpage').fullpage({
-  sectionsColor: ['#F4E89E', '#333452', '#F4E89E', '#F4E89E', '#F4E89E', '#F4E89E'],
+  sectionsColor: ['#F4E89E', 'transparent', '#F4E89E', '#F4E89E', '#F4E89E', '#F4E89E'],
   sectionSelector: '.vertical-scrolling',
   slideSelector: '.horizontal-scrolling',
   navigation: true,
@@ -311,17 +327,15 @@ $('#fullpage').fullpage({
   menu: '#menu',
 
   afterLoad: function(anchorLink, index) {
-    $header_top.css('background', 'rgba(0, 47, 77, .3)');
-    $nav.css('background', 'rgba(0, 47, 77, .25)');
-    if (index == 6) {
-        $('#fp-nav').hide();
-      }
+      //var timer =  setInterval(function(){ $waktu = 5; console.log($waktu);if($waktu == 5){clearInterval(timer);} }, 5000);
+      /*if ($waktu == 5) {
+          $('#fp-nav').hide();
+      }*/
+      setTimeout(() => { $('#fp-nav').fadeOut(); }, 3000);
+      //$('#fp-nav').fadeOut();
   },
-
   onLeave: function(index, nextIndex, direction) {
-    if(index == 6) {
-      $('#fp-nav').show();
-    }
+      $('#fp-nav').fadeIn();
   },
 
   afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex) {

@@ -1,3 +1,42 @@
+<audio autoplay class="myAudio">
+    <source src="https://docs.google.com/uc?export=download&id=167kSlcxufLymMPLhOhxdcEK8DZRHCT-T" type="audio/mp3">
+</audio>
+
+<audio class="myAudio">
+    <source src="https://docs.google.com/uc?export=download&id=1Tz-gf5PkatATp_LkYzD8WxyVdBpmHdrq" type="audio/mp3">
+</audio>
+
+<audio  class="myAudio">
+    <source src="https://docs.google.com/uc?export=download&id=1lPrsF_eVcHuX2zn286qMJKdiEm65KH4L" type="audio/mp3">
+</audio>
+
+<audio  class="myAudio">
+    <source src="https://docs.google.com/uc?export=download&id=1k3PZvO2LjxEx9jCuYbcUSrFd-1OmJ2YX" type="audio/mp3">
+</audio>
+
+<audio  class="myAudio">
+    <source src="https://docs.google.com/uc?export=download&id=14-huM3J5ms30geoF0g3_t6X6quBvd0no" type="audio/mp3">
+</audio>
+
+<audio  class="myAudio">
+    <source src="https://docs.google.com/uc?export=download&id=1k_dC7zc8YJxhPSEUlj0AQy7vepzeRNq4" type="audio/mp3">
+</audio>
+
+<audio  class="myAudio">
+    <source src="https://docs.google.com/uc?export=download&id=1FYXq4f0vblCKu5UzaveSY2v1PmtNA8Uw" type="audio/mp3">
+</audio>
+
+<audio  class="myAudio">
+    <source src="https://docs.google.com/uc?export=download&id=14_tdqWzYQn7C9fdJ9o8XhuDG57D_jw9b" type="audio/mp3">
+</audio>
+
+<audio  class="myAudio">
+    <source src="https://docs.google.com/uc?export=download&id=1o138bd506l3eF8epyGBM7-LNqpC2dp1k" type="audio/mp3">
+</audio>
+
+<audio  class="myAudio">
+    <source src="https://docs.google.com/uc?export=download&id=1GfPmWplpLwUnCxf5q325DzNnDGtGJlU" type="audio/mp3">
+</audio>
 <div id="fullpage">
     <section class="vertical-scrolling">
         <div class="horizontal-scrolling">
@@ -1002,6 +1041,8 @@ bersarang di tangan dan alas kaki tidak masuk ke area hidroponik. Ini bertujuan 
 
 <script>
     var $waktu = 0;
+    var x = document.getElementsByClassName("myAudio");
+    var ind = 0;
 
     $('#fullpage').fullpage({
         sectionsColor: ['#348899'],
@@ -1017,11 +1058,17 @@ bersarang di tangan dan alas kaki tidak masuk ke area hidroponik. Ini bertujuan 
             /*if ($waktu == 5) {
                 $('#fp-nav').hide();
             }*/
+            if((ind+1) == index)
+            {
+                x[ind].play();
+            }
             setTimeout(() => { $('#fp-nav').fadeOut(); }, 3000);
             //$('#fp-nav').fadeOut();
         },
         onLeave: function(index, nextIndex, direction) {
             $('#fp-nav').fadeIn();
+            x[ind].pause();
+            ind = nextIndex - 1;
         },
     });
     

@@ -178,7 +178,7 @@ h2 {
     width: 16px;
     height: 16px;
     margin: -8px 0 0 -8px;
-    background: #f4eb9b;
+    background: #ed2326;
     box-sizing: border-box;
 }
 

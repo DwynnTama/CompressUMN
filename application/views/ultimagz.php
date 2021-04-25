@@ -233,7 +233,7 @@ h2 {
     width: 16px;
     height: 16px;
     margin: -8px 0 0 -8px;
-    background: transparent;
+    background: #ed2326;
     box-sizing: border-box;
     border: 1px solid #ed2326;
 }

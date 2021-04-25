@@ -1,27 +1,37 @@
-<div id="fullpage" >
+<div id="fullpage">
     <section class="vertical-scrolling">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
         <div class="horizontal-scrolling">
             <h1>ULTIMAGZ</h1>
         </div>
     </section>
     <section class="vertical-scrolling">
         <div class="horizontal-scrolling">
-            <iframe src="https://drive.google.com/file/d/1f4r_4micWY9bM915du_xg4mmb4-OPbxR/preview" class="pdf-view"></iframe>
+            <iframe src="https://drive.google.com/file/d/1S2kvlUm4SAU5lEzSniz_-HII1MLAy57o/preview" class="pdf-view"></iframe>
         </div>
         <div class="horizontal-scrolling">
-            <iframe src="https://drive.google.com/file/d/1qnopiLOD_9IJX7uAqvvUlDLoxXEAjOk2/preview" class="pdf-view"></iframe>
+            <iframe src="https://drive.google.com/file/d/1tvM4Mazgcy4BTOeCJZffmG55uzQtnRtN/preview" class="pdf-view"></iframe>
         </div>
         <div class="horizontal-scrolling">
-            <iframe src="https://drive.google.com/file/d/1iw0znOAwLg1D3jz01idzPPOuV1r23iAw/preview" class="pdf-view"></iframe>
+            <iframe src="https://drive.google.com/file/d/17fB5VuFvwJMQPF_k7Vqj3ZuS2PYWwyeN/preview" class="pdf-view"></iframe>
         </div>
         <div class="horizontal-scrolling">
-            <iframe src="https://drive.google.com/file/d/1TR5YK6BiwSm0k92KSyjDSiVX52XjT4Iy/preview" class="pdf-view"></iframe>
+            <iframe src="https://drive.google.com/file/d/1JATFWOEDH1_pSP1E2UJ9aCbPhJNdoNat/preview" class="pdf-view"></iframe>
+        </div>
+        <div class="horizontal-scrolling">
+            <iframe allowfullscreen="true" class="pdf-view" src="//e.issuu.com/embed.html?d=ultimagz_maret-april_2021&u=ultimagz_magazine"></iframe> 
         </div>
     </section>
 </div>
 <style>
   nav{
       display:none;
+  }
+  body
+  {
+    background: #f4e89e;
   }
 
 .pdf-view
@@ -75,11 +85,12 @@
 .vertical-scrolling
 {
     height: inherit; /* forbidden jutsu stop right here*/
+    background: transparent;
 }
 
 .horizontal-scrolling
 {
-  background: #f4e89e;
+  background: transparent;
 }
 
 .horizontal-scrolling h1
@@ -295,28 +306,26 @@ $header_top.find('a').on('click', function() {
 
 // fullpage customization
 $('#fullpage').fullpage({
-  sectionsColor: ['#F4E89E', '#333452', '#F4E89E', '#F4E89E', '#F4E89E', '#F4E89E'],
+  sectionsColor: ['tranparent', 'transparent', 'transparent', 'transparent ', '#F4E89E', '#F4E89E'],
   sectionSelector: '.vertical-scrolling',
   slideSelector: '.horizontal-scrolling',
   navigation: true,
   slidesNavigation: true,
   controlArrows: true,
-  anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection', 'sixthSection'],
+  anchors: ['title', 'konten1', 'konten2', 'konten3', 'fifthSection', 'sixthSection'],
   menu: '#menu',
 
   afterLoad: function(anchorLink, index) {
-    $header_top.css('background', 'rgba(0, 47, 77, .3)');
-    $nav.css('background', 'rgba(0, 47, 77, .25)');
-    if (index == 6) {
-        $('#fp-nav').hide();
-      }
-  },
-
-  onLeave: function(index, nextIndex, direction) {
-    if(index == 6) {
-      $('#fp-nav').show();
-    }
-  },
+            //var timer =  setInterval(function(){ $waktu = 5; console.log($waktu);if($waktu == 5){clearInterval(timer);} }, 5000);
+            /*if ($waktu == 5) {
+                $('#fp-nav').hide();
+            }*/
+            setTimeout(() => { $('#fp-nav').fadeOut(); }, 3000);
+            //$('#fp-nav').fadeOut();
+        },
+        onLeave: function(index, nextIndex, direction) {
+            $('#fp-nav').fadeIn();
+        },
 
   afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex) {
     if(anchorLink == 'sixthSection' && slideIndex == 1) {

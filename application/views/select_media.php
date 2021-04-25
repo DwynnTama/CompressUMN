@@ -17,11 +17,11 @@
             <h2 class="item-title">UMN <br/>JUICE</h2>
         </div>
         <div class="com-item">
-            <a class="com-link" href="<?= base_url("") ?>"></a>
+            <a class="com-link" href="<?= base_url("Pameran/Ultimagz") ?>"></a>
             <h2 class="item-title">ULTIMAGZ</h2>
         </div>
         <div class="com-item">
-            <a class="com-link" href="<?= base_url("") ?>"></a>
+            <a class="com-link" href="<?= base_url("Pameran/Masterpiece") ?>"></a>
             <h2 class="item-title">MASTERPIECE</h2>
         </div>
     </div>

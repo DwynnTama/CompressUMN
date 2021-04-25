@@ -110,8 +110,8 @@
             </div>
         </div>
         <div class="horizontal-scrolling">
-        <!-- <iframe class="vid_dokum" src="https://www.youtube.com/embed/CQ0KFvTa6OE" title="YouTube video player" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        <iframe class="vid_dokum" src="https://www.youtube.com/embed/CQ0KFvTa6OE" title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div class="credit">
               <h3>Dibuat oleh :</h3>
               <h4>Andrea A. Hosana</h4>

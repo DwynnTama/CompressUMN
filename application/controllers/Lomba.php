@@ -14,7 +14,7 @@ class Lomba extends CI_Controller
     public function index()
     {
         $this->load->view('templates/commpress-navbar');
-        $this->load->view('ultimagz');
+        $this->load->view('select_lomba');
         $this->load->view('templates/commpress-footer');
     }
 

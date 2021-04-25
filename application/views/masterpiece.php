@@ -1,5 +1,8 @@
 <div id="fullpage" >
     <section class="vertical-scrolling">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
         <div class="horizontal-scrolling">
             <h1>MASTERPIECE</h1>
         </div>
@@ -13,7 +16,7 @@
         </div>
         <div class="horizontal-scrolling">
             <audio controls="controls">
-                <source src="https://docs.google.com/uc?export=download&id=1ayOLeaPDb6JRfb8ykFuyVbX9TieulK6W">
+                <source src="https://docs.google.com/uc?export=download&id=1nfp0oJeuiotg0P3XTAYreReN3uLyKoWQ">
             </audio>
         </div>
     </section>
@@ -21,6 +24,10 @@
 <style>
   nav{
       display:none;
+  }
+
+  body{
+    background: #f4e89e;
   }
 
 .pdf-view
@@ -78,7 +85,7 @@
 
 .horizontal-scrolling
 {
-  background: #f4e89e;
+  background: transparent;
 }
 
 .horizontal-scrolling h1

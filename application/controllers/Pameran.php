@@ -37,7 +37,9 @@ class Pameran extends CI_Controller
     }
 
     public function Masterpiece(){
-
+        $this->load->view('templates/commpress-navbar');
+        $this->load->view('masterpiece');
+        $this->load->view('templates/commpress-footer');
     }
 
     public function UMN_JUICE(){
@@ -55,6 +57,12 @@ class Pameran extends CI_Controller
     public function UMN_TV(){
         $this->load->view('templates/commpress-navbar');
         $this->load->view('umn_tv');
+        $this->load->view('templates/commpress-footer');
+    }
+
+    public function Ultimagz(){
+        $this->load->view('templates/commpress-navbar');
+        $this->load->view('ultimagz');
         $this->load->view('templates/commpress-footer');
     }
 }

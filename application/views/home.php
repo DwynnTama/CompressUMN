@@ -60,6 +60,19 @@
         </div>
     </div>
     </section>
+    <section class="vertical-scrolling">
+    <div class="konten-punten">
+        <div class="commpress-section">
+            <div>
+                <h2 style="color: #f4e89e;">SHARE</h2>
+            </div>
+            <div class="powr-comments-box size" id="39e12fb6_1619433194"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
+            <div>
+                <h2 style="color: #f4e89e;">YOUR COMMENT</h2>
+            </div>
+        </div>
+    </div>
+    </section>
 </div>
 
 <style>
@@ -86,6 +99,14 @@
 .vertical-scrolling
 {
     height: inherit; /* forbidden jutsu stop right here*/
+}
+
+.size
+{
+  max-height: 60vh;
+  overflow-y: scroll;
+  position: relative;
+  min-width: 15vw;
 }
 
 
@@ -240,13 +261,13 @@ $header_top.find('a').on('click', function() {
 
 // fullpage customization
 $('#fullpage').fullpage({
-  sectionsColor: ['#F4E89E', '#333452', '#F4E89E'],
+  sectionsColor: ['#F4E89E', '#333452', '#F4E89E', '#333452'],
   sectionSelector: '.vertical-scrolling',
   slideSelector: '.horizontal-scrolling',
   navigation: true,
   slidesNavigation: true,
   controlArrows: false,
-  anchors: ['firstSection', 'secondSection', 'thirdSection'],
+  anchors: ['firstSection', 'secondSection', 'thirdSection', 'fouthSection'],
   menu: '#menu',
 
   afterLoad: function(anchorLink, index) {

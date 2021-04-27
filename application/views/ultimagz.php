@@ -4,7 +4,7 @@
         <div id="stars2"></div>
         <div id="stars3"></div>
         <div class="horizontal-scrolling">
-            <h1>ULTIMAGZ</h1>
+            <h1 style="color: red">ULTIMAGZ</h1>
         </div>
     </section>
     <section class="vertical-scrolling">

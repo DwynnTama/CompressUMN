@@ -1,5 +1,5 @@
 <audio autoplay class="myAudio">
-    <source src="https://docs.google.com/uc?export=download&id=167kSlcxufLymMPLhOhxdcEK8DZRHCT-T" type="audio/mp3">
+    <source src="https://docs.google.com/uc?export=download&id=1HGIlIRMn4WO3Q9CAjqRpi4sAilzJDRZG" type="audio/mp3">
 </audio>
 
 <audio class="myAudio">
@@ -1044,6 +1044,11 @@ bersarang di tangan dan alas kaki tidak masuk ke area hidroponik. Ini bertujuan 
     var x = document.getElementsByClassName("myAudio");
     var ind = 0;
 
+    function playing(y)
+    {
+        x[y].play();
+    }
+
     $('#fullpage').fullpage({
         sectionsColor: ['#348899'],
         sectionSelector: '.vertical-scrolling',
@@ -1058,10 +1063,10 @@ bersarang di tangan dan alas kaki tidak masuk ke area hidroponik. Ini bertujuan 
             /*if ($waktu == 5) {
                 $('#fp-nav').hide();
             }*/
-            if((ind+1) == index)
-            {
-                x[ind].play();
-            }
+            // if((ind+1) == index)
+            // {
+            //     x[ind].play();
+            // }
             setTimeout(() => { $('#fp-nav').fadeOut(); }, 3000);
             //$('#fp-nav').fadeOut();
         },

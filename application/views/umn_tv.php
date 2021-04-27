@@ -1,8 +1,11 @@
 <script src="<?= base_url('assets/js/slide.js')?>"></script>
 <div id="fullpage" >
     <section class="vertical-scrolling">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
         <div class="horizontal-scrolling">
-            <h1>UMN TV</h1>
+            <img src="<?= base_url("assets/images/umntv.png")?>" class="img-juice-small" alt="">
         </div>
         <div class="horizontal-scrolling">
             <iframe class="vid_dokum" src="https://drive.google.com/file/d/15jvyw3LDf1jsg9F0lhXP3hrYv0yU_mpu/preview"></iframe>
@@ -58,6 +61,11 @@
       display:none;
   }
 
+  body
+  {
+    background: #f4e89e;
+  }
+
 
 .scroll-icon {
     position: absolute;
@@ -72,11 +80,12 @@
 .vertical-scrolling
 {
     height: inherit; /* forbidden jutsu stop right here*/
+    background: transparent;
 }
 
 .horizontal-scrolling
 {
-  background: #f4e89e;
+  background: transparent;
 }
 
 .horizontal-scrolling h1
@@ -169,6 +178,14 @@ h2 {
 {
     width: 43.5vw;
     height: 52.28vh;
+}
+
+.img-juice-small
+{
+    width: 43.5vw;
+    height: 52.28vh;
+    object-fit: scale-down;
+    border-radius: 5px;
 }
 
 
@@ -275,7 +292,7 @@ $header_top.find('a').on('click', function() {
 
 // fullpage customization
 $('#fullpage').fullpage({
-  sectionsColor: ['#F4E89E', '#333452', '#F4E89E'],
+  sectionsColor: ['transparent', 'transparent', 'transparent'],
   sectionSelector: '.vertical-scrolling',
   slideSelector: '.horizontal-scrolling',
   navigation: false,

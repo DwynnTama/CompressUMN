@@ -391,7 +391,7 @@ untuk bertahan hidup</p>
                 <span style="display:block"></span>
                 <div class="inframe-for-image" style="position:absolute">
                     <img src="<?= base_url("assets/images/fosto/4_4.jpg")?>"/>
-                    <h4>Para pekerja yang sedang melakukan pekerjaannya untuk bertahan hidup./h4>
+                    <h4>Para pekerja yang sedang melakukan pekerjaannya untuk bertahan hidup.</h4>
                 </div>
             </div>
         </div>

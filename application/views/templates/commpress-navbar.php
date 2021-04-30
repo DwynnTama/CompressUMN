@@ -22,9 +22,9 @@
     <span class="navbar">
         <a href="<?= base_url(); ?>"><img src="<?= base_url('assets/images/compress.png'); ?>" style="width:95px; padding-bottom: 3px; padding-top: 3px;"/></a>
         <div class="sub-bar">
-            <a href="<?= base_url(); ?>">Home</a>
-            <a href="<?= base_url('Event'); ?>">Events</a>
-            <a href="<?= base_url('Aboutus'); ?>">About</a>
+            <a href="<?= base_url(); ?>" class="nav-menu-nav">Home</a>
+            <a href="<?= base_url('Event'); ?>" class="nav-menu-nav">Events</a>
+            <a href="<?= base_url('Aboutus'); ?>" class="nav-menu-nav">About</a>
         </div>
     </span>
     <nav role="navigation">

@@ -1,4 +1,4 @@
-<div class="container-pameran" style="padding-top:100px;padding-bottom: 20px">
+<div class="container-pameran" style="padding-top:100px;padding-bottom:20px">
     <?php
     foreach ($tampilkan as $row) {
         $anggota1 = $row['nama_anggota_1'];
@@ -49,3 +49,4 @@
     <?php
     }
     ?>
+</div>

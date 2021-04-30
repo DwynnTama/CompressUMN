@@ -1,4 +1,4 @@
-<div class="container-pameran" style="height:100%;flex-direction:row;justify-content: center;align-items: flex-start;">
+<div class="container-pameran" style="height:100%;flex-direction:row;justify-content: space-between;align-items: flex-start;">
     <div class="curtain-template" id="curt-left">
         <h2 class="left-feature">FEAT<br/>-URE</h2>
     </div>
@@ -13,9 +13,8 @@
         <span>
             <?php 
                 echo '<h3 class="title-bold" style="margin:20px 20px 5px 20px;color: #f3eb9b">'.$judul.'</h3>';?>
-                <h5 class="author" style="color: #f3eb9b">by : </h5>
             <?php
-                echo '<h4 class="author" style="margin:5px 20px 20px 20px;color: #f3eb9b">'.$pengarang.'</h4>';
+                echo '<h4 class="author" style="margin:5px 20px 20px 20px;color: #f3eb9b">by : '.$pengarang.'</h4>';
             ?>
         </span>
         <span>

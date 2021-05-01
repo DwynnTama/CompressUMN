@@ -10,6 +10,7 @@
                 2020 bertujuan memperkuat arti jurnalisme di era digital ini.
             </div>
         </div>
+        <hr style="width:30%; margin-left:35%; background-color:231f20; height: 7px; border: none;">
         <div class="about">
             <span><img src="<?= base_url('assets/images/compress.png')?>" alt="Logo COMMPRESS"></span>
             <div class="about-content">
@@ -91,6 +92,8 @@
                     </li>
                 </ul>
             </div>
+
+            <hr style="width:30%; margin-left:35%; background-color:231f20; height: 7px; margin-top: 7vh; border: none;">
 
         <div class="about-now">
             <img src="<?= base_url("assets/images/TAGLINE.png")?>" alt="">

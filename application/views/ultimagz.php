@@ -1,13 +1,24 @@
+<title>ULTIMAGZ</title>
 <div id="fullpage">
-    <section class="vertical-scrolling">
         <div id="stars"></div>
         <div id="stars2"></div>
         <div id="stars3"></div>
-        <div class="horizontal-scrolling">
-            <h1 style="color: red">ULTIMAGZ</h1>
-        </div>
-    </section>
     <section class="vertical-scrolling">
+        <div class="horizontal-scrolling">
+          <div class="grinding">
+              <div>
+                <img src="<?= base_url("assets/images/biru/kiri.png")?>" style="width: 100%; height: auto; margin-top: -2vw;" alt="">
+                <img src="<?= base_url("assets/images/biru/cacing.png")?>" style="width: 50%; height: auto; margin-top: 20vh; margin-left: 15vw; transform: rotateX(180deg); transform: rotateY(180deg);" alt="">
+              </div>
+
+              <h1 style="color: red">ULTIMAGZ</h1>
+              
+              <div style="height: 100vh;">
+                <img src="<?= base_url("assets/images/biru/cacing.png")?>" class="cacing" alt="">
+                <img src="<?= base_url("assets/images/biru/kanan.png")?>" style="width: 100%; height: auto; transform: rotateX(180deg); margin-top: 30vh;" alt="">
+              </div>
+            </div>
+        </div>
         <div class="horizontal-scrolling">
             <iframe src="https://drive.google.com/file/d/1S2kvlUm4SAU5lEzSniz_-HII1MLAy57o/preview" class="pdf-view"></iframe>
         </div>
@@ -32,6 +43,22 @@
   body
   {
     background: #f4e89e;
+  }
+
+  .cacing
+  {
+    width: 50%; 
+    height: auto; 
+    margin-top: 15vh; 
+    transform: translateX(-12vw) rotateX(180deg);
+  }
+
+  .grinding
+  {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    align-items: center;
+    grid-gap: 1px;
   }
 
 .pdf-view
@@ -93,7 +120,7 @@
   background: transparent;
 }
 
-.horizontal-scrolling h1
+h1
 {
   font-family: "Avenir-bold";
   width: 100%;

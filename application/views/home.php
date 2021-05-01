@@ -16,7 +16,7 @@
                 <div class="kontener">
                     <button class="btn-event"><a href="<?= base_url('Lomba'); ?>" id="event">LOMBA</a></button>
                     <button class="btn-event"><a href="<?= base_url('Pameran'); ?>" id="pameran">PAMERAN</a></button>
-                    <button class="btn-about"><a href="<?= base_url('Aboutus'); ?>" id="lomba">ABOUT US</a></button>
+                    <button class="btn-about"><a href="<?= base_url('Aboutus'); ?>" id="lomba">ABOUT</a></button>
                 </div>
                 <span class="instruction-title" style="margin-top: 30vh;">
                     CHECK US OUT
@@ -26,6 +26,12 @@
         </div>
     </section>
     <section class="vertical-scrolling">
+        <div class="horizontal-scrolling">
+            <div class="konten-punten">
+              <h2>SEBELUMNYA DI</h2>
+              <h1 data-text="#COMMPRESS2020">#COMMPRESS2020</h1>
+            </div>
+        </div>
         <div class="horizontal-scrolling">
             <img src="<?= base_url("assets/images/pic1.jpg") ?>"width="100%" height="auto" style="object-fit: cover;" alt="Image 1">
         </div>
@@ -70,7 +76,7 @@
 </div>
 
 <style>
-    .navbar
+  .navbar
   {
       display: none;
   }
@@ -95,14 +101,29 @@
     height: inherit; /* forbidden jutsu stop right here*/
 }
 
+.horizontal-scrolling
+{
+  background: transparent;
+}
+
 .size
 {
   max-height: 60vh;
   overflow-y: scroll;
   position: relative;
-  min-width: 15vw;
+  min-width: 25vw;
 }
 
+.fp-controlArrow.fp-next
+{
+  right: 50px;
+  border-color: transparent transparent transparent #333452;
+}
+
+.fp-controlArrow.fp-prev
+{
+  border-color: transparent #333452 transparent #fff;
+}
 
 
 /* HELPER CLASSES
@@ -148,7 +169,65 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: -5%;
+    height: 100%;
+}
+
+.konten-punten h1
+{
+  font-family: "Avenir-bold";
+  font-size: 3.33vw;
+  color: transparent;
+  -webkit-text-stroke: 0.1vw #333452;
+  position: relative;
+  margin-top: -50px;
+}
+
+.konten-punten h2
+{
+  font-family: "Avenir-medium";
+  font-size: 2.5vw;
+  color: #231f20;
+}
+
+.konten-punten h1::before
+{
+  content: attr(data-text);
+  position: absolute;
+  width: 0;
+  height: 100%;
+  color: #333452;
+  overflow: hidden;
+  -webkit-text-stroke: 0vw #333452;
+  border-right: 2px solid #333452;
+  animation: animater 6s linear infinite;
+}
+
+@keyframes animater
+{
+  0%
+  {
+    width: 0;
+  }
+
+  3%, 9%, 15%, 21%, 27%, 33%, 39%, 45%, 48%, 51%, 57%, 63%, 69%, 75%, 81%, 87%, 93%, 99%
+  {
+    border-right: 0;
+  }
+
+  6%, 12%, 18%, 24%, 30%, 36%, 42%, 48%, 54%, 60%, 66%, 72%, 78%, 84%, 90%, 96%
+  {
+    border-right: 2px solid #333452;
+  }
+
+  50%,80%
+  {
+    width: 100%;
+  }
+
+  100%
+  {
+    width: 0;
+  }
 }
 
 section { 
@@ -169,6 +248,7 @@ h2 {
 #fp-nav ul li a span, 
 .fp-slidesNav ul li a span {
     background: #333452;
+    border: 2px solid #ed2326;
     width: 8px;
     height: 8px;
     margin: -4px 0 0 -4px;
@@ -255,12 +335,12 @@ $header_top.find('a').on('click', function() {
 
 // fullpage customization
 $('#fullpage').fullpage({
-  sectionsColor: ['#F4E89E', '#333452', '#F4E89E', '#333452'],
+  sectionsColor: ['#F4E89E', 'transparent', '#F4E89E', '#333452'],
   sectionSelector: '.vertical-scrolling',
   slideSelector: '.horizontal-scrolling',
   navigation: true,
   slidesNavigation: true,
-  controlArrows: false,
+  controlArrows: true,
   anchors: ['firstSection', 'secondSection', 'thirdSection', 'fouthSection'],
   menu: '#menu',
 

@@ -135,8 +135,9 @@
     position: absolute;
     left: 50%;
     width: 5px;
-    height: 105%;
+    height: 103%;
     background: #333452;
+    z-index: 1;
 }
 
 .timeline ul{

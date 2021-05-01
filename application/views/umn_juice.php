@@ -1,3 +1,4 @@
+<title>UMN Juice</title>
 <script src="<?= base_url('assets/js/slide.js')?>"></script>
 <div id="fullpage" >
     <section class="vertical-scrolling">
@@ -5,7 +6,19 @@
         <div id="stars2"></div>
         <div id="stars3"></div>
         <div class="horizontal-scrolling">
+          <div class="grinding">
+            <div>
+              <img src="<?= base_url("assets/images/biru/kiri.png")?>" style="width: 100%; height: auto; margin-top: 0;" alt="">
+              <img src="<?= base_url("assets/images/biru/cacing.png")?>" style="width: 50%; height: auto; margin-top: 20vh; margin-left: 15vw; transform: rotateX(180deg); transform: rotateY(180deg);" alt="">
+            </div>
+
             <img src="<?= base_url("assets/images/umn_juice.png")?>" class="img-juice-small" alt="">
+            
+            <div style="height: 100vh;">
+              <img src="<?= base_url("assets/images/biru/cacing.png")?>" class="cacing" alt="">
+              <img src="<?= base_url("assets/images/biru/kanan.png")?>" style="width: 100%; height: auto; transform: rotateX(180deg); margin-top: 30vh;" alt="">
+            </div>
+          </div>
         </div>
     </section>
     <section class="vertical-scrolling">
@@ -104,13 +117,17 @@
     </section>
 </div>
 <style>
-  nav{
-      display:none;
-  }
-
   body
   {
     background:#f4e89e;
+  }
+
+  .cacing
+  {
+    width: 50%; 
+    height: auto; 
+    margin-top: 15vh; 
+    transform: translateX(-12vw) rotateX(180deg);
   }
 
 
@@ -122,6 +139,14 @@
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
+}
+
+.grinding
+{
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    align-items: center;
+    grid-gap: 1px;
 }
 
 .kotak
@@ -259,6 +284,7 @@ h2 {
     height: 52.28vh;
     object-fit: scale-down;
     border-radius: 5px;
+    margin-left: 20%;
 }
 
 .img-juice

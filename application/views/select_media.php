@@ -8,7 +8,7 @@
         </div>
         <div class="com-item">
             <a class="com-link" href="<?= base_url("Pameran/UMN_Radio") ?>"></a>
-            <h2 class="item-title">UMN <br/>RADIO</h2>
+            <img src="<?= base_url("assets/images/umnradio.png")?>" class="img-media" alt="">
         </div>
     </div>
     <div class="com-deck">
@@ -18,7 +18,7 @@
         </div>
         <div class="com-item">
             <a class="com-link" href="<?= base_url("Pameran/Ultimagz") ?>"></a>
-            <h2 class="item-title" style="color: red;">ULTIMAGZ</h2>
+            <h2 class="item-title" style="color: red; font-size:2.3vw;">ULTIMAGZ</h2>
         </div>
         <div class="com-item">
             <a class="com-link" href="<?= base_url("Pameran/Masterpiece") ?>"></a>
@@ -34,10 +34,10 @@
         height: 15vw;
         margin: 30px;
     }
-    .img-media
+    .com-item .img-media
     {
-        width: 20.5vw;
-        height: 20.28vh;
-        object-fit: scale-down;
+        width: 10vw;
+        height : 20vh;
+        object-fit: contain;
     }
 </style>

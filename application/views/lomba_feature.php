@@ -1,3 +1,4 @@
+<title>Feature Writing</title>
 <div class="container-pameran" style="justify-content:flex-start">
     <div style="width:25em;margin:20px;display:flex;flex-direction:column;align-items:center">
         <h1 style="font-size: 2em; padding-top: 100px">Tulis namamu disini ...</h1>

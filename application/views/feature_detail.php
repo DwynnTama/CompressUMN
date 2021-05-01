@@ -1,3 +1,4 @@
+<title>Feature Writing</title>
 <div class="container-pameran" style="height:100%;flex-direction:row;justify-content: space-between;align-items: flex-start;">
     <div class="curtain-template" id="curt-left">
         <h2 class="left-feature">FEAT<br/>-URE</h2>

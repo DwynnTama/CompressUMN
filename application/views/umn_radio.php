@@ -1,5 +1,24 @@
+<title>UMN Radio</title>
 <div id="fullpage">
     <section class="vertical-scrolling">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div class="horizontal-scrolling">
+        <div class="grinding">
+            <div>
+              <img src="<?= base_url("assets/images/biru/kiri.png")?>" style="width: 100%; height: auto; margin-top: -2vw;" alt="">
+              <img src="<?= base_url("assets/images/biru/cacing.png")?>" style="width: 50%; height: auto; margin-top: 20vh; margin-left: 15vw; transform: rotateX(180deg); transform: rotateY(180deg);" alt="">
+            </div>
+
+            <img src="<?= base_url("assets/images/umnradio.png")?>" class="img-juice-small" alt="">
+            
+            <div style="height: 100vh;">
+              <img src="<?= base_url("assets/images/biru/cacing.png")?>" class="cacing" alt="">
+              <img src="<?= base_url("assets/images/biru/kanan.png")?>" style="width: 100%; height: auto; transform: rotateX(180deg); margin-top: 30vh;" alt="">
+            </div>
+          </div>
+        </div>
         <div class="horizontal-scrolling">
             <div class="frame"> 
                 <h1>[U-PODCAST]</h1>
@@ -50,6 +69,31 @@
 <style>
     section { 
         text-align: center;
+    }
+
+.cacing
+  {
+    width: 50%; 
+    height: auto; 
+    margin-top: 15vh; 
+    transform: translateX(-12vw) rotateX(180deg);
+  }
+
+  .grinding
+  {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    align-items: center;
+    grid-gap: 1px;
+  }
+
+    .img-juice-small
+    {
+        width: 43.5vw;
+        height: 52.28vh;
+        object-fit: scale-down;
+        border-radius: 5px;
+        margin-left: 20%;
     }
 
     #fp-nav ul li a span, 
@@ -103,8 +147,17 @@
         width: 100%;
     }
 
+    .horizontal-scrolling:nth-child(1)
+    {
+        background-color: transparent;
+    }
+
     .horizontal-scrolling{
         background-color: #333452;
+    }
+    .vertical-scrolling
+    {
+        background: #f4e89e;
     }
 </style>
 <script>

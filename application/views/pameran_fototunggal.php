@@ -11,21 +11,21 @@
         <div id="slider-container">
             <span onclick="slideRight()" class="btn"></span>
                 <div id="slider">
-                    <div class="slide"> <img src="<?= base_url("assets/images/fotu/kiko.jpg");?>" class="img-cover" id="myBtn1"></div>
                     <div class="slide"> <img src="<?= base_url("assets/images/fotu/geiska.jpg");?>" class="img-cover" id="myBtn2"> </div>
-                    <div class="slide"> <img src="<?= base_url("assets/images/fotu/charina.jpg");?>" class="img-cover" id="myBtn3"> </div>
                     <div class="slide"> <img src="<?= base_url("assets/images/fotu/juan.jpg");?>" class="img-cover" id="myBtn4"> </div>
+                    <div class="slide"> <img src="<?= base_url("assets/images/fotu/charina.jpg");?>" class="img-cover" id="myBtn3"> </div>
+                    <div class="slide"> <img src="<?= base_url("assets/images/fotu/kiko.jpg");?>" class="img-cover" id="myBtn1"></div>
                     <div class="slide"> <img src="<?= base_url("assets/images/fotu/timo.jpg");?>" class="img-cover" id="myBtn5"> </div>
+                    <div class="slide"> <img src="<?= base_url("assets/images/fotu/siti.jpg");?>" class="img-cover" id="myBtn8"> </div>
+                    <div class="slide"> <img src="<?= base_url("assets/images/fotu/helen.png");?>" class="img-cover" id="myBtn12"> </div>
                     <div class="slide"> <img src="<?= base_url("assets/images/fotu/devonseta.jpg");?>" class="img-cover" id="myBtn6" style="object-position: -60px;"> </div>
                     <div class="slide"> <img src="<?= base_url("assets/images/fotu/zupe.jpg");?>" class="img-cover" id="myBtn7" style="object-position: -40px;"> </div>
-                    <div class="slide"> <img src="<?= base_url("assets/images/fotu/siti.jpg");?>" class="img-cover" id="myBtn8"> </div>
+                    <div class="slide"> <img src="<?= base_url("assets/images//fotu/anggi.jpg");?>" class="img-cover" id="myBtn15" style="object-position: -60px;"> </div>
                     <div class="slide"> <img src="<?= base_url("assets/images/fotu/vero.jpg");?>" class="img-cover" id="myBtn9"> </div>
                     <div class="slide"> <img src="<?= base_url("assets/images/fotu/atew.jpg");?>" class="img-cover" id="myBtn10"> </div>
-                    <div class="slide"> <img src="<?= base_url("assets/images/fotu/estefany.jpg");?>" class="img-cover" id="myBtn11"> </div>
-                    <div class="slide"> <img src="<?= base_url("assets/images/fotu/helen.png");?>" class="img-cover" id="myBtn12"> </div>
-                    <div class="slide"> <img src="<?= base_url("assets/images/fotu/frengky.jpg");?>" class="img-cover" id="myBtn13"> </div>
                     <div class="slide"> <img src="<?= base_url("assets/images/fotu/alfredo.jpg");?>" class="img-cover" id="myBtn14"> </div>
-                    <div class="slide"> <img src="<?= base_url("assets/images//fotu/anggi.jpg");?>" class="img-cover" id="myBtn15" style="object-position: -60px;"> </div>
+                    <div class="slide"> <img src="<?= base_url("assets/images/fotu/frengky.jpg");?>" class="img-cover" id="myBtn13"> </div>
+                    <div class="slide"> <img src="<?= base_url("assets/images/fotu/estefany.jpg");?>" class="img-cover" id="myBtn11"> </div>
                 </div>
             <span onclick="slideLeft()" class="btn"></span>
         </div>

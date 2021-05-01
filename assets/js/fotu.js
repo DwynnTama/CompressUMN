@@ -57,11 +57,11 @@ var modal15 = document.getElementById("myModal15");
  
  // When the user clicks the button, open the modal 
  btn[0].onclick = function() {
-   modal1.style.display = "block";
+   modal2.style.display = "block";
  }
 
  btn[1].onclick = function() {
-   modal2.style.display = "block";
+   modal4.style.display = "block";
  }
  
  btn[2].onclick = function() {
@@ -69,7 +69,7 @@ var modal15 = document.getElementById("myModal15");
  }
 
  btn[3].onclick = function() {
-   modal4.style.display = "block";
+   modal1.style.display = "block";
  }
 
  btn[4].onclick = function() {
@@ -77,43 +77,43 @@ var modal15 = document.getElementById("myModal15");
  }
 
  btn[5].onclick = function() {
-   modal6.style.display = "block";
- }
-
- btn[6].onclick = function() {
-   modal7.style.display = "block";
- }
- 
- btn[7].onclick = function() {
    modal8.style.display = "block";
  }
 
- btn[8].onclick = function() {
-   modal9.style.display = "block";
- }
-
- btn[9].onclick = function() {
-   modal10.style.display = "block";
- }
-
- btn[10].onclick = function() {
-   modal11.style.display = "block";
- }
-
- btn[11].onclick = function() {
+ btn[6].onclick = function() {
    modal12.style.display = "block";
  }
  
- btn[12].onclick = function() {
-   modal13.style.display = "block";
+ btn[7].onclick = function() {
+   modal6.style.display = "block";
  }
 
- btn[13].onclick = function() {
+ btn[8].onclick = function() {
+   modal7.style.display = "block";
+ }
+
+ btn[9].onclick = function() {
+   modal15.style.display = "block";
+ }
+
+ btn[10].onclick = function() {
+   modal9.style.display = "block";
+ }
+
+ btn[11].onclick = function() {
+   modal10.style.display = "block";
+ }
+ 
+ btn[12].onclick = function() {
    modal14.style.display = "block";
  }
 
+ btn[13].onclick = function() {
+   modal13.style.display = "block";
+ }
+
  btn[14].onclick = function() {
-   modal15.style.display = "block";
+   modal11.style.display = "block";
  }
  
  // When the user clicks on <span> (x), close the modal

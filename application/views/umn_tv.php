@@ -1,69 +1,61 @@
 <script src="<?= base_url('assets/js/slide.js')?>"></script>
+<title>UMN TV</title>
 <div id="fullpage" >
     <section class="vertical-scrolling">
         <div id="stars"></div>
         <div id="stars2"></div>
         <div id="stars3"></div>
         <div class="horizontal-scrolling">
+        <div class="grinding">
+            <div>
+              <img src="<?= base_url("assets/images/biru/kiri.png")?>" style="width: 100%; height: auto; margin-top: -2vw;" alt="">
+              <img src="<?= base_url("assets/images/biru/cacing.png")?>" style="width: 50%; height: auto; margin-top: 20vh; margin-left: 15vw; transform: rotateX(180deg); transform: rotateY(180deg);" alt="">
+            </div>
+
             <img src="<?= base_url("assets/images/umntv.png")?>" class="img-juice-small" alt="">
+            
+            <div style="height: 100vh;">
+              <img src="<?= base_url("assets/images/biru/cacing.png")?>" class="cacing" alt="">
+              <img src="<?= base_url("assets/images/biru/kanan.png")?>" style="width: 100%; height: auto; transform: rotateX(180deg); margin-top: 30vh;" alt="">
+            </div>
+          </div>
         </div>
         <div class="horizontal-scrolling">
             <iframe class="vid_dokum" src="https://drive.google.com/file/d/15jvyw3LDf1jsg9F0lhXP3hrYv0yU_mpu/preview"></iframe>
         </div>
         <div class="horizontal-scrolling">
             <iframe class="vid_dokum" src="https://drive.google.com/file/d/1KbNInemL-rWJoaesFzBVYkHZkZDsr-J1/preview" ></iframe>
-            <div class="credit">
-              <h3>Dibuat oleh :</h3>
-              <h4>Amadea Claritta</h4>
-              <h4>Eben Haezar</h4>
-              <h4>Muhammad Frizki</h4>
-              <h4>Puspita Wulandari</h4>
-              <h4>Syifa Dwi Mutia</h4>
-            </div>
         </div>
         <div class="horizontal-scrolling">
             <iframe class="vid_dokum" src="https://drive.google.com/file/d/1ZtLBtuP4RHRiXitDm6hSloVlF413mtOx/preview" ></iframe>
-            <div class="credit">
-              <h3>Dibuat oleh :</h3>
-              <h4>Timothy Afryano</h4>
-              <h4>Enrico Gary Himawan</h4>
-              <h4>Fablius Dwitomo Evendi</h4>
-              <h4>Ita Cindy Tania</h4>
-              <h4>Geiska Vatikan Isdy</h4>
-            </div>
         </div>
         <div class="horizontal-scrolling">
         <iframe class="vid_dokum" src="https://drive.google.com/file/d/1ukd__EUhJWVJ11dIaJfbMav-Da6OGC7O/preview" ></iframe>
-            <div class="credit">
-              <h3>Dibuat oleh :</h3>
-              <h4>M Frizki Alfian</h4>
-              <h4>Amadea Claritta</h4>
-              <h4>Aziza Zahwa</h4>
-              <h4>Puspita Wulandari</h4>
-              <h4>Rafifa Nur Shabira</h4>
-              <h4>Syifa Dwi Mutia</h4>
-            </div>
         </div>
         <div class="horizontal-scrolling">
         <iframe class="vid_dokum" src="https://drive.google.com/file/d/1k4CBcVWy0M7P972XO18ZPbi4nw14cK98/preview" ></iframe>
-            <div class="credit">
-              <h3>Dibuat oleh :</h3>
-              <h4>Abdul Fatah Muharam</h4>
-              <h4>Athira Shafa Berliana</h4>
-              <h4>Eric Limanda</h4>
-              <h4>Ninda Ocktaviani Suhanda</h4>
-              <h4>Refano Lionel</h4>
-            </div>
         </div>
     </section>
 <style>
-  nav{
-      display:none;
-  }
-
   body
   {
     background: #f4e89e;
+  }
+
+  .cacing
+  {
+    width: 50%; 
+    height: auto; 
+    margin-top: 15vh; 
+    transform: translateX(-12vw) rotateX(180deg);
+  }
+
+  .grinding
+  {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    align-items: center;
+    grid-gap: 1px;
   }
 
 
@@ -186,6 +178,7 @@ h2 {
     height: 52.28vh;
     object-fit: scale-down;
     border-radius: 5px;
+    margin-left: 20%;
 }
 
 

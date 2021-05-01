@@ -1,3 +1,4 @@
+<title>Podcast</title>
 <div class="container-pameran" style="padding-top:100px;padding-bottom:20px">
     <?php
     foreach ($tampilkan as $row) {
